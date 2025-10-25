@@ -1,0 +1,14 @@
+package protos
+
+import (
+	"time"
+)
+
+type ScenarioGroupHistoryDB struct {
+	AccountServerId       int64
+	ScenarioGroupUqniueId int64
+	ScenarioType          int64
+	EventContentId        *int64
+	ClearDateTime         time.Time
+	IsReturn              bool
+}

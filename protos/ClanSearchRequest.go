@@ -1,0 +1,13 @@
+package protos
+
+import (
+	"github.com/arisu-archive/arona-flatbuffers/go/flatdata"
+)
+
+type ClanSearchRequest struct {
+	RequestPacket
+	Protocol       Protocol
+	SearchString   string
+	ClanJoinOption flatdata.ClanJoinOption
+	ClanUniqueCode string
+}

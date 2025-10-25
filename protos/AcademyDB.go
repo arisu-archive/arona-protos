@@ -1,0 +1,11 @@
+package protos
+
+import (
+	"time"
+)
+
+type AcademyDB struct {
+	LastUpdate               time.Time
+	ZoneVisitCharacterDBs    map[int64][]VisitingCharacterDB
+	ZoneScheduleGroupRecords map[int64][]int64
+}

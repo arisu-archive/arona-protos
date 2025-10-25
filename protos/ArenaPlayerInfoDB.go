@@ -1,0 +1,17 @@
+package protos
+
+import (
+	"time"
+)
+
+type ArenaPlayerInfoDB struct {
+	CurrentSeasonId          int64
+	PlayerGroupId            int64
+	CurrentRank              int64
+	SeasonRecord             int64
+	AllTimeRecord            int64
+	CumulativeTimeReward     int64
+	TimeRewardLastUpdateTime time.Time
+	BattleEnterActiveTime    time.Time
+	DailyRewardActiveTime    time.Time
+}

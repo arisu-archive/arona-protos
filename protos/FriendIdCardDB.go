@@ -1,0 +1,28 @@
+package protos
+
+import (
+	"time"
+)
+
+type FriendIdCardDB struct {
+	Level                       int32
+	FriendCode                  string
+	Comment                     string
+	LastConnectTime             time.Time
+	RepresentCharacterUniqueId  int64
+	RepresentCharacterCostumeId int64
+	SearchPermission            bool
+	AutoAcceptFriendRequest     bool
+	CardBackgroundId            int64
+	ShowAccountLevel            bool
+	ShowFriendCode              bool
+	ShowRaidRanking             bool
+	ShowArenaRanking            bool
+	ShowEliminateRaidRanking    bool
+	ArenaRanking                *int64
+	RaidRanking                 *int64
+	RaidTier                    *int32
+	EliminateRaidRanking        *int64
+	EliminateRaidTier           *int32
+	EmblemId                    int64
+}

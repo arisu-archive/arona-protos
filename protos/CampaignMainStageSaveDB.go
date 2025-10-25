@@ -1,0 +1,26 @@
+package protos
+
+import (
+	"github.com/arisu-archive/arona-flatbuffers/go/flatdata"
+)
+
+type CampaignMainStageSaveDB struct {
+	ContentSaveDB
+	ContentType                      flatdata.ContentType
+	CampaignState                    CampaignState
+	CurrentTurn                      int32
+	EnemyClearCount                  int32
+	LastEnemyEntityId                int32
+	TacticRankSCount                 int32
+	EnemyInfos                       map[int64]HexaUnit
+	EchelonInfos                     map[int64]HexaUnit
+	WithdrawInfos                    map[int64][]int64
+	StrategyObjects                  map[int64]Strategy
+	StrategyObjectRewards            map[int64][]ParcelInfo
+	StrategyObjectHistory            []int64
+	ActivatedHexaEventsAndConditions map[int64][]int64
+	HexaEventDelayedExecutions       map[int64][]int64
+	TileMapStates                    map[int32]HexaTileState
+	DisplayInfos                     []HexaDisplayInfo
+	DeployedEchelonInfos             []HexaUnit
+}
