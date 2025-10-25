@@ -1,5 +1,7 @@
 github.com/arisu-archive/arona-flatbuffers v0.3.0 h1:+ym42Q8gSIah0Y7p45ryUePjBHmTqTQPxaQSdM5Dwz0=
 github.com/arisu-archive/arona-flatbuffers v0.3.0/go.mod h1:BdAWEPzwiSZGf6pbT9pzgTADu/UVgrYzP1Ld2bmCeME=
+github.com/arisu-archive/arona-flatbuffers v0.3.1 h1:lNNiPOzMm9wpbeFnXJDGXOzsqKMtl1jrY7CGuWqRk0A=
+github.com/arisu-archive/arona-flatbuffers v0.3.1/go.mod h1:BdAWEPzwiSZGf6pbT9pzgTADu/UVgrYzP1Ld2bmCeME=
 github.com/arisu-archive/bluearchive-fbs-utils v0.0.0-20250523141606-65e055cdb50b h1:aSw1k4pyb+CBLpfREiiZfAVbF7TBLRHijzIoP1Ib/5U=
 github.com/arisu-archive/bluearchive-fbs-utils v0.0.0-20250523141606-65e055cdb50b/go.mod h1:TcA0pAoioBOjVpqKszcgRZl23YJGG33cjbRIvxRSMKI=
 github.com/go-logr/logr v1.4.2 h1:6pFjapn8bFcIbiKo3XT4j/BhANplGihG6tvd+8rYgrY=
