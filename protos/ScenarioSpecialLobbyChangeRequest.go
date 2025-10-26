@@ -2,7 +2,7 @@ package protos
 
 type ScenarioSpecialLobbyChangeRequest struct {
 	RequestPacket
-	Protocol            Protocol
-	MemoryLobbyId       int64
-	MemoryLobbyIdBefore int64
+	Protocol Protocol `json:",omitempty,omitzero"`
+	MemoryLobbyId int64 `json:",omitempty,omitzero"`
+	MemoryLobbyIdBefore int64 `json:",omitempty,omitzero"`
 }

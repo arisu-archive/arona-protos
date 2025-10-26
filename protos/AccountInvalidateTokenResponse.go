@@ -2,5 +2,5 @@ package protos
 
 type AccountInvalidateTokenResponse struct {
 	ResponsePacket
-	Protocol Protocol
+	Protocol Protocol `json:",omitempty,omitzero"`
 }

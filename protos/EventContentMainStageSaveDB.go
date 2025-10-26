@@ -6,7 +6,7 @@ import (
 
 type EventContentMainStageSaveDB struct {
 	CampaignMainStageSaveDB
-	ContentType                flatdata.ContentType
-	SelectedBuffDict           map[int64]int64
-	CurrentAppearedBuffGroupId int64
+	ContentType flatdata.ContentType `json:",omitempty,omitzero"`
+	SelectedBuffDict map[int64]int64 `json:",omitempty,omitzero"`
+	CurrentAppearedBuffGroupId int64 `json:",omitempty,omitzero"`
 }

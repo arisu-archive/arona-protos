@@ -2,5 +2,5 @@ package protos
 
 type ClanCancelApplyRequest struct {
 	RequestPacket
-	Protocol Protocol
+	Protocol Protocol `json:",omitempty,omitzero"`
 }

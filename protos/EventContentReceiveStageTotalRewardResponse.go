@@ -2,8 +2,8 @@ package protos
 
 type EventContentReceiveStageTotalRewardResponse struct {
 	ResponsePacket
-	Protocol               Protocol
-	EventContentId         int64
-	AlreadyReceiveRewardId []int64
-	ParcelResultDB         ParcelResultDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	EventContentId int64 `json:",omitempty,omitzero"`
+	AlreadyReceiveRewardId []int64 `json:",omitempty,omitzero"`
+	ParcelResultDB ParcelResultDB `json:",omitempty,omitzero"`
 }

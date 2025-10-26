@@ -2,6 +2,6 @@ package protos
 
 type RaidShareRequest struct {
 	RequestPacket
-	Protocol     Protocol
-	RaidServerId int64
+	Protocol Protocol `json:",omitempty,omitzero"`
+	RaidServerId int64 `json:",omitempty,omitzero"`
 }

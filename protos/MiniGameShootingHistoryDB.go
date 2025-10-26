@@ -5,9 +5,9 @@ import (
 )
 
 type MiniGameShootingHistoryDB struct {
-	EventContentId int64
-	UniqueId       int64
-	ArriveSection  int64
-	LastUpdateDate time.Time
-	IsClearToday   bool
+	EventContentId int64 `json:",omitempty,omitzero"`
+	UniqueId int64 `json:",omitempty,omitzero"`
+	ArriveSection int64 `json:",omitempty,omitzero"`
+	LastUpdateDate time.Time `json:",omitempty,omitzero"`
+	IsClearToday bool `json:",omitempty,omitzero"`
 }

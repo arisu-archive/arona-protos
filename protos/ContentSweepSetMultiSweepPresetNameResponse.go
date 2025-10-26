@@ -2,6 +2,6 @@ package protos
 
 type ContentSweepSetMultiSweepPresetNameResponse struct {
 	ResponsePacket
-	Protocol            Protocol
-	MultiSweepPresetDBs []MultiSweepPresetDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	MultiSweepPresetDBs []MultiSweepPresetDB `json:",omitempty,omitzero"`
 }

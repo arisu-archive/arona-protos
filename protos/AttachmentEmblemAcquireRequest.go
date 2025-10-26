@@ -2,6 +2,6 @@ package protos
 
 type AttachmentEmblemAcquireRequest struct {
 	RequestPacket
-	Protocol  Protocol
-	UniqueIds []int64
+	Protocol Protocol `json:",omitempty,omitzero"`
+	UniqueIds []int64 `json:",omitempty,omitzero"`
 }

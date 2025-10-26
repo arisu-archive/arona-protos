@@ -6,9 +6,9 @@ import (
 
 type EquipmentDB struct {
 	ConsumableItemBaseDB
-	Type                   flatdata.ParcelType
-	Level                  int32
-	Exp                    int64
-	Tier                   int32
-	BoundCharacterServerId int64
+	Type flatdata.ParcelType `json:",omitempty,omitzero"`
+	Level int32 `json:",omitempty,omitzero"`
+	Exp int64 `json:",omitempty,omitzero"`
+	Tier int32 `json:",omitempty,omitzero"`
+	BoundCharacterServerId int64 `json:",omitempty,omitzero"`
 }

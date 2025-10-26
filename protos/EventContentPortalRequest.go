@@ -2,8 +2,8 @@ package protos
 
 type EventContentPortalRequest struct {
 	RequestPacket
-	Protocol        Protocol
-	EventContentId  int64
-	StageUniqueId   int64
-	EchelonEntityId int64
+	Protocol Protocol `json:",omitempty,omitzero"`
+	EventContentId int64 `json:",omitempty,omitzero"`
+	StageUniqueId int64 `json:",omitempty,omitzero"`
+	EchelonEntityId int64 `json:",omitempty,omitzero"`
 }

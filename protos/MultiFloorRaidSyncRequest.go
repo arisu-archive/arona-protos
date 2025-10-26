@@ -2,6 +2,6 @@ package protos
 
 type MultiFloorRaidSyncRequest struct {
 	RequestPacket
-	Protocol Protocol
-	SeasonId *int64
+	Protocol Protocol `json:",omitempty,omitzero"`
+	SeasonId *int64 `json:",omitempty,omitzero"`
 }

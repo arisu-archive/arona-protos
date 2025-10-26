@@ -1,17 +1,16 @@
 package protos
 
 import (
-	"time"
-
 	"github.com/arisu-archive/arona-flatbuffers/go/flatdata"
+	"time"
 )
 
 type RaidSeasonRankingHistoryDB struct {
-	ContentType      flatdata.ContentType
-	AccountId        int64
-	SeasonId         int64
-	Ranking          int64
-	BestRankingPoint int64
-	Tier             int32
-	ReceivedDate     time.Time
+	ContentType flatdata.ContentType `json:",omitempty,omitzero"`
+	AccountId int64 `json:",omitempty,omitzero"`
+	SeasonId int64 `json:",omitempty,omitzero"`
+	Ranking int64 `json:",omitempty,omitzero"`
+	BestRankingPoint int64 `json:",omitempty,omitzero"`
+	Tier int32 `json:",omitempty,omitzero"`
+	ReceivedDate time.Time `json:",omitempty,omitzero"`
 }

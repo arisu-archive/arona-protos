@@ -2,7 +2,7 @@ package protos
 
 type EventContentShopListResponse struct {
 	ResponsePacket
-	Protocol             Protocol
-	ShopInfos            []ShopInfoDB
-	ShopEligmaHistoryDBs []ShopEligmaHistoryDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	ShopInfos []ShopInfoDB `json:",omitempty,omitzero"`
+	ShopEligmaHistoryDBs []ShopEligmaHistoryDB `json:",omitempty,omitzero"`
 }

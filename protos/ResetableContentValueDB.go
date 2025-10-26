@@ -5,7 +5,7 @@ import (
 )
 
 type ResetableContentValueDB struct {
-	ResetableContentId ResetableContentId
-	ContentValue       int64
-	LastUpdateTime     time.Time
+	ResetableContentId ResetableContentId `json:",omitempty,omitzero"`
+	ContentValue int64 `json:",omitempty,omitzero"`
+	LastUpdateTime time.Time `json:",omitempty,omitzero"`
 }

@@ -2,6 +2,6 @@ package protos
 
 type CampaignDeployEchelonResponse struct {
 	ResponsePacket
-	Protocol   Protocol
-	SaveDataDB CampaignMainStageSaveDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	SaveDataDB CampaignMainStageSaveDB `json:",omitempty,omitzero"`
 }

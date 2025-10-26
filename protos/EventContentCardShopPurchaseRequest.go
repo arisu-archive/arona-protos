@@ -2,7 +2,7 @@ package protos
 
 type EventContentCardShopPurchaseRequest struct {
 	RequestPacket
-	Protocol       Protocol
-	EventContentId int64
-	SlotNumber     int32
+	Protocol Protocol `json:",omitempty,omitzero"`
+	EventContentId int64 `json:",omitempty,omitzero"`
+	SlotNumber int32 `json:",omitempty,omitzero"`
 }

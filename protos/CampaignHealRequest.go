@@ -2,8 +2,8 @@ package protos
 
 type CampaignHealRequest struct {
 	RequestPacket
-	Protocol              Protocol
-	CampaignStageUniqueId int64
-	EchelonIndex          int64
-	CharacterServerId     int64
+	Protocol Protocol `json:",omitempty,omitzero"`
+	CampaignStageUniqueId int64 `json:",omitempty,omitzero"`
+	EchelonIndex int64 `json:",omitempty,omitzero"`
+	CharacterServerId int64 `json:",omitempty,omitzero"`
 }

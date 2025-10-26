@@ -2,6 +2,6 @@ package protos
 
 type ShopBuyRefreshMerchandiseRequest struct {
 	RequestPacket
-	Protocol      Protocol
-	ShopUniqueIds []int64
+	Protocol Protocol `json:",omitempty,omitzero"`
+	ShopUniqueIds []int64 `json:",omitempty,omitzero"`
 }

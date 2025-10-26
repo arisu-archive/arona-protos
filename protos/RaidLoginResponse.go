@@ -6,9 +6,9 @@ import (
 
 type RaidLoginResponse struct {
 	ResponsePacket
-	Protocol                Protocol
-	SeasonType              flatdata.RaidSeasonType
-	CanReceiveRankingReward bool
-	LastSettledRanking      int64
-	LastSettledTier         *int32
+	Protocol Protocol `json:",omitempty,omitzero"`
+	SeasonType flatdata.RaidSeasonType `json:",omitempty,omitzero"`
+	CanReceiveRankingReward bool `json:",omitempty,omitzero"`
+	LastSettledRanking int64 `json:",omitempty,omitzero"`
+	LastSettledTier *int32 `json:",omitempty,omitzero"`
 }

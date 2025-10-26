@@ -6,7 +6,7 @@ import (
 
 type BillingTransactionEndByYostarRequest struct {
 	RequestPacket
-	Protocol        Protocol
-	PurchaseOrderId int64
-	EndType         flatdata.BillingTransactionEndType
+	Protocol Protocol `json:",omitempty,omitzero"`
+	PurchaseOrderId int64 `json:",omitempty,omitzero"`
+	EndType flatdata.BillingTransactionEndType `json:",omitempty,omitzero"`
 }

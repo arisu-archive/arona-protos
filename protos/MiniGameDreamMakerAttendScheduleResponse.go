@@ -2,10 +2,10 @@ package protos
 
 type MiniGameDreamMakerAttendScheduleResponse struct {
 	ResponsePacket
-	Protocol                  Protocol
-	InfoDB                    MiniGameDreamMakerInfoDB
-	ParameterDBs              []MiniGameDreamMakerParameterDB
-	ParcelResultDB            ParcelResultDB
-	ScheduleResultId          int64
-	EventContentCollectionDBs []EventContentCollectionDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	InfoDB MiniGameDreamMakerInfoDB `json:",omitempty,omitzero"`
+	ParameterDBs []MiniGameDreamMakerParameterDB `json:",omitempty,omitzero"`
+	ParcelResultDB ParcelResultDB `json:",omitempty,omitzero"`
+	ScheduleResultId int64 `json:",omitempty,omitzero"`
+	EventContentCollectionDBs []EventContentCollectionDB `json:",omitempty,omitzero"`
 }

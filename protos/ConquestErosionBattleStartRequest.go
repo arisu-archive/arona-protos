@@ -2,10 +2,10 @@ package protos
 
 type ConquestErosionBattleStartRequest struct {
 	RequestPacket
-	Protocol           Protocol
-	EventContentId     int64
-	ConquestObjectDBId int64
-	UseManageEchelon   bool
-	EchelonNumber      int64
-	ClanAssistUseInfo  ClanAssistUseInfo
+	Protocol Protocol `json:",omitempty,omitzero"`
+	EventContentId int64 `json:",omitempty,omitzero"`
+	ConquestObjectDBId int64 `json:",omitempty,omitzero"`
+	UseManageEchelon bool `json:",omitempty,omitzero"`
+	EchelonNumber int64 `json:",omitempty,omitzero"`
+	ClanAssistUseInfo ClanAssistUseInfo `json:",omitempty,omitzero"`
 }

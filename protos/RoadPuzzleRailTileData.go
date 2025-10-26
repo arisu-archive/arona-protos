@@ -6,8 +6,8 @@ import (
 
 type RoadPuzzleRailTileData struct {
 	RoadPuzzleTileData
-	Type          flatdata.RoadPuzzleRailTileType
-	EntranceIndex int32
-	ExitIndex     int32
-	ResourcePath  string
+	Type flatdata.RoadPuzzleRailTileType `json:",omitempty,omitzero"`
+	EntranceIndex int32 `json:",omitempty,omitzero"`
+	ExitIndex int32 `json:",omitempty,omitzero"`
+	ResourcePath string `json:",omitempty,omitzero"`
 }

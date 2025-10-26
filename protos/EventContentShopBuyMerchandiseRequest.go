@@ -2,10 +2,10 @@ package protos
 
 type EventContentShopBuyMerchandiseRequest struct {
 	RequestPacket
-	Protocol             Protocol
-	EventContentId       int64
-	IsRefreshMerchandise bool
-	ShopUniqueId         int64
-	GoodsUniqueId        int64
-	PurchaseCount        int64
+	Protocol Protocol `json:",omitempty,omitzero"`
+	EventContentId int64 `json:",omitempty,omitzero"`
+	IsRefreshMerchandise bool `json:",omitempty,omitzero"`
+	ShopUniqueId int64 `json:",omitempty,omitzero"`
+	GoodsUniqueId int64 `json:",omitempty,omitzero"`
+	PurchaseCount int64 `json:",omitempty,omitzero"`
 }

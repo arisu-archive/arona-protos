@@ -1,18 +1,17 @@
 package protos
 
 import (
-	"time"
-
 	"github.com/arisu-archive/arona-flatbuffers/go/flatdata"
+	"time"
 )
 
 type BillingTransactionStartByYostarResponse struct {
 	ResponsePacket
-	Protocol                  Protocol
-	PurchaseCount             int64
-	PurchaseResetDate         time.Time
-	PurchaseOrderId           int64
-	MXSeedKey                 string
-	PurchaseServerTag         flatdata.PurchaseServerTag
-	PurchaseServerCallbackUrl string
+	Protocol Protocol `json:",omitempty,omitzero"`
+	PurchaseCount int64 `json:",omitempty,omitzero"`
+	PurchaseResetDate time.Time `json:",omitempty,omitzero"`
+	PurchaseOrderId int64 `json:",omitempty,omitzero"`
+	MXSeedKey string `json:",omitempty,omitzero"`
+	PurchaseServerTag flatdata.PurchaseServerTag `json:",omitempty,omitzero"`
+	PurchaseServerCallbackUrl string `json:",omitempty,omitzero"`
 }

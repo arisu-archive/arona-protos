@@ -2,6 +2,6 @@ package protos
 
 type CafeOpenRequest struct {
 	RequestPacket
-	Protocol Protocol
-	CafeId   int64
+	Protocol Protocol `json:",omitempty,omitzero"`
+	CafeId int64 `json:",omitempty,omitzero"`
 }

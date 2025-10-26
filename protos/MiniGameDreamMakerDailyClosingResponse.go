@@ -2,10 +2,10 @@ package protos
 
 type MiniGameDreamMakerDailyClosingResponse struct {
 	ResponsePacket
-	Protocol                     Protocol
-	InfoDB                       MiniGameDreamMakerInfoDB
-	ParameterDBs                 []MiniGameDreamMakerParameterDB
-	ParcelResultDB               ParcelResultDB
-	EventPointAmount             int64
-	AlreadyReceivePointRewardIds []int64
+	Protocol Protocol `json:",omitempty,omitzero"`
+	InfoDB MiniGameDreamMakerInfoDB `json:",omitempty,omitzero"`
+	ParameterDBs []MiniGameDreamMakerParameterDB `json:",omitempty,omitzero"`
+	ParcelResultDB ParcelResultDB `json:",omitempty,omitzero"`
+	EventPointAmount int64 `json:",omitempty,omitzero"`
+	AlreadyReceivePointRewardIds []int64 `json:",omitempty,omitzero"`
 }

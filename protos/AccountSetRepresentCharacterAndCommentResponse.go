@@ -2,7 +2,7 @@ package protos
 
 type AccountSetRepresentCharacterAndCommentResponse struct {
 	ResponsePacket
-	Protocol             Protocol
-	AccountDB            AccountDB
-	RepresentCharacterDB CharacterDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	AccountDB AccountDB `json:",omitempty,omitzero"`
+	RepresentCharacterDB CharacterDB `json:",omitempty,omitzero"`
 }

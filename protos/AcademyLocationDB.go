@@ -1,7 +1,7 @@
 package protos
 
 type AcademyLocationDB struct {
-	LocationId int64
-	Rank       int64
-	Exp        int64
+	LocationId int64 `json:",omitempty,omitzero"`
+	Rank int64 `json:",omitempty,omitzero"`
+	Exp int64 `json:",omitempty,omitzero"`
 }

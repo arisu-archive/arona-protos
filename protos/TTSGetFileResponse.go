@@ -2,7 +2,7 @@ package protos
 
 type TTSGetFileResponse struct {
 	ResponsePacket
-	Protocol     Protocol
-	IsFileReady  bool
-	TTSFileS3Uri string
+	Protocol Protocol `json:",omitempty,omitzero"`
+	IsFileReady bool `json:",omitempty,omitzero"`
+	TTSFileS3Uri string `json:",omitempty,omitzero"`
 }

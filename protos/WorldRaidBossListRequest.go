@@ -2,7 +2,7 @@ package protos
 
 type WorldRaidBossListRequest struct {
 	RequestPacket
-	Protocol                 Protocol
-	SeasonId                 int64
-	RequestOnlyWorldBossData bool
+	Protocol Protocol `json:",omitempty,omitzero"`
+	SeasonId int64 `json:",omitempty,omitzero"`
+	RequestOnlyWorldBossData bool `json:",omitempty,omitzero"`
 }

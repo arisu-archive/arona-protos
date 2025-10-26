@@ -2,7 +2,7 @@ package protos
 
 type WeekDungeonListResponse struct {
 	ResponsePacket
-	Protocol                      Protocol
-	AdditionalStageIdList         []int64
-	WeekDungeonStageHistoryDBList []WeekDungeonStageHistoryDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	AdditionalStageIdList []int64 `json:",omitempty,omitzero"`
+	WeekDungeonStageHistoryDBList []WeekDungeonStageHistoryDB `json:",omitempty,omitzero"`
 }

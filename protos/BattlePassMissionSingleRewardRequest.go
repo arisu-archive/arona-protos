@@ -2,7 +2,7 @@ package protos
 
 type BattlePassMissionSingleRewardRequest struct {
 	RequestPacket
-	Protocol        Protocol
-	BattlePassId    int64
-	MissionUniqueId int64
+	Protocol Protocol `json:",omitempty,omitzero"`
+	BattlePassId int64 `json:",omitempty,omitzero"`
+	MissionUniqueId int64 `json:",omitempty,omitzero"`
 }

@@ -5,18 +5,18 @@ import (
 )
 
 type CampaignStageHistoryDB struct {
-	StoryUniqueId                   int64
-	ChapterUniqueId                 int64
-	StageUniqueId                   int64
-	TacticClearCountWithRankSRecord int64
-	ClearTurnRecord                 int64
-	Star1Flag                       bool
-	Star2Flag                       bool
-	Star3Flag                       bool
-	LastPlay                        time.Time
-	TodayPlayCount                  int64
-	TodayPurchasePlayCountHardStage int64
-	FirstClearRewardReceive         *time.Time
-	StarRewardReceive               *time.Time
-	TodayPlayCountForUI             int64
+	StoryUniqueId int64 `json:",omitempty,omitzero"`
+	ChapterUniqueId int64 `json:",omitempty,omitzero"`
+	StageUniqueId int64 `json:",omitempty,omitzero"`
+	TacticClearCountWithRankSRecord int64 `json:",omitempty,omitzero"`
+	ClearTurnRecord int64 `json:",omitempty,omitzero"`
+	Star1Flag bool `json:",omitempty,omitzero"`
+	Star2Flag bool `json:",omitempty,omitzero"`
+	Star3Flag bool `json:",omitempty,omitzero"`
+	LastPlay time.Time `json:",omitempty,omitzero"`
+	TodayPlayCount int64 `json:",omitempty,omitzero"`
+	TodayPurchasePlayCountHardStage int64 `json:",omitempty,omitzero"`
+	FirstClearRewardReceive *time.Time `json:",omitempty,omitzero"`
+	StarRewardReceive *time.Time `json:",omitempty,omitzero"`
+	TodayPlayCountForUI int64 `json:",omitempty,omitzero"`
 }

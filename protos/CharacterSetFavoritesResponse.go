@@ -2,6 +2,6 @@ package protos
 
 type CharacterSetFavoritesResponse struct {
 	ResponsePacket
-	Protocol     Protocol
-	CharacterDBs []CharacterDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	CharacterDBs []CharacterDB `json:",omitempty,omitzero"`
 }

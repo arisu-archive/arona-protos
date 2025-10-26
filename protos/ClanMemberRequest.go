@@ -2,7 +2,7 @@ package protos
 
 type ClanMemberRequest struct {
 	RequestPacket
-	Protocol        Protocol
-	ClanDBId        int64
-	MemberAccountId int64
+	Protocol Protocol `json:",omitempty,omitzero"`
+	ClanDBId int64 `json:",omitempty,omitzero"`
+	MemberAccountId int64 `json:",omitempty,omitzero"`
 }

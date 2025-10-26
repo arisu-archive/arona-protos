@@ -2,9 +2,9 @@ package protos
 
 type ShopBuyEligmaRequest struct {
 	RequestPacket
-	Protocol          Protocol
-	GoodsUniqueId     int64
-	ShopUniqueId      int64
-	CharacterUniqueId int64
-	PurchaseCount     int64
+	Protocol Protocol `json:",omitempty,omitzero"`
+	GoodsUniqueId int64 `json:",omitempty,omitzero"`
+	ShopUniqueId int64 `json:",omitempty,omitzero"`
+	CharacterUniqueId int64 `json:",omitempty,omitzero"`
+	PurchaseCount int64 `json:",omitempty,omitzero"`
 }

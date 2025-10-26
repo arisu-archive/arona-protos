@@ -2,7 +2,7 @@ package protos
 
 type ShopBeforehandGachaGetResponse struct {
 	ResponsePacket
-	Protocol                Protocol
-	AlreadyPicked           bool
-	BeforehandGachaSnapshot BeforehandGachaSnapshotDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	AlreadyPicked bool `json:",omitempty,omitzero"`
+	BeforehandGachaSnapshot BeforehandGachaSnapshotDB `json:",omitempty,omitzero"`
 }

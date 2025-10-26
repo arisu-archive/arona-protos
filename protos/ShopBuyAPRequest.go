@@ -2,7 +2,7 @@ package protos
 
 type ShopBuyAPRequest struct {
 	RequestPacket
-	Protocol      Protocol
-	ShopUniqueId  int64
-	PurchaseCount int64
+	Protocol Protocol `json:",omitempty,omitzero"`
+	ShopUniqueId int64 `json:",omitempty,omitzero"`
+	PurchaseCount int64 `json:",omitempty,omitzero"`
 }

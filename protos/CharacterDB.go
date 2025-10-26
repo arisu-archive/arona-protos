@@ -6,20 +6,20 @@ import (
 
 type CharacterDB struct {
 	ParcelBase
-	Type                   flatdata.ParcelType
-	ServerId               int64
-	UniqueId               int64
-	StarGrade              int32
-	Level                  int32
-	Exp                    int64
-	FavorRank              int32
-	FavorExp               int64
-	PublicSkillLevel       int32
-	ExSkillLevel           int32
-	PassiveSkillLevel      int32
-	ExtraPassiveSkillLevel int32
-	LeaderSkillLevel       int32
-	IsFavorite             bool
-	EquipmentServerIds     []int64
-	PotentialStats         map[int32]int32
+	Type flatdata.ParcelType `json:",omitempty,omitzero"`
+	ServerId int64 `json:",omitempty,omitzero"`
+	UniqueId int64 `json:",omitempty,omitzero"`
+	StarGrade int32 `json:",omitempty,omitzero"`
+	Level int32 `json:",omitempty,omitzero"`
+	Exp int64 `json:",omitempty,omitzero"`
+	FavorRank int32 `json:",omitempty,omitzero"`
+	FavorExp int64 `json:",omitempty,omitzero"`
+	PublicSkillLevel int32 `json:",omitempty,omitzero"`
+	ExSkillLevel int32 `json:",omitempty,omitzero"`
+	PassiveSkillLevel int32 `json:",omitempty,omitzero"`
+	ExtraPassiveSkillLevel int32 `json:",omitempty,omitzero"`
+	LeaderSkillLevel int32 `json:",omitempty,omitzero"`
+	IsFavorite bool `json:",omitempty,omitzero"`
+	EquipmentServerIds []int64 `json:",omitempty,omitzero"`
+	PotentialStats map[int32]int32 `json:",omitempty,omitzero"`
 }

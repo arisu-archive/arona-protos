@@ -2,7 +2,7 @@ package protos
 
 type ScenarioAccountStudentChangeRequest struct {
 	RequestPacket
-	Protocol             Protocol
-	AccountStudent       int64
-	AccountStudentBefore int64
+	Protocol Protocol `json:",omitempty,omitzero"`
+	AccountStudent int64 `json:",omitempty,omitzero"`
+	AccountStudentBefore int64 `json:",omitempty,omitzero"`
 }

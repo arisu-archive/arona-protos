@@ -2,5 +2,5 @@ package protos
 
 type ArenaBattleResultResponse struct {
 	ResponsePacket
-	Protocol Protocol
+	Protocol Protocol `json:",omitempty,omitzero"`
 }

@@ -6,11 +6,11 @@ import (
 
 type EliminateRaidLoginResponse struct {
 	ResponsePacket
-	Protocol                 Protocol
-	SeasonType               flatdata.RaidSeasonType
-	CanReceiveRankingReward  bool
-	ReceiveLimitedRewardIds  []int64
-	SweepPointByRaidUniqueId map[int64]int64
-	LastSettledRanking       int64
-	LastSettledTier          *int32
+	Protocol Protocol `json:",omitempty,omitzero"`
+	SeasonType flatdata.RaidSeasonType `json:",omitempty,omitzero"`
+	CanReceiveRankingReward bool `json:",omitempty,omitzero"`
+	ReceiveLimitedRewardIds []int64 `json:",omitempty,omitzero"`
+	SweepPointByRaidUniqueId map[int64]int64 `json:",omitempty,omitzero"`
+	LastSettledRanking int64 `json:",omitempty,omitzero"`
+	LastSettledTier *int32 `json:",omitempty,omitzero"`
 }

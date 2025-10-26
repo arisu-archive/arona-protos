@@ -2,9 +2,9 @@ package protos
 
 type MissionListResponse struct {
 	ResponsePacket
-	Protocol                 Protocol
-	MissionHistoryUniqueIds  []int64
-	ProgressDBs              []MissionProgressDB
-	DailySuddenMissionInfo   MissionInfo
-	ClearedOrignalMissionIds []int64
+	Protocol Protocol `json:",omitempty,omitzero"`
+	MissionHistoryUniqueIds []int64 `json:",omitempty,omitzero"`
+	ProgressDBs []MissionProgressDB `json:",omitempty,omitzero"`
+	DailySuddenMissionInfo MissionInfo `json:",omitempty,omitzero"`
+	ClearedOrignalMissionIds []int64 `json:",omitempty,omitzero"`
 }

@@ -2,5 +2,5 @@ package protos
 
 type AccountLinkRewardRequest struct {
 	RequestPacket
-	Protocol Protocol
+	Protocol Protocol `json:",omitempty,omitzero"`
 }

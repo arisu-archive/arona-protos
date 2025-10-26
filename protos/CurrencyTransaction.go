@@ -2,31 +2,31 @@ package protos
 
 type CurrencyTransaction struct {
 	ParcelBase
-	Gold                      int64
-	Gem                       int64
-	GemBonus                  int64
-	GemPaid                   int64
-	ActionPoint               int64
-	ArenaTicket               int64
-	RaidTicket                int64
-	WeekDungeonChaserATicket  int64
-	WeekDungeonChaserBTicket  int64
-	WeekDungeonChaserCTicket  int64
-	WeekDungeonFindGiftTicket int64
-	WeekDungeonBloodTicket    int64
-	AcademyTicket             int64
-	SchoolDungeonATicket      int64
-	SchoolDungeonBTicket      int64
-	SchoolDungeonCTicket      int64
-	TimeAttackDungeonTicket   int64
-	MasterCoin                int64
-	WorldRaidTicketA          int64
-	WorldRaidTicketB          int64
-	WorldRaidTicketC          int64
-	ChaserTotalTicket         int64
-	SchoolDungeonTotalTicket  int64
-	EliminateTicketA          int64
-	EliminateTicketB          int64
-	EliminateTicketC          int64
-	EliminateTicketD          int64
+	Gold int64 `json:",omitempty,omitzero"`
+	Gem int64 `json:",omitempty,omitzero"`
+	GemBonus int64 `json:",omitempty,omitzero"`
+	GemPaid int64 `json:",omitempty,omitzero"`
+	ActionPoint int64 `json:",omitempty,omitzero"`
+	ArenaTicket int64 `json:",omitempty,omitzero"`
+	RaidTicket int64 `json:",omitempty,omitzero"`
+	WeekDungeonChaserATicket int64 `json:",omitempty,omitzero"`
+	WeekDungeonChaserBTicket int64 `json:",omitempty,omitzero"`
+	WeekDungeonChaserCTicket int64 `json:",omitempty,omitzero"`
+	WeekDungeonFindGiftTicket int64 `json:",omitempty,omitzero"`
+	WeekDungeonBloodTicket int64 `json:",omitempty,omitzero"`
+	AcademyTicket int64 `json:",omitempty,omitzero"`
+	SchoolDungeonATicket int64 `json:",omitempty,omitzero"`
+	SchoolDungeonBTicket int64 `json:",omitempty,omitzero"`
+	SchoolDungeonCTicket int64 `json:",omitempty,omitzero"`
+	TimeAttackDungeonTicket int64 `json:",omitempty,omitzero"`
+	MasterCoin int64 `json:",omitempty,omitzero"`
+	WorldRaidTicketA int64 `json:",omitempty,omitzero"`
+	WorldRaidTicketB int64 `json:",omitempty,omitzero"`
+	WorldRaidTicketC int64 `json:",omitempty,omitzero"`
+	ChaserTotalTicket int64 `json:",omitempty,omitzero"`
+	SchoolDungeonTotalTicket int64 `json:",omitempty,omitzero"`
+	EliminateTicketA int64 `json:",omitempty,omitzero"`
+	EliminateTicketB int64 `json:",omitempty,omitzero"`
+	EliminateTicketC int64 `json:",omitempty,omitzero"`
+	EliminateTicketD int64 `json:",omitempty,omitzero"`
 }

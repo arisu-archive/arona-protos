@@ -2,11 +2,11 @@ package protos
 
 type ArenaEnterBattleResponse struct {
 	ResponsePacket
-	Protocol          Protocol
-	AccountCurrencyDB AccountCurrencyDB
-	ArenaBattleDB     ArenaBattleDB
-	ArenaPlayerInfoDB ArenaPlayerInfoDB
-	VictoryRewards    ParcelResultDB
-	SeasonRewards     ParcelResultDB
-	AllTimeRewards    ParcelResultDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	AccountCurrencyDB AccountCurrencyDB `json:",omitempty,omitzero"`
+	ArenaBattleDB ArenaBattleDB `json:",omitempty,omitzero"`
+	ArenaPlayerInfoDB ArenaPlayerInfoDB `json:",omitempty,omitzero"`
+	VictoryRewards ParcelResultDB `json:",omitempty,omitzero"`
+	SeasonRewards ParcelResultDB `json:",omitempty,omitzero"`
+	AllTimeRewards ParcelResultDB `json:",omitempty,omitzero"`
 }

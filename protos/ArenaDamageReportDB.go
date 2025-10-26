@@ -5,11 +5,11 @@ import (
 )
 
 type ArenaDamageReportDB struct {
-	ArenaBattleServerId   int64
-	WinnerAccountServerId int64
-	AttackerUserDB        ArenaUserDB
-	DefenderUserDB        ArenaUserDB
-	BattleEndTime         time.Time
-	AttackerDamageReport  map[int64]int64
-	DefenderDamageReport  map[int64]int64
+	ArenaBattleServerId int64 `json:",omitempty,omitzero"`
+	WinnerAccountServerId int64 `json:",omitempty,omitzero"`
+	AttackerUserDB ArenaUserDB `json:",omitempty,omitzero"`
+	DefenderUserDB ArenaUserDB `json:",omitempty,omitzero"`
+	BattleEndTime time.Time `json:",omitempty,omitzero"`
+	AttackerDamageReport map[int64]int64 `json:",omitempty,omitzero"`
+	DefenderDamageReport map[int64]int64 `json:",omitempty,omitzero"`
 }

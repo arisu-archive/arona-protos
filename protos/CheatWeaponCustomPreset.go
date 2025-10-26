@@ -1,6 +1,6 @@
 package protos
 
 type CheatWeaponCustomPreset struct {
-	StarGrade int32
-	Level     int32
+	StarGrade int32 `json:",omitempty,omitzero"`
+	Level int32 `json:",omitempty,omitzero"`
 }

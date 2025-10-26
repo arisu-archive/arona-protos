@@ -2,7 +2,7 @@ package protos
 
 type MiniGameTableBoardResurrectResponse struct {
 	ResponsePacket
-	Protocol       Protocol
-	PlayerDB       TBGPlayerDB
-	ParcelResultDB ParcelResultDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	PlayerDB TBGPlayerDB `json:",omitempty,omitzero"`
+	ParcelResultDB ParcelResultDB `json:",omitempty,omitzero"`
 }

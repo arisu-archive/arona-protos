@@ -2,8 +2,8 @@ package protos
 
 type MiniGameMissionRewardRequest struct {
 	RequestPacket
-	Protocol         Protocol
-	MissionUniqueId  int64
-	ProgressServerId int64
-	EventContentId   int64
+	Protocol Protocol `json:",omitempty,omitzero"`
+	MissionUniqueId int64 `json:",omitempty,omitzero"`
+	ProgressServerId int64 `json:",omitempty,omitzero"`
+	EventContentId int64 `json:",omitempty,omitzero"`
 }

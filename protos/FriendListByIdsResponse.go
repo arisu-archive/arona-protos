@@ -2,6 +2,6 @@ package protos
 
 type FriendListByIdsResponse struct {
 	ResponsePacket
-	Protocol   Protocol
-	ListResult []FriendDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	ListResult []FriendDB `json:",omitempty,omitzero"`
 }

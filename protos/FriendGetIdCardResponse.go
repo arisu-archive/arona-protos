@@ -2,6 +2,6 @@ package protos
 
 type FriendGetIdCardResponse struct {
 	ResponsePacket
-	Protocol       Protocol
-	FriendIdCardDB FriendIdCardDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	FriendIdCardDB FriendIdCardDB `json:",omitempty,omitzero"`
 }

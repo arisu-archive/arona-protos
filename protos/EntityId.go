@@ -1,3 +1,4 @@
 package protos
 
-type EntityId struct{}
+type EntityId struct {
+}

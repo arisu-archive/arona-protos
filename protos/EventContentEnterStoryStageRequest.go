@@ -2,7 +2,7 @@ package protos
 
 type EventContentEnterStoryStageRequest struct {
 	RequestPacket
-	Protocol       Protocol
-	StageUniqueId  int64
-	EventContentId int64
+	Protocol Protocol `json:",omitempty,omitzero"`
+	StageUniqueId int64 `json:",omitempty,omitzero"`
+	EventContentId int64 `json:",omitempty,omitzero"`
 }

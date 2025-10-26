@@ -2,6 +2,6 @@ package protos
 
 type CafeAckResponse struct {
 	ResponsePacket
-	Protocol Protocol
-	CafeDB   CafeDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	CafeDB CafeDB `json:",omitempty,omitzero"`
 }

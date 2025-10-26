@@ -2,8 +2,8 @@ package protos
 
 type EventContentEnterSubStageResponse struct {
 	ResponsePacket
-	Protocol               Protocol
-	ParcelResultDB         ParcelResultDB
-	SaveDataDB             EventContentSubStageSaveDB
-	CampaignStageHistoryDB CampaignStageHistoryDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	ParcelResultDB ParcelResultDB `json:",omitempty,omitzero"`
+	SaveDataDB EventContentSubStageSaveDB `json:",omitempty,omitzero"`
+	CampaignStageHistoryDB CampaignStageHistoryDB `json:",omitempty,omitzero"`
 }

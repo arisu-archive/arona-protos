@@ -2,6 +2,6 @@ package protos
 
 type RaidGetBestTeamResponse struct {
 	ResponsePacket
-	Protocol           Protocol
-	RaidTeamSettingDBs []RaidTeamSettingDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	RaidTeamSettingDBs []RaidTeamSettingDB `json:",omitempty,omitzero"`
 }

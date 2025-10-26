@@ -1,8 +1,8 @@
 package protos
 
 type ParcelInfo struct {
-	Key         ParcelKeyPair
-	Amount      int64
-	Multiplier  BasisPoint
-	Probability BasisPoint
+	Key ParcelKeyPair `json:",omitempty,omitzero"`
+	Amount int64 `json:",omitempty,omitzero"`
+	Multiplier BasisPoint `json:",omitempty,omitzero"`
+	Probability BasisPoint `json:",omitempty,omitzero"`
 }

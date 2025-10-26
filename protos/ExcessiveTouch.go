@@ -1,3 +1,4 @@
 package protos
 
-type ExcessiveTouch struct{}
+type ExcessiveTouch struct {
+}

@@ -2,7 +2,7 @@ package protos
 
 type ItemSelectTicketResponse struct {
 	ResponsePacket
-	Protocol       Protocol
-	UsedItemDB     ItemDB
-	ParcelResultDB ParcelResultDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	UsedItemDB ItemDB `json:",omitempty,omitzero"`
+	ParcelResultDB ParcelResultDB `json:",omitempty,omitzero"`
 }

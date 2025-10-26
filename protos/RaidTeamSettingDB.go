@@ -5,13 +5,13 @@ import (
 )
 
 type RaidTeamSettingDB struct {
-	AccountId                     int64
-	TryNumber                     int64
-	EchelonType                   flatdata.EchelonType
-	EchelonExtensionType          flatdata.EchelonExtensionType
-	MainCharacterDBs              []RaidCharacterDB
-	SupportCharacterDBs           []RaidCharacterDB
-	SkillCardMulliganCharacterIds []int64
-	TSSInteractionUniqueId        int64
-	LeaderCharacterUniqueId       int64
+	AccountId int64 `json:",omitempty,omitzero"`
+	TryNumber int64 `json:",omitempty,omitzero"`
+	EchelonType flatdata.EchelonType `json:",omitempty,omitzero"`
+	EchelonExtensionType flatdata.EchelonExtensionType `json:",omitempty,omitzero"`
+	MainCharacterDBs []RaidCharacterDB `json:",omitempty,omitzero"`
+	SupportCharacterDBs []RaidCharacterDB `json:",omitempty,omitzero"`
+	SkillCardMulliganCharacterIds []int64 `json:",omitempty,omitzero"`
+	TSSInteractionUniqueId int64 `json:",omitempty,omitzero"`
+	LeaderCharacterUniqueId int64 `json:",omitempty,omitzero"`
 }

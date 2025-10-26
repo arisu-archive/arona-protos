@@ -6,9 +6,9 @@ import (
 
 type ConquestMainStoryConquerRequest struct {
 	RequestPacket
-	Protocol       Protocol
-	EventContentId int64
-	Difficulty     flatdata.StageDifficulty
-	TileUniqueId   int64
-	TileRewardId   int64
+	Protocol Protocol `json:",omitempty,omitzero"`
+	EventContentId int64 `json:",omitempty,omitzero"`
+	Difficulty flatdata.StageDifficulty `json:",omitempty,omitzero"`
+	TileUniqueId int64 `json:",omitempty,omitzero"`
+	TileRewardId int64 `json:",omitempty,omitzero"`
 }

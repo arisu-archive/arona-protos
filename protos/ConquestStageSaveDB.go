@@ -6,15 +6,15 @@ import (
 
 type ConquestStageSaveDB struct {
 	ContentSaveDB
-	ContentType             flatdata.ContentType
-	ConquestEventObjectDBId *int64
-	EventContentId          int64
-	Difficulty              flatdata.StageDifficulty
-	TileUniqueId            int64
-	TilePresetId            int64
-	ConquestTileType        flatdata.ConquestTileType
-	UseManageEchelon        bool
-	AssistCharacterDB       AssistCharacterDB
-	EchelonSlotType         int32
-	EchelonSlotIndex        int32
+	ContentType flatdata.ContentType `json:",omitempty,omitzero"`
+	ConquestEventObjectDBId *int64 `json:",omitempty,omitzero"`
+	EventContentId int64 `json:",omitempty,omitzero"`
+	Difficulty flatdata.StageDifficulty `json:",omitempty,omitzero"`
+	TileUniqueId int64 `json:",omitempty,omitzero"`
+	TilePresetId int64 `json:",omitempty,omitzero"`
+	ConquestTileType flatdata.ConquestTileType `json:",omitempty,omitzero"`
+	UseManageEchelon bool `json:",omitempty,omitzero"`
+	AssistCharacterDB AssistCharacterDB `json:",omitempty,omitzero"`
+	EchelonSlotType int32 `json:",omitempty,omitzero"`
+	EchelonSlotIndex int32 `json:",omitempty,omitzero"`
 }

@@ -2,7 +2,7 @@ package protos
 
 type EventContentShopBuyRefreshMerchandiseRequest struct {
 	RequestPacket
-	Protocol       Protocol
-	EventContentId int64
-	ShopUniqueIds  []int64
+	Protocol Protocol `json:",omitempty,omitzero"`
+	EventContentId int64 `json:",omitempty,omitzero"`
+	ShopUniqueIds []int64 `json:",omitempty,omitzero"`
 }

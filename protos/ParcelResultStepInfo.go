@@ -1,6 +1,6 @@
 package protos
 
 type ParcelResultStepInfo struct {
-	ParcelProcessActionType ParcelProcessActionType
-	StepParcelDetails       []ParcelDetail
+	ParcelProcessActionType ParcelProcessActionType `json:",omitempty,omitzero"`
+	StepParcelDetails []ParcelDetail `json:",omitempty,omitzero"`
 }

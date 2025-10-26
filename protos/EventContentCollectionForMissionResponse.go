@@ -2,6 +2,6 @@ package protos
 
 type EventContentCollectionForMissionResponse struct {
 	ResponsePacket
-	Protocol                  Protocol
-	EventContentCollectionDBs []EventContentCollectionDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	EventContentCollectionDBs []EventContentCollectionDB `json:",omitempty,omitzero"`
 }

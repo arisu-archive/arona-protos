@@ -1,3 +1,4 @@
 package protos
 
-type HexLocation struct{}
+type HexLocation struct {
+}

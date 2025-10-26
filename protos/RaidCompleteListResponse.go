@@ -2,9 +2,9 @@ package protos
 
 type RaidCompleteListResponse struct {
 	ResponsePacket
-	Protocol          Protocol
-	RaidDBs           []RaidDB
-	StackedDamage     int64
-	ReceiveRewardId   []int64
-	CurSeasonUniqueId int64
+	Protocol Protocol `json:",omitempty,omitzero"`
+	RaidDBs []RaidDB `json:",omitempty,omitzero"`
+	StackedDamage int64 `json:",omitempty,omitzero"`
+	ReceiveRewardId []int64 `json:",omitempty,omitzero"`
+	CurSeasonUniqueId int64 `json:",omitempty,omitzero"`
 }

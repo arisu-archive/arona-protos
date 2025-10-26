@@ -2,7 +2,7 @@ package protos
 
 type EchelonListResponse struct {
 	ResponsePacket
-	Protocol       Protocol
-	EchelonDBs     []EchelonDB
-	ArenaEchelonDB EchelonDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	EchelonDBs []EchelonDB `json:",omitempty,omitzero"`
+	ArenaEchelonDB EchelonDB `json:",omitempty,omitzero"`
 }

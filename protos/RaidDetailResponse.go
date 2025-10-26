@@ -2,7 +2,7 @@ package protos
 
 type RaidDetailResponse struct {
 	ResponsePacket
-	Protocol                      Protocol
-	RaidDetailDB                  RaidDetailDB
-	ParticipateCharacterServerIds []int64
+	Protocol Protocol `json:",omitempty,omitzero"`
+	RaidDetailDB RaidDetailDB `json:",omitempty,omitzero"`
+	ParticipateCharacterServerIds []int64 `json:",omitempty,omitzero"`
 }

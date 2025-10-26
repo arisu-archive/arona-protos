@@ -2,6 +2,6 @@ package protos
 
 type ScenarioSkipMainStageRequest struct {
 	RequestPacket
-	Protocol      Protocol
-	StageUniqueId int64
+	Protocol Protocol `json:",omitempty,omitzero"`
+	StageUniqueId int64 `json:",omitempty,omitzero"`
 }

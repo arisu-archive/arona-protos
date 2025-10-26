@@ -6,10 +6,10 @@ import (
 
 type RaidOpponentListRequest struct {
 	RequestPacket
-	Protocol       Protocol
-	Rank           *int64
-	Score          *int64
-	IsUpper        bool
-	IsFirstRequest bool
-	SearchType     flatdata.RankingSearchType
+	Protocol Protocol `json:",omitempty,omitzero"`
+	Rank *int64 `json:",omitempty,omitzero"`
+	Score *int64 `json:",omitempty,omitzero"`
+	IsUpper bool `json:",omitempty,omitzero"`
+	IsFirstRequest bool `json:",omitempty,omitzero"`
+	SearchType flatdata.RankingSearchType `json:",omitempty,omitzero"`
 }

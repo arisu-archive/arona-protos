@@ -2,10 +2,10 @@ package protos
 
 type BillingPurchaseListByYostarResponse struct {
 	ResponsePacket
-	Protocol              Protocol
-	CountList             []PurchaseCountDB
-	OrderList             []PurchaseOrderDB
-	MonthlyProductList    []MonthlyProductPurchaseDB
-	BlockedProductDBs     []BlockedProductDB
-	BattlePassProductList []BattlePassProductPurchaseDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	CountList []PurchaseCountDB `json:",omitempty,omitzero"`
+	OrderList []PurchaseOrderDB `json:",omitempty,omitzero"`
+	MonthlyProductList []MonthlyProductPurchaseDB `json:",omitempty,omitzero"`
+	BlockedProductDBs []BlockedProductDB `json:",omitempty,omitzero"`
+	BattlePassProductList []BattlePassProductPurchaseDB `json:",omitempty,omitzero"`
 }

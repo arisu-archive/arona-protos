@@ -2,7 +2,7 @@ package protos
 
 type MomoTalkMessageListResponse struct {
 	ResponsePacket
-	Protocol          Protocol
-	MomoTalkOutLineDB MomoTalkOutLineDB
-	MomoTalkChoiceDBs []MomoTalkChoiceDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	MomoTalkOutLineDB MomoTalkOutLineDB `json:",omitempty,omitzero"`
+	MomoTalkChoiceDBs []MomoTalkChoiceDB `json:",omitempty,omitzero"`
 }

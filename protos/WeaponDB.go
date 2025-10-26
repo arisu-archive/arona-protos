@@ -6,10 +6,10 @@ import (
 
 type WeaponDB struct {
 	ParcelBase
-	Type                   flatdata.ParcelType
-	UniqueId               int64
-	Level                  int32
-	Exp                    int64
-	StarGrade              int32
-	BoundCharacterServerId int64
+	Type flatdata.ParcelType `json:",omitempty,omitzero"`
+	UniqueId int64 `json:",omitempty,omitzero"`
+	Level int32 `json:",omitempty,omitzero"`
+	Exp int64 `json:",omitempty,omitzero"`
+	StarGrade int32 `json:",omitempty,omitzero"`
+	BoundCharacterServerId int64 `json:",omitempty,omitzero"`
 }

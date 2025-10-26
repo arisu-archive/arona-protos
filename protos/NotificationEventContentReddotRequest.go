@@ -2,5 +2,5 @@ package protos
 
 type NotificationEventContentReddotRequest struct {
 	RequestPacket
-	Protocol Protocol
+	Protocol Protocol `json:",omitempty,omitzero"`
 }

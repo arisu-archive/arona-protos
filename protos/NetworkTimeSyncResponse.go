@@ -2,7 +2,7 @@ package protos
 
 type NetworkTimeSyncResponse struct {
 	ResponsePacket
-	Protocol     Protocol
-	ReceiveTick  int64
-	EchoSendTick int64
+	Protocol Protocol `json:",omitempty,omitzero"`
+	ReceiveTick int64 `json:",omitempty,omitzero"`
+	EchoSendTick int64 `json:",omitempty,omitzero"`
 }

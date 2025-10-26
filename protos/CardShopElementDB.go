@@ -1,8 +1,8 @@
 package protos
 
 type CardShopElementDB struct {
-	EventContentId    int64
-	SlotNumber        int32
-	CardShopElementId int64
-	SoldOut           bool
+	EventContentId int64 `json:",omitempty,omitzero"`
+	SlotNumber int32 `json:",omitempty,omitzero"`
+	CardShopElementId int64 `json:",omitempty,omitzero"`
+	SoldOut bool `json:",omitempty,omitzero"`
 }

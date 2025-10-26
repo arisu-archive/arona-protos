@@ -2,6 +2,6 @@ package protos
 
 type CafeTrophyHistoryResponse struct {
 	ResponsePacket
-	Protocol                    Protocol
-	RaidSeasonRankingHistoryDBs []RaidSeasonRankingHistoryDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	RaidSeasonRankingHistoryDBs []RaidSeasonRankingHistoryDB `json:",omitempty,omitzero"`
 }

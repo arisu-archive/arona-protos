@@ -2,7 +2,7 @@ package protos
 
 type ShopBuyGachaResponse struct {
 	ResponsePacket
-	Protocol        Protocol
-	ConsumeResultDB ConsumeResultDB
-	ParcelResultDB  ParcelResultDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	ConsumeResultDB ConsumeResultDB `json:",omitempty,omitzero"`
+	ParcelResultDB ParcelResultDB `json:",omitempty,omitzero"`
 }

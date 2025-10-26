@@ -6,8 +6,8 @@ import (
 
 type RaidListRequest struct {
 	RequestPacket
-	Protocol           Protocol
-	RaidBossGroup      string
-	RaidDifficulty     flatdata.Difficulty
-	RaidRoomSortOption RaidRoomSortOption
+	Protocol Protocol `json:",omitempty,omitzero"`
+	RaidBossGroup string `json:",omitempty,omitzero"`
+	RaidDifficulty flatdata.Difficulty `json:",omitempty,omitzero"`
+	RaidRoomSortOption RaidRoomSortOption `json:",omitempty,omitzero"`
 }

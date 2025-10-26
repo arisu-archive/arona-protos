@@ -6,8 +6,8 @@ import (
 
 type ArenaOpponentListResponse struct {
 	ResponsePacket
-	Protocol        Protocol
-	PlayerRank      int64
-	OpponentUserDBs []ArenaUserDB
-	AutoRefreshTime time.Time
+	Protocol Protocol `json:",omitempty,omitzero"`
+	PlayerRank int64 `json:",omitempty,omitzero"`
+	OpponentUserDBs []ArenaUserDB `json:",omitempty,omitzero"`
+	AutoRefreshTime time.Time `json:",omitempty,omitzero"`
 }

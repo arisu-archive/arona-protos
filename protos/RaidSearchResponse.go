@@ -2,6 +2,6 @@ package protos
 
 type RaidSearchResponse struct {
 	ResponsePacket
-	Protocol Protocol
-	RaidDBs  []RaidDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	RaidDBs []RaidDB `json:",omitempty,omitzero"`
 }

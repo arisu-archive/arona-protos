@@ -5,6 +5,6 @@ import (
 )
 
 type ParcelKeyPair struct {
-	Type flatdata.ParcelType
-	Id   int64
+	Type flatdata.ParcelType `json:",omitempty,omitzero"`
+	Id int64 `json:",omitempty,omitzero"`
 }

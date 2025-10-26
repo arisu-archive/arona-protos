@@ -2,6 +2,6 @@ package protos
 
 type EventContentPermanentListResponse struct {
 	ResponsePacket
-	Protocol     Protocol
-	PermanentDBs []EventContentPermanentDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	PermanentDBs []EventContentPermanentDB `json:",omitempty,omitzero"`
 }

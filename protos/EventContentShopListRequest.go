@@ -6,7 +6,7 @@ import (
 
 type EventContentShopListRequest struct {
 	RequestPacket
-	Protocol       Protocol
-	EventContentId int64
-	CategoryList   []flatdata.ShopCategoryType
+	Protocol Protocol `json:",omitempty,omitzero"`
+	EventContentId int64 `json:",omitempty,omitzero"`
+	CategoryList []flatdata.ShopCategoryType `json:",omitempty,omitzero"`
 }

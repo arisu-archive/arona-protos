@@ -2,7 +2,7 @@ package protos
 
 type CharacterGearUnlockRequest struct {
 	RequestPacket
-	Protocol          Protocol
-	CharacterServerId int64
-	SlotIndex         int32
+	Protocol Protocol `json:",omitempty,omitzero"`
+	CharacterServerId int64 `json:",omitempty,omitzero"`
+	SlotIndex int32 `json:",omitempty,omitzero"`
 }

@@ -2,7 +2,7 @@ package protos
 
 type ItemConsumeResponse struct {
 	ResponsePacket
-	Protocol          Protocol
-	UsedItemDB        ItemDB
-	NewParcelResultDB ParcelResultDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	UsedItemDB ItemDB `json:",omitempty,omitzero"`
+	NewParcelResultDB ParcelResultDB `json:",omitempty,omitzero"`
 }

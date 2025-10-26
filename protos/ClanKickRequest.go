@@ -2,6 +2,6 @@ package protos
 
 type ClanKickRequest struct {
 	RequestPacket
-	Protocol        Protocol
-	MemberAccountId int64
+	Protocol Protocol `json:",omitempty,omitzero"`
+	MemberAccountId int64 `json:",omitempty,omitzero"`
 }

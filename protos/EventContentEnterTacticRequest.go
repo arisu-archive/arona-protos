@@ -2,9 +2,9 @@ package protos
 
 type EventContentEnterTacticRequest struct {
 	RequestPacket
-	Protocol       Protocol
-	EventContentId int64
-	StageUniqueId  int64
-	EchelonIndex   int64
-	EnemyIndex     int64
+	Protocol Protocol `json:",omitempty,omitzero"`
+	EventContentId int64 `json:",omitempty,omitzero"`
+	StageUniqueId int64 `json:",omitempty,omitzero"`
+	EchelonIndex int64 `json:",omitempty,omitzero"`
+	EnemyIndex int64 `json:",omitempty,omitzero"`
 }

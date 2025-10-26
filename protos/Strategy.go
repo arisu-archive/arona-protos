@@ -1,8 +1,8 @@
 package protos
 
 type Strategy struct {
-	PlayAnimation bool
-	Activated     bool
-	Values        []int32
-	Index         int32
+	PlayAnimation bool `json:",omitempty,omitzero"`
+	Activated bool `json:",omitempty,omitzero"`
+	Values []int32 `json:",omitempty,omitzero"`
+	Index int32 `json:",omitempty,omitzero"`
 }

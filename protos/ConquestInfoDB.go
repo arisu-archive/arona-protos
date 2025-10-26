@@ -1,13 +1,13 @@
 package protos
 
 type ConquestInfoDB struct {
-	EventContentId                         int64
-	EventGauge                             int32
-	EventSpawnCount                        int32
-	EchelonChangeCount                     int32
-	TodayConquestRentCount                 int32
-	TodayOperationRentCount                int32
-	CumulatedConditionValue                int64
-	ReceivedCalculateRewardConditionAmount int64
-	AlertMassErosionId                     *int64
+	EventContentId int64 `json:",omitempty,omitzero"`
+	EventGauge int32 `json:",omitempty,omitzero"`
+	EventSpawnCount int32 `json:",omitempty,omitzero"`
+	EchelonChangeCount int32 `json:",omitempty,omitzero"`
+	TodayConquestRentCount int32 `json:",omitempty,omitzero"`
+	TodayOperationRentCount int32 `json:",omitempty,omitzero"`
+	CumulatedConditionValue int64 `json:",omitempty,omitzero"`
+	ReceivedCalculateRewardConditionAmount int64 `json:",omitempty,omitzero"`
+	AlertMassErosionId *int64 `json:",omitempty,omitzero"`
 }

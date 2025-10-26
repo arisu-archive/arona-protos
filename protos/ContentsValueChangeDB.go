@@ -5,5 +5,5 @@ import (
 )
 
 type ContentsValueChangeDB struct {
-	ContentsChangeType flatdata.ContentsChangeType
+	ContentsChangeType flatdata.ContentsChangeType `json:",omitempty,omitzero"`
 }

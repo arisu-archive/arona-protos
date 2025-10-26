@@ -2,5 +2,5 @@ package protos
 
 type AccountAuth2Request struct {
 	AccountAuthRequest
-	Protocol Protocol
+	Protocol Protocol `json:",omitempty,omitzero"`
 }

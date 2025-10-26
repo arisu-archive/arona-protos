@@ -2,6 +2,6 @@ package protos
 
 type GuideMissionSeasonListResponse struct {
 	ResponsePacket
-	Protocol              Protocol
-	GuideMissionSeasonDBs []GuideMissionSeasonDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	GuideMissionSeasonDBs []GuideMissionSeasonDB `json:",omitempty,omitzero"`
 }

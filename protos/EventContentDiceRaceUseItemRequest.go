@@ -6,7 +6,7 @@ import (
 
 type EventContentDiceRaceUseItemRequest struct {
 	RequestPacket
-	Protocol           Protocol
-	EventContentId     int64
-	DiceRaceResultType flatdata.EventContentDiceRaceResultType
+	Protocol Protocol `json:",omitempty,omitzero"`
+	EventContentId int64 `json:",omitempty,omitzero"`
+	DiceRaceResultType flatdata.EventContentDiceRaceResultType `json:",omitempty,omitzero"`
 }

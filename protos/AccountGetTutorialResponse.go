@@ -2,6 +2,6 @@ package protos
 
 type AccountGetTutorialResponse struct {
 	ResponsePacket
-	Protocol    Protocol
-	TutorialIds []int64
+	Protocol Protocol `json:",omitempty,omitzero"`
+	TutorialIds []int64 `json:",omitempty,omitzero"`
 }

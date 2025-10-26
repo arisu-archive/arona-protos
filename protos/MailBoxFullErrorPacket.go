@@ -2,6 +2,6 @@ package protos
 
 type MailBoxFullErrorPacket struct {
 	ResponsePacket
-	Protocol  Protocol
-	ErrorCode WebAPIErrorCode
+	Protocol Protocol `json:",omitempty,omitzero"`
+	ErrorCode WebAPIErrorCode `json:",omitempty,omitzero"`
 }

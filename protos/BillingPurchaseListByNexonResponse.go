@@ -2,14 +2,14 @@ package protos
 
 type BillingPurchaseListByNexonResponse struct {
 	ResponsePacket
-	Protocol                   Protocol
-	CountList                  []PurchaseCountDB
-	OrderList                  []PurchaseOrderDB
-	MonthlyProductList         []MonthlyProductPurchaseDB
-	ProductMonthlyIdInMailList []int64
-	GachaTicketItemIdList      []int64
-	BlockedProductDBs          []BlockedProductDB
-	BattlePassProductList      []BattlePassProductPurchaseDB
-	BattlePassIdInMailList     []int64
-	IsTeenage                  bool
+	Protocol Protocol `json:",omitempty,omitzero"`
+	CountList []PurchaseCountDB `json:",omitempty,omitzero"`
+	OrderList []PurchaseOrderDB `json:",omitempty,omitzero"`
+	MonthlyProductList []MonthlyProductPurchaseDB `json:",omitempty,omitzero"`
+	ProductMonthlyIdInMailList []int64 `json:",omitempty,omitzero"`
+	GachaTicketItemIdList []int64 `json:",omitempty,omitzero"`
+	BlockedProductDBs []BlockedProductDB `json:",omitempty,omitzero"`
+	BattlePassProductList []BattlePassProductPurchaseDB `json:",omitempty,omitzero"`
+	BattlePassIdInMailList []int64 `json:",omitempty,omitzero"`
+	IsTeenage bool `json:",omitempty,omitzero"`
 }

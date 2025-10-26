@@ -2,10 +2,10 @@ package protos
 
 type SchoolDungeonBattleResultResponse struct {
 	ResponsePacket
-	Protocol                    Protocol
-	SchoolDungeonStageHistoryDB SchoolDungeonStageHistoryDB
-	LevelUpCharacterDBs         []CharacterDB
-	FirstClearReward            []ParcelInfo
-	ThreeStarReward             []ParcelInfo
-	ParcelResultDB              ParcelResultDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	SchoolDungeonStageHistoryDB SchoolDungeonStageHistoryDB `json:",omitempty,omitzero"`
+	LevelUpCharacterDBs []CharacterDB `json:",omitempty,omitzero"`
+	FirstClearReward []ParcelInfo `json:",omitempty,omitzero"`
+	ThreeStarReward []ParcelInfo `json:",omitempty,omitzero"`
+	ParcelResultDB ParcelResultDB `json:",omitempty,omitzero"`
 }

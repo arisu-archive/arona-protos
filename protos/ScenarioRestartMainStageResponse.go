@@ -2,7 +2,7 @@ package protos
 
 type ScenarioRestartMainStageResponse struct {
 	ResponsePacket
-	Protocol       Protocol
-	ParcelResultDB ParcelResultDB
-	SaveDataDB     StoryStrategyStageSaveDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	ParcelResultDB ParcelResultDB `json:",omitempty,omitzero"`
+	SaveDataDB StoryStrategyStageSaveDB `json:",omitempty,omitzero"`
 }

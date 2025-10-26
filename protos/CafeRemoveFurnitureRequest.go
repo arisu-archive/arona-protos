@@ -2,7 +2,7 @@ package protos
 
 type CafeRemoveFurnitureRequest struct {
 	RequestPacket
-	Protocol           Protocol
-	CafeDBId           int64
-	FurnitureServerIds []int64
+	Protocol Protocol `json:",omitempty,omitzero"`
+	CafeDBId int64 `json:",omitempty,omitzero"`
+	FurnitureServerIds []int64 `json:",omitempty,omitzero"`
 }

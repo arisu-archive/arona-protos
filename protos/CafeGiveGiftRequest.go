@@ -2,8 +2,8 @@ package protos
 
 type CafeGiveGiftRequest struct {
 	RequestPacket
-	Protocol          Protocol
-	CafeDBId          int64
-	CharacterUniqueId int64
-	ConsumeRequestDB  ConsumeRequestDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	CafeDBId int64 `json:",omitempty,omitzero"`
+	CharacterUniqueId int64 `json:",omitempty,omitzero"`
+	ConsumeRequestDB ConsumeRequestDB `json:",omitempty,omitzero"`
 }

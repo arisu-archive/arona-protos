@@ -2,8 +2,8 @@ package protos
 
 type ShopBeforehandGachaPickRequest struct {
 	RequestPacket
-	Protocol     Protocol
-	ShopUniqueId int64
-	GoodsId      int64
-	TargetIndex  int64
+	Protocol Protocol `json:",omitempty,omitzero"`
+	ShopUniqueId int64 `json:",omitempty,omitzero"`
+	GoodsId int64 `json:",omitempty,omitzero"`
+	TargetIndex int64 `json:",omitempty,omitzero"`
 }

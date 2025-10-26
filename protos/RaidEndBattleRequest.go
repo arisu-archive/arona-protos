@@ -2,10 +2,10 @@ package protos
 
 type RaidEndBattleRequest struct {
 	RequestPacket
-	Protocol      Protocol
-	EchelonId     int32
-	RaidServerId  int64
-	IsPractice    bool
-	Summary       BattleSummary
-	AssistUseInfo ClanAssistUseInfo
+	Protocol Protocol `json:",omitempty,omitzero"`
+	EchelonId int32 `json:",omitempty,omitzero"`
+	RaidServerId int64 `json:",omitempty,omitzero"`
+	IsPractice bool `json:",omitempty,omitzero"`
+	Summary BattleSummary `json:",omitempty,omitzero"`
+	AssistUseInfo ClanAssistUseInfo `json:",omitempty,omitzero"`
 }

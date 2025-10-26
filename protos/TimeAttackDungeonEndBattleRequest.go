@@ -2,9 +2,9 @@ package protos
 
 type TimeAttackDungeonEndBattleRequest struct {
 	RequestPacket
-	Protocol      Protocol
-	EchelonId     int32
-	RoomId        int64
-	Summary       BattleSummary
-	AssistUseInfo ClanAssistUseInfo
+	Protocol Protocol `json:",omitempty,omitzero"`
+	EchelonId int32 `json:",omitempty,omitzero"`
+	RoomId int64 `json:",omitempty,omitzero"`
+	Summary BattleSummary `json:",omitempty,omitzero"`
+	AssistUseInfo ClanAssistUseInfo `json:",omitempty,omitzero"`
 }

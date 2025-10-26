@@ -5,10 +5,10 @@ import (
 )
 
 type ConquestEchelonDB struct {
-	EventContentId          int64
-	Difficulty              flatdata.StageDifficulty
-	TileUniqueId            int64
-	EchelonDB               EchelonDB
-	AssistCharacterUniqueId int64
-	AssistUseInfo           ClanAssistUseInfo
+	EventContentId int64 `json:",omitempty,omitzero"`
+	Difficulty flatdata.StageDifficulty `json:",omitempty,omitzero"`
+	TileUniqueId int64 `json:",omitempty,omitzero"`
+	EchelonDB EchelonDB `json:",omitempty,omitzero"`
+	AssistCharacterUniqueId int64 `json:",omitempty,omitzero"`
+	AssistUseInfo ClanAssistUseInfo `json:",omitempty,omitzero"`
 }

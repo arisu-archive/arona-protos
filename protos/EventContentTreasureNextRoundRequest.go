@@ -2,7 +2,7 @@ package protos
 
 type EventContentTreasureNextRoundRequest struct {
 	RequestPacket
-	Protocol       Protocol
-	EventContentId int64
-	Round          int32
+	Protocol Protocol `json:",omitempty,omitzero"`
+	EventContentId int64 `json:",omitempty,omitzero"`
+	Round int32 `json:",omitempty,omitzero"`
 }

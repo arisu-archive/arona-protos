@@ -6,6 +6,6 @@ import (
 
 type AccountRequestBirthdayMailRequest struct {
 	RequestPacket
-	Protocol Protocol
-	Birthday time.Time
+	Protocol Protocol `json:",omitempty,omitzero"`
+	Birthday time.Time `json:",omitempty,omitzero"`
 }

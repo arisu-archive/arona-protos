@@ -2,25 +2,25 @@ package protos
 
 type AccountAuthResponse struct {
 	ResponsePacket
-	Protocol                            Protocol
-	CurrentVersion                      int64
-	MinimumVersion                      int64
-	IsDevelopment                       bool
-	BattleValidation                    bool
-	UpdateRequired                      bool
-	TTSCdnUri                           string
-	AccountDB                           AccountDB
-	AttendanceBookRewards               []AttendanceBookReward
-	AttendanceHistoryDBs                []AttendanceHistoryDB
-	RepurchasableMonthlyProductCountDBs []PurchaseCountDB
-	MonthlyProductParcel                []ParcelInfo
-	MonthlyProductMail                  []ParcelInfo
-	BiweeklyProductParcel               []ParcelInfo
-	BiweeklyProductMail                 []ParcelInfo
-	WeeklyProductParcel                 []ParcelInfo
-	WeeklyProductMail                   []ParcelInfo
-	EncryptedUID                        string
-	AccountRestrictionsDB               AccountRestrictionsDB
-	IssueAlertInfos                     []IssueAlertInfoDB
-	AccountBanByNexonDBs                []AccountBanByNexonDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	CurrentVersion int64 `json:",omitempty,omitzero"`
+	MinimumVersion int64 `json:",omitempty,omitzero"`
+	IsDevelopment bool `json:",omitempty,omitzero"`
+	BattleValidation bool `json:",omitempty,omitzero"`
+	UpdateRequired bool `json:",omitempty,omitzero"`
+	TTSCdnUri string `json:",omitempty,omitzero"`
+	AccountDB AccountDB `json:",omitempty,omitzero"`
+	AttendanceBookRewards []AttendanceBookReward `json:",omitempty,omitzero"`
+	AttendanceHistoryDBs []AttendanceHistoryDB `json:",omitempty,omitzero"`
+	RepurchasableMonthlyProductCountDBs []PurchaseCountDB `json:",omitempty,omitzero"`
+	MonthlyProductParcel []ParcelInfo `json:",omitempty,omitzero"`
+	MonthlyProductMail []ParcelInfo `json:",omitempty,omitzero"`
+	BiweeklyProductParcel []ParcelInfo `json:",omitempty,omitzero"`
+	BiweeklyProductMail []ParcelInfo `json:",omitempty,omitzero"`
+	WeeklyProductParcel []ParcelInfo `json:",omitempty,omitzero"`
+	WeeklyProductMail []ParcelInfo `json:",omitempty,omitzero"`
+	EncryptedUID string `json:",omitempty,omitzero"`
+	AccountRestrictionsDB AccountRestrictionsDB `json:",omitempty,omitzero"`
+	IssueAlertInfos []IssueAlertInfoDB `json:",omitempty,omitzero"`
+	AccountBanByNexonDBs []AccountBanByNexonDB `json:",omitempty,omitzero"`
 }

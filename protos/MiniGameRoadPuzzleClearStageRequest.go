@@ -2,9 +2,9 @@ package protos
 
 type MiniGameRoadPuzzleClearStageRequest struct {
 	RequestPacket
-	Protocol       Protocol
-	EventContentId int64
-	UniqueId       int64
-	Round          int64
-	IsSkip         bool
+	Protocol Protocol `json:",omitempty,omitzero"`
+	EventContentId int64 `json:",omitempty,omitzero"`
+	UniqueId int64 `json:",omitempty,omitzero"`
+	Round int64 `json:",omitempty,omitzero"`
+	IsSkip bool `json:",omitempty,omitzero"`
 }

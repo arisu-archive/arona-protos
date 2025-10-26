@@ -2,6 +2,6 @@ package protos
 
 type MemoryLobbySetMainRequest struct {
 	RequestPacket
-	Protocol      Protocol
-	MemoryLobbyId int64
+	Protocol Protocol `json:",omitempty,omitzero"`
+	MemoryLobbyId int64 `json:",omitempty,omitzero"`
 }

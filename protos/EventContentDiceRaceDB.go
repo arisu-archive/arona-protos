@@ -1,9 +1,9 @@
 package protos
 
 type EventContentDiceRaceDB struct {
-	EventContentId        int64
-	Node                  int64
-	LapCount              int64
-	DiceRollCount         int64
-	ReceiveRewardLapCount int64
+	EventContentId int64 `json:",omitempty,omitzero"`
+	Node int64 `json:",omitempty,omitzero"`
+	LapCount int64 `json:",omitempty,omitzero"`
+	DiceRollCount int64 `json:",omitempty,omitzero"`
+	ReceiveRewardLapCount int64 `json:",omitempty,omitzero"`
 }

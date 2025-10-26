@@ -2,6 +2,6 @@ package protos
 
 type MemoryLobbyUpdateLobbyModeRequest struct {
 	RequestPacket
-	Protocol          Protocol
-	IsMemoryLobbyMode bool
+	Protocol Protocol `json:",omitempty,omitzero"`
+	IsMemoryLobbyMode bool `json:",omitempty,omitzero"`
 }

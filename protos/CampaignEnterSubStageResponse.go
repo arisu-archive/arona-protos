@@ -2,7 +2,7 @@ package protos
 
 type CampaignEnterSubStageResponse struct {
 	ResponsePacket
-	Protocol       Protocol
-	ParcelResultDB ParcelResultDB
-	SaveDataDB     CampaignSubStageSaveDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	ParcelResultDB ParcelResultDB `json:",omitempty,omitzero"`
+	SaveDataDB CampaignSubStageSaveDB `json:",omitempty,omitzero"`
 }

@@ -6,5 +6,5 @@ import (
 
 type ItemDB struct {
 	ConsumableItemBaseDB
-	Type flatdata.ParcelType
+	Type flatdata.ParcelType `json:",omitempty,omitzero"`
 }

@@ -1,7 +1,7 @@
 package protos
 
 type ArenaSummary struct {
-	ArenaMapId        int64
-	EnemyAccountId    int64
-	EnemyAccountLevel int64
+	ArenaMapId int64 `json:",omitempty,omitzero"`
+	EnemyAccountId int64 `json:",omitempty,omitzero"`
+	EnemyAccountLevel int64 `json:",omitempty,omitzero"`
 }

@@ -1,42 +1,41 @@
 package protos
 
 import (
-	"time"
-
 	"github.com/arisu-archive/arona-flatbuffers/go/flatdata"
+	"time"
 )
 
 type MissionInfo struct {
 	IMissionConstraint
-	Id                            int64
-	Category                      flatdata.MissionCategory
-	ResetType                     flatdata.MissionResetType
-	ToastDisplayType              flatdata.MissionToastDisplayConditionType
-	Description                   uint32
-	IsVisible                     bool
-	IsLimited                     bool
-	StartDate                     time.Time
-	StartableEndDate              time.Time
-	EndDate                       time.Time
-	EndDday                       int64
-	AccountState                  flatdata.AccountState
-	AccountLevel                  int64
-	PreMissionIds                 []int64
-	NextMissionId                 int64
-	SuddenMissionContentTypes     []flatdata.SuddenMissionContentType
-	CompleteConditionType         flatdata.MissionCompleteConditionType
-	CompleteConditionCount        int64
-	CompleteConditionParameters   []int64
-	Tags                          []flatdata.Tag
-	CompleteConditionMissionIds   []int64
-	CompleteConditionMissionCount int64
-	CompleteConditionRewards      []ParcelInfo
-	RewardIcon                    string
-	Rewards                       []ParcelInfo
-	DateAutoRefer                 flatdata.ContentType
-	ToastImagePath                string
-	DisplayOrder                  int64
-	HasFollowingMission           bool
-	Shortcuts                     []string
-	ChallengeStageId              int64
+	Id int64 `json:",omitempty,omitzero"`
+	Category flatdata.MissionCategory `json:",omitempty,omitzero"`
+	ResetType flatdata.MissionResetType `json:",omitempty,omitzero"`
+	ToastDisplayType flatdata.MissionToastDisplayConditionType `json:",omitempty,omitzero"`
+	Description uint32 `json:",omitempty,omitzero"`
+	IsVisible bool `json:",omitempty,omitzero"`
+	IsLimited bool `json:",omitempty,omitzero"`
+	StartDate time.Time `json:",omitempty,omitzero"`
+	StartableEndDate time.Time `json:",omitempty,omitzero"`
+	EndDate time.Time `json:",omitempty,omitzero"`
+	EndDday int64 `json:",omitempty,omitzero"`
+	AccountState flatdata.AccountState `json:",omitempty,omitzero"`
+	AccountLevel int64 `json:",omitempty,omitzero"`
+	PreMissionIds []int64 `json:",omitempty,omitzero"`
+	NextMissionId int64 `json:",omitempty,omitzero"`
+	SuddenMissionContentTypes []flatdata.SuddenMissionContentType `json:",omitempty,omitzero"`
+	CompleteConditionType flatdata.MissionCompleteConditionType `json:",omitempty,omitzero"`
+	CompleteConditionCount int64 `json:",omitempty,omitzero"`
+	CompleteConditionParameters []int64 `json:",omitempty,omitzero"`
+	Tags []flatdata.Tag `json:",omitempty,omitzero"`
+	CompleteConditionMissionIds []int64 `json:",omitempty,omitzero"`
+	CompleteConditionMissionCount int64 `json:",omitempty,omitzero"`
+	CompleteConditionRewards []ParcelInfo `json:",omitempty,omitzero"`
+	RewardIcon string `json:",omitempty,omitzero"`
+	Rewards []ParcelInfo `json:",omitempty,omitzero"`
+	DateAutoRefer flatdata.ContentType `json:",omitempty,omitzero"`
+	ToastImagePath string `json:",omitempty,omitzero"`
+	DisplayOrder int64 `json:",omitempty,omitzero"`
+	HasFollowingMission bool `json:",omitempty,omitzero"`
+	Shortcuts []string `json:",omitempty,omitzero"`
+	ChallengeStageId int64 `json:",omitempty,omitzero"`
 }

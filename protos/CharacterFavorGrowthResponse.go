@@ -2,8 +2,8 @@ package protos
 
 type CharacterFavorGrowthResponse struct {
 	ResponsePacket
-	Protocol                     Protocol
-	CharacterDB                  CharacterDB
-	ConsumeStackableItemDBResult []ItemDB
-	ParcelResultDB               ParcelResultDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	CharacterDB CharacterDB `json:",omitempty,omitzero"`
+	ConsumeStackableItemDBResult []ItemDB `json:",omitempty,omitzero"`
+	ParcelResultDB ParcelResultDB `json:",omitempty,omitzero"`
 }

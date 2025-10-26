@@ -2,6 +2,6 @@ package protos
 
 type AttachmentEmblemListResponse struct {
 	ResponsePacket
-	Protocol  Protocol
-	EmblemDBs []EmblemDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	EmblemDBs []EmblemDB `json:",omitempty,omitzero"`
 }

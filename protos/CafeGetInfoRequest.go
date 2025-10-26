@@ -2,6 +2,6 @@ package protos
 
 type CafeGetInfoRequest struct {
 	RequestPacket
-	Protocol        Protocol
-	AccountServerId int64
+	Protocol Protocol `json:",omitempty,omitzero"`
+	AccountServerId int64 `json:",omitempty,omitzero"`
 }

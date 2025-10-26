@@ -2,8 +2,8 @@ package protos
 
 type MailReceiveResponse struct {
 	ResponsePacket
-	Protocol          Protocol
-	MailServerIds     []int64
-	ParcelResultDB    ParcelResultDB
-	BattlePassInfoDBs []BattlePassInfoDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	MailServerIds []int64 `json:",omitempty,omitzero"`
+	ParcelResultDB ParcelResultDB `json:",omitempty,omitzero"`
+	BattlePassInfoDBs []BattlePassInfoDB `json:",omitempty,omitzero"`
 }

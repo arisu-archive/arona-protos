@@ -5,6 +5,6 @@ import (
 )
 
 type PickupFirstGetHistoryDB struct {
-	ShopRecruitId int64
-	LogDate       time.Time
+	ShopRecruitId int64 `json:",omitempty,omitzero"`
+	LogDate time.Time `json:",omitempty,omitzero"`
 }

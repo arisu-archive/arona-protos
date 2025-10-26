@@ -2,6 +2,6 @@ package protos
 
 type AccountDismissRepurchasablePopupRequest struct {
 	RequestPacket
-	Protocol   Protocol
-	ProductIds []int64
+	Protocol Protocol `json:",omitempty,omitzero"`
+	ProductIds []int64 `json:",omitempty,omitzero"`
 }

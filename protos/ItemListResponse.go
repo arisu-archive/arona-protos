@@ -2,7 +2,7 @@ package protos
 
 type ItemListResponse struct {
 	ResponsePacket
-	Protocol      Protocol
-	ItemDBs       []ItemDB
-	ExpiryItemDBs []ItemDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	ItemDBs []ItemDB `json:",omitempty,omitzero"`
+	ExpiryItemDBs []ItemDB `json:",omitempty,omitzero"`
 }

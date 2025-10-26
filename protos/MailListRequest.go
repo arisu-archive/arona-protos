@@ -1,17 +1,16 @@
 package protos
 
 import (
-	"time"
-
 	"github.com/arisu-archive/arona-flatbuffers/go/flatdata"
+	"time"
 )
 
 type MailListRequest struct {
 	RequestPacket
-	Protocol        Protocol
-	IsReadMail      bool
-	PivotTime       time.Time
-	PivotIndex      int64
-	MailSortingRule flatdata.MailSortingRule
-	IsDescending    bool
+	Protocol Protocol `json:",omitempty,omitzero"`
+	IsReadMail bool `json:",omitempty,omitzero"`
+	PivotTime time.Time `json:",omitempty,omitzero"`
+	PivotIndex int64 `json:",omitempty,omitzero"`
+	MailSortingRule flatdata.MailSortingRule `json:",omitempty,omitzero"`
+	IsDescending bool `json:",omitempty,omitzero"`
 }

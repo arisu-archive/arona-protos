@@ -5,13 +5,13 @@ import (
 )
 
 type ArenaBattleDB struct {
-	ArenaBattleServerId int64
-	Season              int64
-	Group               int64
-	BattleStartTime     time.Time
-	BattleEndTime       time.Time
-	Seed                int64
-	AttackingUserDB     ArenaUserDB
-	DefendingUserDB     ArenaUserDB
-	BattleSummary       BattleSummary
+	ArenaBattleServerId int64 `json:",omitempty,omitzero"`
+	Season int64 `json:",omitempty,omitzero"`
+	Group int64 `json:",omitempty,omitzero"`
+	BattleStartTime time.Time `json:",omitempty,omitzero"`
+	BattleEndTime time.Time `json:",omitempty,omitzero"`
+	Seed int64 `json:",omitempty,omitzero"`
+	AttackingUserDB ArenaUserDB `json:",omitempty,omitzero"`
+	DefendingUserDB ArenaUserDB `json:",omitempty,omitzero"`
+	BattleSummary BattleSummary `json:",omitempty,omitzero"`
 }

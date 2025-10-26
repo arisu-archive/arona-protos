@@ -2,7 +2,7 @@ package protos
 
 type CafeDeployFurnitureRequest struct {
 	RequestPacket
-	Protocol    Protocol
-	CafeDBId    int64
-	FurnitureDB FurnitureDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	CafeDBId int64 `json:",omitempty,omitzero"`
+	FurnitureDB FurnitureDB `json:",omitempty,omitzero"`
 }

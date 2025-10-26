@@ -1,13 +1,12 @@
 package protos
 
 import (
-	"time"
-
 	"github.com/arisu-archive/arona-flatbuffers/go/flatdata"
+	"time"
 )
 
 type CampaignChapterClearRewardHistoryDB struct {
-	ChapterUniqueId int64
-	RewardType      flatdata.StageDifficulty
-	ReceiveDate     time.Time
+	ChapterUniqueId int64 `json:",omitempty,omitzero"`
+	RewardType flatdata.StageDifficulty `json:",omitempty,omitzero"`
+	ReceiveDate time.Time `json:",omitempty,omitzero"`
 }

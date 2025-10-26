@@ -2,8 +2,8 @@ package protos
 
 type ContentSaveGetResponse struct {
 	ResponsePacket
-	Protocol             Protocol
-	HasValidData         bool
-	ContentSaveDB        ContentSaveDB
-	EventContentChangeDB EventContentChangeDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	HasValidData bool `json:",omitempty,omitzero"`
+	ContentSaveDB ContentSaveDB `json:",omitempty,omitzero"`
+	EventContentChangeDB EventContentChangeDB `json:",omitempty,omitzero"`
 }

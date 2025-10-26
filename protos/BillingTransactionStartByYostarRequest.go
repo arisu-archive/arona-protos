@@ -2,8 +2,8 @@ package protos
 
 type BillingTransactionStartByYostarRequest struct {
 	RequestPacket
-	Protocol                    Protocol
-	ShopCashId                  int64
-	ShopCashProductSelectionDBs []ShopCashProductSelectionDB
-	VirtualPayment              bool
+	Protocol Protocol `json:",omitempty,omitzero"`
+	ShopCashId int64 `json:",omitempty,omitzero"`
+	ShopCashProductSelectionDBs []ShopCashProductSelectionDB `json:",omitempty,omitzero"`
+	VirtualPayment bool `json:",omitempty,omitzero"`
 }

@@ -2,13 +2,13 @@ package protos
 
 type EventContentMainGroundStageResultResponse struct {
 	ResponsePacket
-	Protocol                  Protocol
-	TacticRank                int64
-	CampaignStageHistoryDB    CampaignStageHistoryDB
-	LevelUpCharacterDBs       []CharacterDB
-	ParcelResultDB            ParcelResultDB
-	FirstClearReward          []ParcelInfo
-	ThreeStarReward           []ParcelInfo
-	BonusReward               []ParcelInfo
-	EventContentCollectionDBs []EventContentCollectionDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	TacticRank int64 `json:",omitempty,omitzero"`
+	CampaignStageHistoryDB CampaignStageHistoryDB `json:",omitempty,omitzero"`
+	LevelUpCharacterDBs []CharacterDB `json:",omitempty,omitzero"`
+	ParcelResultDB ParcelResultDB `json:",omitempty,omitzero"`
+	FirstClearReward []ParcelInfo `json:",omitempty,omitzero"`
+	ThreeStarReward []ParcelInfo `json:",omitempty,omitzero"`
+	BonusReward []ParcelInfo `json:",omitempty,omitzero"`
+	EventContentCollectionDBs []EventContentCollectionDB `json:",omitempty,omitzero"`
 }

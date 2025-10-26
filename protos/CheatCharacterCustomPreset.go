@@ -1,13 +1,13 @@
 package protos
 
 type CheatCharacterCustomPreset struct {
-	UniqueId            int64
-	StarGrade           int32
-	Level               int32
-	ExSkillLevel        int32
-	PublicSkillLevel    int32
-	PassiveSkillLevel   int32
-	ExPassiveSkillLevel int32
-	Equipments          []CheatEquipmentCustomPreset
-	Weapon              CheatWeaponCustomPreset
+	UniqueId int64 `json:",omitempty,omitzero"`
+	StarGrade int32 `json:",omitempty,omitzero"`
+	Level int32 `json:",omitempty,omitzero"`
+	ExSkillLevel int32 `json:",omitempty,omitzero"`
+	PublicSkillLevel int32 `json:",omitempty,omitzero"`
+	PassiveSkillLevel int32 `json:",omitempty,omitzero"`
+	ExPassiveSkillLevel int32 `json:",omitempty,omitzero"`
+	Equipments []CheatEquipmentCustomPreset `json:",omitempty,omitzero"`
+	Weapon CheatWeaponCustomPreset `json:",omitempty,omitzero"`
 }

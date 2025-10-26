@@ -2,7 +2,7 @@ package protos
 
 type CampaignRetreatResponse struct {
 	ResponsePacket
-	Protocol               Protocol
-	ReleasedEchelonNumbers []int64
-	ParcelResultDB         ParcelResultDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	ReleasedEchelonNumbers []int64 `json:",omitempty,omitzero"`
+	ParcelResultDB ParcelResultDB `json:",omitempty,omitzero"`
 }

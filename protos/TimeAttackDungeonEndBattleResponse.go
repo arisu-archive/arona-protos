@@ -2,10 +2,10 @@ package protos
 
 type TimeAttackDungeonEndBattleResponse struct {
 	ResponsePacket
-	Protocol       Protocol
-	RoomDB         TimeAttackDungeonRoomDB
-	TotalPoint     int64
-	DefaultPoint   int64
-	TimePoint      int64
-	ParcelResultDB ParcelResultDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	RoomDB TimeAttackDungeonRoomDB `json:",omitempty,omitzero"`
+	TotalPoint int64 `json:",omitempty,omitzero"`
+	DefaultPoint int64 `json:",omitempty,omitzero"`
+	TimePoint int64 `json:",omitempty,omitzero"`
+	ParcelResultDB ParcelResultDB `json:",omitempty,omitzero"`
 }

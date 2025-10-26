@@ -2,7 +2,7 @@ package protos
 
 type EventContentDiceRaceLapRewardResponse struct {
 	ResponsePacket
-	Protocol       Protocol
-	DiceRaceDB     EventContentDiceRaceDB
-	ParcelResultDB ParcelResultDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	DiceRaceDB EventContentDiceRaceDB `json:",omitempty,omitzero"`
+	ParcelResultDB ParcelResultDB `json:",omitempty,omitzero"`
 }

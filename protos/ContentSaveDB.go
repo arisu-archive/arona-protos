@@ -1,24 +1,23 @@
 package protos
 
 import (
-	"time"
-
 	"github.com/arisu-archive/arona-flatbuffers/go/flatdata"
+	"time"
 )
 
 type ContentSaveDB struct {
-	ContentType                 flatdata.ContentType
-	AccountServerId             int64
-	CreateTime                  time.Time
-	StageUniqueId               int64
-	LastEnterStageEchelonNumber int64
-	StageEntranceFee            []ParcelInfo
-	EnemyKillCountByUniqueId    map[int64]int64
-	TacticClearTimeMscSum       int64
-	AccountLevelWhenCreateDB    int64
-	BIEchelon                   string
-	BIEchelon1                  string
-	BIEchelon2                  string
-	BIEchelon3                  string
-	BIEchelon4                  string
+	ContentType flatdata.ContentType `json:",omitempty,omitzero"`
+	AccountServerId int64 `json:",omitempty,omitzero"`
+	CreateTime time.Time `json:",omitempty,omitzero"`
+	StageUniqueId int64 `json:",omitempty,omitzero"`
+	LastEnterStageEchelonNumber int64 `json:",omitempty,omitzero"`
+	StageEntranceFee []ParcelInfo `json:",omitempty,omitzero"`
+	EnemyKillCountByUniqueId map[int64]int64 `json:",omitempty,omitzero"`
+	TacticClearTimeMscSum int64 `json:",omitempty,omitzero"`
+	AccountLevelWhenCreateDB int64 `json:",omitempty,omitzero"`
+	BIEchelon string `json:",omitempty,omitzero"`
+	BIEchelon1 string `json:",omitempty,omitzero"`
+	BIEchelon2 string `json:",omitempty,omitzero"`
+	BIEchelon3 string `json:",omitempty,omitzero"`
+	BIEchelon4 string `json:",omitempty,omitzero"`
 }

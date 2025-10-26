@@ -2,6 +2,6 @@ package protos
 
 type MailCheckResponse struct {
 	ResponsePacket
-	Protocol Protocol
-	Count    int64
+	Protocol Protocol `json:",omitempty,omitzero"`
+	Count int64 `json:",omitempty,omitzero"`
 }

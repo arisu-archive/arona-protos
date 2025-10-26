@@ -1,9 +1,9 @@
 package protos
 
 type EventContentTreasureObject struct {
-	ServerId      int64
-	RewardId      int64
-	Rotation      int32
-	IsHiddenImage bool
-	Cells         []EventContentTreasureCell
+	ServerId int64 `json:",omitempty,omitzero"`
+	RewardId int64 `json:",omitempty,omitzero"`
+	Rotation int32 `json:",omitempty,omitzero"`
+	IsHiddenImage bool `json:",omitempty,omitzero"`
+	Cells []EventContentTreasureCell `json:",omitempty,omitzero"`
 }

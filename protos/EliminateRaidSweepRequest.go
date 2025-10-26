@@ -2,7 +2,7 @@ package protos
 
 type EliminateRaidSweepRequest struct {
 	RequestPacket
-	Protocol   Protocol
-	UniqueId   int64
-	SweepCount int32
+	Protocol Protocol `json:",omitempty,omitzero"`
+	UniqueId int64 `json:",omitempty,omitzero"`
+	SweepCount int32 `json:",omitempty,omitzero"`
 }

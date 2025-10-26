@@ -6,7 +6,7 @@ import (
 
 type ArenaHistoryRequest struct {
 	RequestPacket
-	Protocol        Protocol
-	SearchStartDate time.Time
-	Count           int32
+	Protocol Protocol `json:",omitempty,omitzero"`
+	SearchStartDate time.Time `json:",omitempty,omitzero"`
+	Count int32 `json:",omitempty,omitzero"`
 }

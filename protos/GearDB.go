@@ -6,12 +6,12 @@ import (
 
 type GearDB struct {
 	ParcelBase
-	Type                   flatdata.ParcelType
-	ServerId               int64
-	UniqueId               int64
-	Level                  int32
-	Exp                    int64
-	Tier                   int32
-	SlotIndex              int64
-	BoundCharacterServerId int64
+	Type flatdata.ParcelType `json:",omitempty,omitzero"`
+	ServerId int64 `json:",omitempty,omitzero"`
+	UniqueId int64 `json:",omitempty,omitzero"`
+	Level int32 `json:",omitempty,omitzero"`
+	Exp int64 `json:",omitempty,omitzero"`
+	Tier int32 `json:",omitempty,omitzero"`
+	SlotIndex int64 `json:",omitempty,omitzero"`
+	BoundCharacterServerId int64 `json:",omitempty,omitzero"`
 }

@@ -6,9 +6,9 @@ import (
 
 type ClanSetAssistRequest struct {
 	RequestPacket
-	Protocol         Protocol
-	EchelonType      flatdata.EchelonType
-	SlotNumber       int32
-	CharacterDBId    int64
-	CombatStyleIndex int32
+	Protocol Protocol `json:",omitempty,omitzero"`
+	EchelonType flatdata.EchelonType `json:",omitempty,omitzero"`
+	SlotNumber int32 `json:",omitempty,omitzero"`
+	CharacterDBId int64 `json:",omitempty,omitzero"`
+	CombatStyleIndex int32 `json:",omitempty,omitzero"`
 }

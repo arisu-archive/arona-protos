@@ -5,14 +5,14 @@ import (
 )
 
 type EchelonPresetDB struct {
-	GroupIndex             int32
-	Index                  int32
-	Label                  string
-	LeaderUniqueId         int64
-	TSSInteractionUniqueId int64
-	StrikerUniqueIds       []int64
-	SpecialUniqueIds       []int64
-	CombatStyleIndex       []int32
-	MulliganUniqueIds      []int64
-	ExtensionType          flatdata.EchelonExtensionType
+	GroupIndex int32 `json:",omitempty,omitzero"`
+	Index int32 `json:",omitempty,omitzero"`
+	Label string `json:",omitempty,omitzero"`
+	LeaderUniqueId int64 `json:",omitempty,omitzero"`
+	TSSInteractionUniqueId int64 `json:",omitempty,omitzero"`
+	StrikerUniqueIds []int64 `json:",omitempty,omitzero"`
+	SpecialUniqueIds []int64 `json:",omitempty,omitzero"`
+	CombatStyleIndex []int32 `json:",omitempty,omitzero"`
+	MulliganUniqueIds []int64 `json:",omitempty,omitzero"`
+	ExtensionType flatdata.EchelonExtensionType `json:",omitempty,omitzero"`
 }

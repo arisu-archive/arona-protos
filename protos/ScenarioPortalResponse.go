@@ -2,7 +2,7 @@ package protos
 
 type ScenarioPortalResponse struct {
 	ResponsePacket
-	Protocol                 Protocol
-	StoryStrategyStageSaveDB StoryStrategyStageSaveDB
-	ScenarioIds              []int64
+	Protocol Protocol `json:",omitempty,omitzero"`
+	StoryStrategyStageSaveDB StoryStrategyStageSaveDB `json:",omitempty,omitzero"`
+	ScenarioIds []int64 `json:",omitempty,omitzero"`
 }

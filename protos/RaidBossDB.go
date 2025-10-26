@@ -5,8 +5,8 @@ import (
 )
 
 type RaidBossDB struct {
-	ContentType     flatdata.ContentType
-	BossIndex       int32
-	BossCurrentHP   int64
-	BossGroggyPoint int64
+	ContentType flatdata.ContentType `json:",omitempty,omitzero"`
+	BossIndex int32 `json:",omitempty,omitzero"`
+	BossCurrentHP int64 `json:",omitempty,omitzero"`
+	BossGroggyPoint int64 `json:",omitempty,omitzero"`
 }

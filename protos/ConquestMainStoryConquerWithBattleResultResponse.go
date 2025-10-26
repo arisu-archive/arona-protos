@@ -6,11 +6,11 @@ import (
 
 type ConquestMainStoryConquerWithBattleResultResponse struct {
 	ResponsePacket
-	Protocol                 Protocol
-	ParcelResultDB           ParcelResultDB
-	ConquestTileDB           ConquestTileDB
-	ConquestInfoDB           ConquestInfoDB
-	DisplayInfos             []ConquestDisplayInfo
-	StepAfterBattle          int32
-	DisplayParcelByRewardTag map[flatdata.RewardTag][]ParcelInfo
+	Protocol Protocol `json:",omitempty,omitzero"`
+	ParcelResultDB ParcelResultDB `json:",omitempty,omitzero"`
+	ConquestTileDB ConquestTileDB `json:",omitempty,omitzero"`
+	ConquestInfoDB ConquestInfoDB `json:",omitempty,omitzero"`
+	DisplayInfos []ConquestDisplayInfo `json:",omitempty,omitzero"`
+	StepAfterBattle int32 `json:",omitempty,omitzero"`
+	DisplayParcelByRewardTag map[flatdata.RewardTag][]ParcelInfo `json:",omitempty,omitzero"`
 }

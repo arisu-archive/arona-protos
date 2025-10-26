@@ -6,9 +6,9 @@ import (
 
 type ConquestMainStoryGetInfoResponse struct {
 	ResponsePacket
-	Protocol             Protocol
-	ConquestInfoDB       ConquestInfoDB
-	ConquestedTileDBs    []ConquestTileDB
-	DifficultyToStepDict map[flatdata.StageDifficulty]int32
-	IsFirstEnter         bool
+	Protocol Protocol `json:",omitempty,omitzero"`
+	ConquestInfoDB ConquestInfoDB `json:",omitempty,omitzero"`
+	ConquestedTileDBs []ConquestTileDB `json:",omitempty,omitzero"`
+	DifficultyToStepDict map[flatdata.StageDifficulty]int32 `json:",omitempty,omitzero"`
+	IsFirstEnter bool `json:",omitempty,omitzero"`
 }

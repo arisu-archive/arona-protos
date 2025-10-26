@@ -5,6 +5,6 @@ import (
 )
 
 type PotentialGrowthRequestDB struct {
-	Type  flatdata.PotentialStatBonusRateType
-	Level int32
+	Type flatdata.PotentialStatBonusRateType `json:",omitempty,omitzero"`
+	Level int32 `json:",omitempty,omitzero"`
 }

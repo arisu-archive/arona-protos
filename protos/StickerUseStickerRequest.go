@@ -2,6 +2,6 @@ package protos
 
 type StickerUseStickerRequest struct {
 	RequestPacket
-	Protocol        Protocol
-	StickerUniqueId int64
+	Protocol Protocol `json:",omitempty,omitzero"`
+	StickerUniqueId int64 `json:",omitempty,omitzero"`
 }

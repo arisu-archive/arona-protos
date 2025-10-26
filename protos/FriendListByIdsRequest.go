@@ -2,6 +2,6 @@ package protos
 
 type FriendListByIdsRequest struct {
 	RequestPacket
-	Protocol         Protocol
-	TargetAccountIds []int64
+	Protocol Protocol `json:",omitempty,omitzero"`
+	TargetAccountIds []int64 `json:",omitempty,omitzero"`
 }

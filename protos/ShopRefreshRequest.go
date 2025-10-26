@@ -6,6 +6,6 @@ import (
 
 type ShopRefreshRequest struct {
 	RequestPacket
-	Protocol         Protocol
-	ShopCategoryType flatdata.ShopCategoryType
+	Protocol Protocol `json:",omitempty,omitzero"`
+	ShopCategoryType flatdata.ShopCategoryType `json:",omitempty,omitzero"`
 }

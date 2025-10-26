@@ -2,8 +2,8 @@ package protos
 
 type ClanAutoJoinResponse struct {
 	ResponsePacket
-	Protocol     Protocol
-	IrcConfig    IrcServerConfig
-	ClanDB       ClanDB
-	ClanMemberDB ClanMemberDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	IrcConfig IrcServerConfig `json:",omitempty,omitzero"`
+	ClanDB ClanDB `json:",omitempty,omitzero"`
+	ClanMemberDB ClanMemberDB `json:",omitempty,omitzero"`
 }

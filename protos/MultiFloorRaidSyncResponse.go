@@ -2,6 +2,6 @@ package protos
 
 type MultiFloorRaidSyncResponse struct {
 	ResponsePacket
-	Protocol          Protocol
-	MultiFloorRaidDBs []MultiFloorRaidDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	MultiFloorRaidDBs []MultiFloorRaidDB `json:",omitempty,omitzero"`
 }

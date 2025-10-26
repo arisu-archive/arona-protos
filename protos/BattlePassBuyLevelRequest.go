@@ -2,7 +2,7 @@ package protos
 
 type BattlePassBuyLevelRequest struct {
 	RequestPacket
-	Protocol                Protocol
-	BattlePassId            int64
-	BattlePassBuyLevelCount int32
+	Protocol Protocol `json:",omitempty,omitzero"`
+	BattlePassId int64 `json:",omitempty,omitzero"`
+	BattlePassBuyLevelCount int32 `json:",omitempty,omitzero"`
 }

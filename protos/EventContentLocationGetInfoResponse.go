@@ -2,6 +2,6 @@ package protos
 
 type EventContentLocationGetInfoResponse struct {
 	ResponsePacket
-	Protocol               Protocol
-	EventContentLocationDB EventContentLocationDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	EventContentLocationDB EventContentLocationDB `json:",omitempty,omitzero"`
 }

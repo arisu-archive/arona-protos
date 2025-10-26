@@ -2,6 +2,6 @@ package protos
 
 type FriendSendFriendRequestRequest struct {
 	RequestPacket
-	Protocol        Protocol
-	TargetAccountId int64
+	Protocol Protocol `json:",omitempty,omitzero"`
+	TargetAccountId int64 `json:",omitempty,omitzero"`
 }

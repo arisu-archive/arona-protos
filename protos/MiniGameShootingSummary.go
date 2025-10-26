@@ -1,3 +1,4 @@
 package protos
 
-type MiniGameShootingSummary struct{}
+type MiniGameShootingSummary struct {
+}

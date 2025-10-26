@@ -2,7 +2,7 @@ package protos
 
 type MissionRewardResponse struct {
 	ResponsePacket
-	Protocol       Protocol
-	AddedHistoryDB MissionHistoryDB
-	ParcelResultDB ParcelResultDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	AddedHistoryDB MissionHistoryDB `json:",omitempty,omitzero"`
+	ParcelResultDB ParcelResultDB `json:",omitempty,omitzero"`
 }

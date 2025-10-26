@@ -2,7 +2,7 @@ package protos
 
 type ContentSweepSetMultiSweepPresetNameRequest struct {
 	RequestPacket
-	Protocol   Protocol
-	PresetId   int64
-	PresetName string
+	Protocol Protocol `json:",omitempty,omitzero"`
+	PresetId int64 `json:",omitempty,omitzero"`
+	PresetName string `json:",omitempty,omitzero"`
 }

@@ -5,7 +5,7 @@ import (
 )
 
 type MiniGameDreamMakerParameterDB struct {
-	ParameterType flatdata.DreamMakerParameterType
-	BaseAmount    int64
-	CurrentAmount int64
+	ParameterType flatdata.DreamMakerParameterType `json:",omitempty,omitzero"`
+	BaseAmount int64 `json:",omitempty,omitzero"`
+	CurrentAmount int64 `json:",omitempty,omitzero"`
 }

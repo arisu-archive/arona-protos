@@ -2,5 +2,5 @@ package protos
 
 type ArenaEnterLobbyRequest struct {
 	RequestPacket
-	Protocol Protocol
+	Protocol Protocol `json:",omitempty,omitzero"`
 }

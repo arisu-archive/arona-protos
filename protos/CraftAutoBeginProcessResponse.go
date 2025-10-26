@@ -2,7 +2,7 @@ package protos
 
 type CraftAutoBeginProcessResponse struct {
 	ResponsePacket
-	Protocol       Protocol
-	CraftInfoDBs   []CraftInfoDB
-	ParcelResultDB ParcelResultDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	CraftInfoDBs []CraftInfoDB `json:",omitempty,omitzero"`
+	ParcelResultDB ParcelResultDB `json:",omitempty,omitzero"`
 }

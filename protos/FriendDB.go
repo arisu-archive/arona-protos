@@ -1,3 +1,4 @@
 package protos
 
-type FriendDB struct{}
+type FriendDB struct {
+}

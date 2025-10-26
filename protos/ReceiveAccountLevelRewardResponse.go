@@ -2,7 +2,7 @@ package protos
 
 type ReceiveAccountLevelRewardResponse struct {
 	ResponsePacket
-	Protocol                      Protocol
-	ReceivedAccountLevelRewardIds []int64
-	ParcelResultDB                ParcelResultDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	ReceivedAccountLevelRewardIds []int64 `json:",omitempty,omitzero"`
+	ParcelResultDB ParcelResultDB `json:",omitempty,omitzero"`
 }

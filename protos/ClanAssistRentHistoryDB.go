@@ -5,8 +5,8 @@ import (
 )
 
 type ClanAssistRentHistoryDB struct {
-	AssistCharacterAccountId int64
-	AssistCharacterDBId      int64
-	RentDate                 time.Time
-	AssistCharacterId        int64
+	AssistCharacterAccountId int64 `json:",omitempty,omitzero"`
+	AssistCharacterDBId int64 `json:",omitempty,omitzero"`
+	RentDate time.Time `json:",omitempty,omitzero"`
+	AssistCharacterId int64 `json:",omitempty,omitzero"`
 }

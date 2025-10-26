@@ -2,6 +2,6 @@ package protos
 
 type BillingCheckConditionCashGoodsResponse struct {
 	ResponsePacket
-	Protocol Protocol
-	Result   bool
+	Protocol Protocol `json:",omitempty,omitzero"`
+	Result bool `json:",omitempty,omitzero"`
 }

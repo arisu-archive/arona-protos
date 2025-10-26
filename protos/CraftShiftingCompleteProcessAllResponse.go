@@ -2,7 +2,7 @@ package protos
 
 type CraftShiftingCompleteProcessAllResponse struct {
 	ResponsePacket
-	Protocol       Protocol
-	CraftInfoDBs   []ShiftingCraftInfoDB
-	ParcelResultDB ParcelResultDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	CraftInfoDBs []ShiftingCraftInfoDB `json:",omitempty,omitzero"`
+	ParcelResultDB ParcelResultDB `json:",omitempty,omitzero"`
 }

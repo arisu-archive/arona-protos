@@ -5,7 +5,7 @@ import (
 )
 
 type RaidRankBracket struct {
-	Difficulty     flatdata.Difficulty
-	BossGroupIndex *int32
-	RankCount      int64
+	Difficulty flatdata.Difficulty `json:",omitempty,omitzero"`
+	BossGroupIndex *int32 `json:",omitempty,omitzero"`
+	RankCount int64 `json:",omitempty,omitzero"`
 }

@@ -2,6 +2,6 @@ package protos
 
 type FriendGetFriendDetailedInfoRequest struct {
 	RequestPacket
-	Protocol        Protocol
-	FriendAccountId int64
+	Protocol Protocol `json:",omitempty,omitzero"`
+	FriendAccountId int64 `json:",omitempty,omitzero"`
 }

@@ -2,6 +2,6 @@ package protos
 
 type ClanChatLogResponse struct {
 	ResponsePacket
-	Protocol    Protocol
-	ClanChatLog string
+	Protocol Protocol `json:",omitempty,omitzero"`
+	ClanChatLog string `json:",omitempty,omitzero"`
 }

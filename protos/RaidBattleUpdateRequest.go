@@ -2,9 +2,9 @@ package protos
 
 type RaidBattleUpdateRequest struct {
 	RequestPacket
-	Protocol              Protocol
-	RaidServerId          int64
-	RaidBossIndex         int32
-	CumulativeDamage      int64
-	CumulativeGroggyPoint int64
+	Protocol Protocol `json:",omitempty,omitzero"`
+	RaidServerId int64 `json:",omitempty,omitzero"`
+	RaidBossIndex int32 `json:",omitempty,omitzero"`
+	CumulativeDamage int64 `json:",omitempty,omitzero"`
+	CumulativeGroggyPoint int64 `json:",omitempty,omitzero"`
 }

@@ -2,7 +2,7 @@ package protos
 
 type MiniGameDefenseEnterBattleRequest struct {
 	RequestPacket
-	Protocol       Protocol
-	EventContentId int64
-	StageId        int64
+	Protocol Protocol `json:",omitempty,omitzero"`
+	EventContentId int64 `json:",omitempty,omitzero"`
+	StageId int64 `json:",omitempty,omitzero"`
 }

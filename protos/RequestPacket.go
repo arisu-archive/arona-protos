@@ -6,8 +6,8 @@ import (
 
 type RequestPacket struct {
 	BasePacket
-	Resendable                    bool
-	Hash                          int64
-	IsTest                        bool
-	ModifiedServerTime__DebugOnly *time.Time
+	Resendable bool `json:",omitempty,omitzero"`
+	Hash int64 `json:",omitempty,omitzero"`
+	IsTest bool `json:",omitempty,omitzero"`
+	ModifiedServerTime__DebugOnly *time.Time `json:",omitempty,omitzero"`
 }

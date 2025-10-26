@@ -2,6 +2,6 @@ package protos
 
 type StickerLobbyRequest struct {
 	RequestPacket
-	Protocol                Protocol
-	AcquireStickerUniqueIds []int64
+	Protocol Protocol `json:",omitempty,omitzero"`
+	AcquireStickerUniqueIds []int64 `json:",omitempty,omitzero"`
 }

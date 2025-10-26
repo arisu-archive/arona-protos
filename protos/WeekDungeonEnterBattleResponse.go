@@ -2,8 +2,8 @@ package protos
 
 type WeekDungeonEnterBattleResponse struct {
 	ResponsePacket
-	Protocol       Protocol
-	ParcelResultDB ParcelResultDB
-	Seed           int32
-	Sequence       int32
+	Protocol Protocol `json:",omitempty,omitzero"`
+	ParcelResultDB ParcelResultDB `json:",omitempty,omitzero"`
+	Seed int32 `json:",omitempty,omitzero"`
+	Sequence int32 `json:",omitempty,omitzero"`
 }

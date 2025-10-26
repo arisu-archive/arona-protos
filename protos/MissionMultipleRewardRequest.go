@@ -6,8 +6,8 @@ import (
 
 type MissionMultipleRewardRequest struct {
 	RequestPacket
-	Protocol             Protocol
-	MissionCategory      flatdata.MissionCategory
-	GuideMissionSeasonId *int64
-	EventContentId       *int64
+	Protocol Protocol `json:",omitempty,omitzero"`
+	MissionCategory flatdata.MissionCategory `json:",omitempty,omitzero"`
+	GuideMissionSeasonId *int64 `json:",omitempty,omitzero"`
+	EventContentId *int64 `json:",omitempty,omitzero"`
 }

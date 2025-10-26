@@ -6,9 +6,9 @@ import (
 
 type ContentSweepRequest struct {
 	RequestPacket
-	Protocol       Protocol
-	Content        flatdata.ContentType
-	StageId        int64
-	EventContentId int64
-	Count          int64
+	Protocol Protocol `json:",omitempty,omitzero"`
+	Content flatdata.ContentType `json:",omitempty,omitzero"`
+	StageId int64 `json:",omitempty,omitzero"`
+	EventContentId int64 `json:",omitempty,omitzero"`
+	Count int64 `json:",omitempty,omitzero"`
 }

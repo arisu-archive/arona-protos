@@ -2,6 +2,6 @@ package protos
 
 type TimeAttackDungeonSweepRequest struct {
 	RequestPacket
-	Protocol   Protocol
-	SweepCount int64
+	Protocol Protocol `json:",omitempty,omitzero"`
+	SweepCount int64 `json:",omitempty,omitzero"`
 }

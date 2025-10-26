@@ -1,16 +1,15 @@
 package protos
 
 import (
-	"time"
-
 	"github.com/arisu-archive/arona-flatbuffers/go/flatdata"
+	"time"
 )
 
 type ClanAssistSlotDB struct {
-	EchelonType      flatdata.EchelonType
-	SlotNumber       int64
-	CharacterDBId    int64
-	DeployDate       time.Time
-	TotalRentCount   int64
-	CombatStyleIndex int32
+	EchelonType flatdata.EchelonType `json:",omitempty,omitzero"`
+	SlotNumber int64 `json:",omitempty,omitzero"`
+	CharacterDBId int64 `json:",omitempty,omitzero"`
+	DeployDate time.Time `json:",omitempty,omitzero"`
+	TotalRentCount int64 `json:",omitempty,omitzero"`
+	CombatStyleIndex int32 `json:",omitempty,omitzero"`
 }

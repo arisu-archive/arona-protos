@@ -2,7 +2,7 @@ package protos
 
 type EventContentEndTurnResponse struct {
 	ResponsePacket
-	Protocol          Protocol
-	SaveDataDB        EventContentMainStageSaveDB
-	AccountCurrencyDB AccountCurrencyDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	SaveDataDB EventContentMainStageSaveDB `json:",omitempty,omitzero"`
+	AccountCurrencyDB AccountCurrencyDB `json:",omitempty,omitzero"`
 }

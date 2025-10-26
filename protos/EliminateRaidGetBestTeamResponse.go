@@ -2,6 +2,6 @@ package protos
 
 type EliminateRaidGetBestTeamResponse struct {
 	ResponsePacket
-	Protocol               Protocol
-	RaidTeamSettingDBsDict map[string][]RaidTeamSettingDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	RaidTeamSettingDBsDict map[string][]RaidTeamSettingDB `json:",omitempty,omitzero"`
 }

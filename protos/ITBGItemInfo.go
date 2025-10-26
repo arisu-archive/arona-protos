@@ -1,3 +1,4 @@
 package protos
 
-type ITBGItemInfo struct{}
+type ITBGItemInfo struct {
+}

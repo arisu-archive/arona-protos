@@ -1,11 +1,11 @@
 package protos
 
 type ConquestDisplayInfo struct {
-	TriggerType  ConquestTriggerType
-	Type         ConquestDisplayType
-	EntityId     int64
-	TileUniqueId int64
-	Parameter    string
-	DisplayOrder int32
-	DisplayOnce  bool
+	TriggerType ConquestTriggerType `json:",omitempty,omitzero"`
+	Type ConquestDisplayType `json:",omitempty,omitzero"`
+	EntityId int64 `json:",omitempty,omitzero"`
+	TileUniqueId int64 `json:",omitempty,omitzero"`
+	Parameter string `json:",omitempty,omitzero"`
+	DisplayOrder int32 `json:",omitempty,omitzero"`
+	DisplayOnce bool `json:",omitempty,omitzero"`
 }

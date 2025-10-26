@@ -1,6 +1,6 @@
 package protos
 
 type EventInfoDB struct {
-	EventId       int64
-	ImageNameHash uint32
+	EventId int64 `json:",omitempty,omitzero"`
+	ImageNameHash uint32 `json:",omitempty,omitzero"`
 }

@@ -2,8 +2,8 @@ package protos
 
 type ClanMemberResponse struct {
 	ResponsePacket
-	Protocol              Protocol
-	ClanDB                ClanDB
-	ClanMemberDB          ClanMemberDB
-	DetailedAccountInfoDB DetailedAccountInfoDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	ClanDB ClanDB `json:",omitempty,omitzero"`
+	ClanMemberDB ClanMemberDB `json:",omitempty,omitzero"`
+	DetailedAccountInfoDB DetailedAccountInfoDB `json:",omitempty,omitzero"`
 }

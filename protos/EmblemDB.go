@@ -1,15 +1,14 @@
 package protos
 
 import (
-	"time"
-
 	"github.com/arisu-archive/arona-flatbuffers/go/flatdata"
+	"time"
 )
 
 type EmblemDB struct {
 	ParcelBase
-	Type        flatdata.ParcelType
-	UniqueId    int64
-	ReceiveDate time.Time
-	ParcelInfos []ParcelInfo
+	Type flatdata.ParcelType `json:",omitempty,omitzero"`
+	UniqueId int64 `json:",omitempty,omitzero"`
+	ReceiveDate time.Time `json:",omitempty,omitzero"`
+	ParcelInfos []ParcelInfo `json:",omitempty,omitzero"`
 }

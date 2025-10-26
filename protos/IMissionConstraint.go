@@ -1,3 +1,4 @@
 package protos
 
-type IMissionConstraint struct{}
+type IMissionConstraint struct {
+}

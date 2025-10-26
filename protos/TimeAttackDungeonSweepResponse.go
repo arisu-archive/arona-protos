@@ -2,8 +2,8 @@ package protos
 
 type TimeAttackDungeonSweepResponse struct {
 	ResponsePacket
-	Protocol       Protocol
-	Rewards        [][]ParcelInfo
-	ParcelResultDB ParcelResultDB
-	RoomDB         TimeAttackDungeonRoomDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	Rewards [][]ParcelInfo `json:",omitempty,omitzero"`
+	ParcelResultDB ParcelResultDB `json:",omitempty,omitzero"`
+	RoomDB TimeAttackDungeonRoomDB `json:",omitempty,omitzero"`
 }

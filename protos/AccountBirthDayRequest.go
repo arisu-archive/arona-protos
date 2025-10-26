@@ -6,6 +6,6 @@ import (
 
 type AccountBirthDayRequest struct {
 	RequestPacket
-	Protocol Protocol
-	BirthDay time.Time
+	Protocol Protocol `json:",omitempty,omitzero"`
+	BirthDay time.Time `json:",omitempty,omitzero"`
 }

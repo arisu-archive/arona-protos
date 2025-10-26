@@ -6,6 +6,6 @@ import (
 
 type MemoryLobbyDB struct {
 	ParcelBase
-	Type                flatdata.ParcelType
-	MemoryLobbyUniqueId int64
+	Type flatdata.ParcelType `json:",omitempty,omitzero"`
+	MemoryLobbyUniqueId int64 `json:",omitempty,omitzero"`
 }

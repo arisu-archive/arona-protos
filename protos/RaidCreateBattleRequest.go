@@ -6,11 +6,11 @@ import (
 
 type RaidCreateBattleRequest struct {
 	RequestPacket
-	Protocol      Protocol
-	RaidUniqueId  int64
-	IsPractice    bool
-	Tags          []int32
-	IsPublic      bool
-	Difficulty    flatdata.Difficulty
-	AssistUseInfo ClanAssistUseInfo
+	Protocol Protocol `json:",omitempty,omitzero"`
+	RaidUniqueId int64 `json:",omitempty,omitzero"`
+	IsPractice bool `json:",omitempty,omitzero"`
+	Tags []int32 `json:",omitempty,omitzero"`
+	IsPublic bool `json:",omitempty,omitzero"`
+	Difficulty flatdata.Difficulty `json:",omitempty,omitzero"`
+	AssistUseInfo ClanAssistUseInfo `json:",omitempty,omitzero"`
 }

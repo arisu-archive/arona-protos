@@ -1,12 +1,12 @@
 package protos
 
 type MiniGameDreamMakerInfoDB struct {
-	EventContentId       int64
-	Round                int64
-	Multiplier           int64
-	DayOfNumber          int64
-	ActionCount          int64
-	CurrentRoundEndingId int64
-	EndingRewardReceived bool
-	CanStartNewGame      bool
+	EventContentId int64 `json:",omitempty,omitzero"`
+	Round int64 `json:",omitempty,omitzero"`
+	Multiplier int64 `json:",omitempty,omitzero"`
+	DayOfNumber int64 `json:",omitempty,omitzero"`
+	ActionCount int64 `json:",omitempty,omitzero"`
+	CurrentRoundEndingId int64 `json:",omitempty,omitzero"`
+	EndingRewardReceived bool `json:",omitempty,omitzero"`
+	CanStartNewGame bool `json:",omitempty,omitzero"`
 }

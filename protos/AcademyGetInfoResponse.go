@@ -2,7 +2,7 @@ package protos
 
 type AcademyGetInfoResponse struct {
 	ResponsePacket
-	Protocol           Protocol
-	AcademyDB          AcademyDB
-	AcademyLocationDBs []AcademyLocationDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	AcademyDB AcademyDB `json:",omitempty,omitzero"`
+	AcademyLocationDBs []AcademyLocationDB `json:",omitempty,omitzero"`
 }

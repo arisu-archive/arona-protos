@@ -2,7 +2,7 @@ package protos
 
 type ScenarioLobbyStudentChangeRequest struct {
 	RequestPacket
-	Protocol            Protocol
-	LobbyStudents       []int64
-	LobbyStudentsBefore []int64
+	Protocol Protocol `json:",omitempty,omitzero"`
+	LobbyStudents []int64 `json:",omitempty,omitzero"`
+	LobbyStudentsBefore []int64 `json:",omitempty,omitzero"`
 }

@@ -2,10 +2,10 @@ package protos
 
 type EventContentAdventureListResponse struct {
 	ResponsePacket
-	Protocol                   Protocol
-	StageHistoryDBs            []CampaignStageHistoryDB
-	StrategyObjecthistoryDBs   []StrategyObjectHistoryDB
-	EventContentBonusRewardDBs []EventContentBonusRewardDB
-	AlreadyReceiveRewardId     []int64
-	StagePoint                 int64
+	Protocol Protocol `json:",omitempty,omitzero"`
+	StageHistoryDBs []CampaignStageHistoryDB `json:",omitempty,omitzero"`
+	StrategyObjecthistoryDBs []StrategyObjectHistoryDB `json:",omitempty,omitzero"`
+	EventContentBonusRewardDBs []EventContentBonusRewardDB `json:",omitempty,omitzero"`
+	AlreadyReceiveRewardId []int64 `json:",omitempty,omitzero"`
+	StagePoint int64 `json:",omitempty,omitzero"`
 }

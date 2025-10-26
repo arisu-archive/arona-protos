@@ -2,7 +2,7 @@ package protos
 
 type ScenarioSelectRequest struct {
 	RequestPacket
-	Protocol          Protocol
-	ScriptGroupId     int64
-	ScriptSelectGroup int64
+	Protocol Protocol `json:",omitempty,omitzero"`
+	ScriptGroupId int64 `json:",omitempty,omitzero"`
+	ScriptSelectGroup int64 `json:",omitempty,omitzero"`
 }

@@ -5,15 +5,15 @@ import (
 )
 
 type CafeDB struct {
-	CafeDBId              int64
-	CafeId                int64
-	AccountId             int64
-	CafeRank              int32
-	LastUpdate            time.Time
-	LastSummonDate        *time.Time
-	IsNew                 bool
-	CafeVisitCharacterDBs map[int64]CafeDB_CafeCharacterDB
-	FurnitureDBs          []FurnitureDB
-	ProductionAppliedTime time.Time
-	ProductionDB          CafeProductionDB
+	CafeDBId int64 `json:",omitempty,omitzero"`
+	CafeId int64 `json:",omitempty,omitzero"`
+	AccountId int64 `json:",omitempty,omitzero"`
+	CafeRank int32 `json:",omitempty,omitzero"`
+	LastUpdate time.Time `json:",omitempty,omitzero"`
+	LastSummonDate *time.Time `json:",omitempty,omitzero"`
+	IsNew bool `json:",omitempty,omitzero"`
+	CafeVisitCharacterDBs map[int64]CafeDB_CafeCharacterDB `json:",omitempty,omitzero"`
+	FurnitureDBs []FurnitureDB `json:",omitempty,omitzero"`
+	ProductionAppliedTime time.Time `json:",omitempty,omitzero"`
+	ProductionDB CafeProductionDB `json:",omitempty,omitzero"`
 }

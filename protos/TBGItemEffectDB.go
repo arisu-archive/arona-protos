@@ -6,8 +6,8 @@ import (
 
 type TBGItemEffectDB struct {
 	ITBGItemEffectDB
-	ItemUniqueId           int64
-	ItemType               flatdata.TBGItemType
-	EffectType             flatdata.TBGItemEffectType
-	RemainEncounterCounter int32
+	ItemUniqueId int64 `json:",omitempty,omitzero"`
+	ItemType flatdata.TBGItemType `json:",omitempty,omitzero"`
+	EffectType flatdata.TBGItemEffectType `json:",omitempty,omitzero"`
+	RemainEncounterCounter int32 `json:",omitempty,omitzero"`
 }

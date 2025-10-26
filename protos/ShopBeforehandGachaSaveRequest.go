@@ -2,6 +2,6 @@ package protos
 
 type ShopBeforehandGachaSaveRequest struct {
 	RequestPacket
-	Protocol    Protocol
-	TargetIndex int64
+	Protocol Protocol `json:",omitempty,omitzero"`
+	TargetIndex int64 `json:",omitempty,omitzero"`
 }

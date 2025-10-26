@@ -2,6 +2,6 @@ package protos
 
 type RaidRankingIndexResponse struct {
 	ResponsePacket
-	Protocol     Protocol
-	RankBrackets []RaidRankBracket
+	Protocol Protocol `json:",omitempty,omitzero"`
+	RankBrackets []RaidRankBracket `json:",omitempty,omitzero"`
 }

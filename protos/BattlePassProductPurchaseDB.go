@@ -1,7 +1,7 @@
 package protos
 
 type BattlePassProductPurchaseDB struct {
-	ProductId                 int64
-	BattlePassId              int64
-	PurchaseBattlePassGroupId int64
+	ProductId int64 `json:",omitempty,omitzero"`
+	BattlePassId int64 `json:",omitempty,omitzero"`
+	PurchaseBattlePassGroupId int64 `json:",omitempty,omitzero"`
 }

@@ -2,6 +2,6 @@ package protos
 
 type CampaignPortalResponse struct {
 	ResponsePacket
-	Protocol                Protocol
-	CampaignMainStageSaveDB CampaignMainStageSaveDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	CampaignMainStageSaveDB CampaignMainStageSaveDB `json:",omitempty,omitzero"`
 }

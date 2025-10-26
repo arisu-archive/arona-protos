@@ -2,7 +2,7 @@ package protos
 
 type ArenaRankListRequest struct {
 	RequestPacket
-	Protocol   Protocol
-	StartIndex int32
-	Count      int32
+	Protocol Protocol `json:",omitempty,omitzero"`
+	StartIndex int32 `json:",omitempty,omitzero"`
+	Count int32 `json:",omitempty,omitzero"`
 }

@@ -2,8 +2,8 @@ package protos
 
 type ConquestErosionBattleResultRequest struct {
 	RequestPacket
-	Protocol           Protocol
-	EventContentId     int64
-	ConquestObjectDBId int64
-	BattleSummary      BattleSummary
+	Protocol Protocol `json:",omitempty,omitzero"`
+	EventContentId int64 `json:",omitempty,omitzero"`
+	ConquestObjectDBId int64 `json:",omitempty,omitzero"`
+	BattleSummary BattleSummary `json:",omitempty,omitzero"`
 }

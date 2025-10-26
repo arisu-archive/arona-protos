@@ -1,6 +1,6 @@
 package protos
 
 type VisitingCharacterDB struct {
-	UniqueId int64
-	ServerId int64
+	UniqueId int64 `json:",omitempty,omitzero"`
+	ServerId int64 `json:",omitempty,omitzero"`
 }

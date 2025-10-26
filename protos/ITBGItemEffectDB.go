@@ -1,3 +1,4 @@
 package protos
 
-type ITBGItemEffectDB struct{}
+type ITBGItemEffectDB struct {
+}

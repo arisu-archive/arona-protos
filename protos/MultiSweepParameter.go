@@ -1,3 +1,4 @@
 package protos
 
-type MultiSweepParameter struct{}
+type MultiSweepParameter struct {
+}

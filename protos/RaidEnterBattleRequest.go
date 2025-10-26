@@ -2,10 +2,10 @@ package protos
 
 type RaidEnterBattleRequest struct {
 	RequestPacket
-	Protocol      Protocol
-	RaidServerId  int64
-	RaidUniqueId  int64
-	IsPractice    bool
-	EchelonId     int64
-	AssistUseInfo ClanAssistUseInfo
+	Protocol Protocol `json:",omitempty,omitzero"`
+	RaidServerId int64 `json:",omitempty,omitzero"`
+	RaidUniqueId int64 `json:",omitempty,omitzero"`
+	IsPractice bool `json:",omitempty,omitzero"`
+	EchelonId int64 `json:",omitempty,omitzero"`
+	AssistUseInfo ClanAssistUseInfo `json:",omitempty,omitzero"`
 }

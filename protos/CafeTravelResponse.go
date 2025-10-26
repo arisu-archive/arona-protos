@@ -2,7 +2,7 @@ package protos
 
 type CafeTravelResponse struct {
 	ResponsePacket
-	Protocol Protocol
-	FriendDB FriendDB
-	CafeDBs  []CafeDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	FriendDB FriendDB `json:",omitempty,omitzero"`
+	CafeDBs []CafeDB `json:",omitempty,omitzero"`
 }

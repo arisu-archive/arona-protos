@@ -2,6 +2,6 @@ package protos
 
 type OpenConditionSetResponse struct {
 	ResponsePacket
-	Protocol     Protocol
-	ConditionDBs []OpenConditionDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	ConditionDBs []OpenConditionDB `json:",omitempty,omitzero"`
 }

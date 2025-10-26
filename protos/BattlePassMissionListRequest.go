@@ -2,6 +2,6 @@ package protos
 
 type BattlePassMissionListRequest struct {
 	RequestPacket
-	Protocol     Protocol
-	BattlePassId int64
+	Protocol Protocol `json:",omitempty,omitzero"`
+	BattlePassId int64 `json:",omitempty,omitzero"`
 }

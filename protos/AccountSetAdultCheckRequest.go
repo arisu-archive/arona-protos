@@ -2,6 +2,6 @@ package protos
 
 type AccountSetAdultCheckRequest struct {
 	RequestPacket
-	Protocol        Protocol
-	CheckAdultAgree bool
+	Protocol Protocol `json:",omitempty,omitzero"`
+	CheckAdultAgree bool `json:",omitempty,omitzero"`
 }

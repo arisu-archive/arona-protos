@@ -1,32 +1,31 @@
 package protos
 
 import (
-	"time"
-
 	"github.com/arisu-archive/arona-flatbuffers/go/flatdata"
+	"time"
 )
 
 type RaidLobbyInfoDB struct {
-	SeasonId                      int64
-	Tier                          int32
-	Ranking                       int64
-	BestRankingPoint              int64
-	TotalRankingPoint             int64
-	ReceivedRankingRewardId       int64
-	CanReceiveRankingReward       bool
-	PlayingRaidDB                 RaidDB
-	ReceiveRewardIds              []int64
-	ReceiveLimitedRewardIds       []int64
-	ParticipateCharacterServerIds []int64
-	PlayableHighestDifficulty     map[string]flatdata.Difficulty
-	SweepPointByRaidUniqueId      map[int64]int64
-	SeasonStartDate               time.Time
-	SeasonEndDate                 time.Time
-	SettlementEndDate             time.Time
-	NextSeasonId                  int64
-	NextSeasonStartDate           time.Time
-	NextSeasonEndDate             time.Time
-	NextSettlementEndDate         time.Time
-	ClanAssistUseInfo             ClanAssistUseInfo
-	RemainFailCompensation        map[int32]bool
+	SeasonId int64 `json:",omitempty,omitzero"`
+	Tier int32 `json:",omitempty,omitzero"`
+	Ranking int64 `json:",omitempty,omitzero"`
+	BestRankingPoint int64 `json:",omitempty,omitzero"`
+	TotalRankingPoint int64 `json:",omitempty,omitzero"`
+	ReceivedRankingRewardId int64 `json:",omitempty,omitzero"`
+	CanReceiveRankingReward bool `json:",omitempty,omitzero"`
+	PlayingRaidDB RaidDB `json:",omitempty,omitzero"`
+	ReceiveRewardIds []int64 `json:",omitempty,omitzero"`
+	ReceiveLimitedRewardIds []int64 `json:",omitempty,omitzero"`
+	ParticipateCharacterServerIds []int64 `json:",omitempty,omitzero"`
+	PlayableHighestDifficulty map[string]flatdata.Difficulty `json:",omitempty,omitzero"`
+	SweepPointByRaidUniqueId map[int64]int64 `json:",omitempty,omitzero"`
+	SeasonStartDate time.Time `json:",omitempty,omitzero"`
+	SeasonEndDate time.Time `json:",omitempty,omitzero"`
+	SettlementEndDate time.Time `json:",omitempty,omitzero"`
+	NextSeasonId int64 `json:",omitempty,omitzero"`
+	NextSeasonStartDate time.Time `json:",omitempty,omitzero"`
+	NextSeasonEndDate time.Time `json:",omitempty,omitzero"`
+	NextSettlementEndDate time.Time `json:",omitempty,omitzero"`
+	ClanAssistUseInfo ClanAssistUseInfo `json:",omitempty,omitzero"`
+	RemainFailCompensation map[int32]bool `json:",omitempty,omitzero"`
 }

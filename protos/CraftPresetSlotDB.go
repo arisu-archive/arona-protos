@@ -1,5 +1,5 @@
 package protos
 
 type CraftPresetSlotDB struct {
-	PresetNodeDBs []CraftPresetNodeDB
+	PresetNodeDBs []CraftPresetNodeDB `json:",omitempty,omitzero"`
 }

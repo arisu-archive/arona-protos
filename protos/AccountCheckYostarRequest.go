@@ -2,10 +2,10 @@ package protos
 
 type AccountCheckYostarRequest struct {
 	RequestPacket
-	Protocol         Protocol
-	UID              int64
-	YostarToken      string
-	EnterTicket      string
-	PassCookieResult bool
-	Cookie           string
+	Protocol Protocol `json:",omitempty,omitzero"`
+	UID int64 `json:",omitempty,omitzero"`
+	YostarToken string `json:",omitempty,omitzero"`
+	EnterTicket string `json:",omitempty,omitzero"`
+	PassCookieResult bool `json:",omitempty,omitzero"`
+	Cookie string `json:",omitempty,omitzero"`
 }

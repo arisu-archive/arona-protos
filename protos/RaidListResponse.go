@@ -2,8 +2,8 @@ package protos
 
 type RaidListResponse struct {
 	ResponsePacket
-	Protocol      Protocol
-	CreateRaidDBs []RaidDB
-	EnterRaidDBs  []RaidDB
-	ListRaidDBs   []RaidDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	CreateRaidDBs []RaidDB `json:",omitempty,omitzero"`
+	EnterRaidDBs []RaidDB `json:",omitempty,omitzero"`
+	ListRaidDBs []RaidDB `json:",omitempty,omitzero"`
 }

@@ -2,6 +2,6 @@ package protos
 
 type AcademyAttendScheduleRequest struct {
 	RequestPacket
-	Protocol Protocol
-	ZoneId   int64
+	Protocol Protocol `json:",omitempty,omitzero"`
+	ZoneId int64 `json:",omitempty,omitzero"`
 }

@@ -2,9 +2,9 @@ package protos
 
 type AccountPassCheckResponse struct {
 	ResponsePacket
-	Protocol     Protocol
-	EncryptedKey string
-	SignedKey    string
-	EncryptedIV  string
-	SignedIV     string
+	Protocol Protocol `json:",omitempty,omitzero"`
+	EncryptedKey string `json:",omitempty,omitzero"`
+	SignedKey string `json:",omitempty,omitzero"`
+	EncryptedIV string `json:",omitempty,omitzero"`
+	SignedIV string `json:",omitempty,omitzero"`
 }

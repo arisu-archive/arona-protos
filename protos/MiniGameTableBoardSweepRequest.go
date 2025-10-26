@@ -2,7 +2,7 @@ package protos
 
 type MiniGameTableBoardSweepRequest struct {
 	RequestPacket
-	Protocol                    Protocol
-	EventContentId              int64
-	PreserveItemEffectUniqueIds []int64
+	Protocol Protocol `json:",omitempty,omitzero"`
+	EventContentId int64 `json:",omitempty,omitzero"`
+	PreserveItemEffectUniqueIds []int64 `json:",omitempty,omitzero"`
 }

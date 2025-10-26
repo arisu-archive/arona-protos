@@ -5,11 +5,11 @@ import (
 )
 
 type ArenaTeamSettingDB struct {
-	EchelonType               flatdata.EchelonType
-	LeaderCharacterId         int64
-	TSSInteractionCharacterId int64
-	MainCharacters            []ArenaCharacterDB
-	SupportCharacters         []ArenaCharacterDB
-	TSSCharacterDB            ArenaCharacterDB
-	MapId                     int64
+	EchelonType flatdata.EchelonType `json:",omitempty,omitzero"`
+	LeaderCharacterId int64 `json:",omitempty,omitzero"`
+	TSSInteractionCharacterId int64 `json:",omitempty,omitzero"`
+	MainCharacters []ArenaCharacterDB `json:",omitempty,omitzero"`
+	SupportCharacters []ArenaCharacterDB `json:",omitempty,omitzero"`
+	TSSCharacterDB ArenaCharacterDB `json:",omitempty,omitzero"`
+	MapId int64 `json:",omitempty,omitzero"`
 }

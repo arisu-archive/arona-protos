@@ -2,5 +2,5 @@ package protos
 
 type TimeAttackDungeonLobbyRequest struct {
 	RequestPacket
-	Protocol Protocol
+	Protocol Protocol `json:",omitempty,omitzero"`
 }

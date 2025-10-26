@@ -2,8 +2,8 @@ package protos
 
 type EventContentEnterSubStageRequest struct {
 	RequestPacket
-	Protocol                    Protocol
-	EventContentId              int64
-	StageUniqueId               int64
-	LastEnterStageEchelonNumber int64
+	Protocol Protocol `json:",omitempty,omitzero"`
+	EventContentId int64 `json:",omitempty,omitzero"`
+	StageUniqueId int64 `json:",omitempty,omitzero"`
+	LastEnterStageEchelonNumber int64 `json:",omitempty,omitzero"`
 }

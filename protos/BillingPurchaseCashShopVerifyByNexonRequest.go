@@ -2,11 +2,11 @@ package protos
 
 type BillingPurchaseCashShopVerifyByNexonRequest struct {
 	RequestPacket
-	Protocol       Protocol
-	NpSN           int64
-	StampToken     string
-	ShopCashId     int64
-	VirtualPayment bool
-	CurrencyCode   string
-	CurrencyValue  int64
+	Protocol Protocol `json:",omitempty,omitzero"`
+	NpSN int64 `json:",omitempty,omitzero"`
+	StampToken string `json:",omitempty,omitzero"`
+	ShopCashId int64 `json:",omitempty,omitzero"`
+	VirtualPayment bool `json:",omitempty,omitzero"`
+	CurrencyCode string `json:",omitempty,omitzero"`
+	CurrencyValue int64 `json:",omitempty,omitzero"`
 }

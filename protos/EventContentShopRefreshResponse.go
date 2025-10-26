@@ -2,7 +2,7 @@ package protos
 
 type EventContentShopRefreshResponse struct {
 	ResponsePacket
-	Protocol       Protocol
-	ParcelResultDB ParcelResultDB
-	ShopInfoDB     ShopInfoDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	ParcelResultDB ParcelResultDB `json:",omitempty,omitzero"`
+	ShopInfoDB ShopInfoDB `json:",omitempty,omitzero"`
 }

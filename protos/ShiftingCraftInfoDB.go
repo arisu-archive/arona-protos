@@ -5,9 +5,9 @@ import (
 )
 
 type ShiftingCraftInfoDB struct {
-	SlotSequence  int64
-	CraftRecipeId int64
-	CraftAmount   int64
-	StartTime     time.Time
-	EndTime       time.Time
+	SlotSequence int64 `json:",omitempty,omitzero"`
+	CraftRecipeId int64 `json:",omitempty,omitzero"`
+	CraftAmount int64 `json:",omitempty,omitzero"`
+	StartTime time.Time `json:",omitempty,omitzero"`
+	EndTime time.Time `json:",omitempty,omitzero"`
 }

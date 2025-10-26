@@ -6,7 +6,7 @@ import (
 
 type AccountCurrencySyncResponse struct {
 	ResponsePacket
-	Protocol          Protocol
-	AccountCurrencyDB AccountCurrencyDB
-	ExpiredCurrency   map[flatdata.CurrencyTypes]int64
+	Protocol Protocol `json:",omitempty,omitzero"`
+	AccountCurrencyDB AccountCurrencyDB `json:",omitempty,omitzero"`
+	ExpiredCurrency map[flatdata.CurrencyTypes]int64 `json:",omitempty,omitzero"`
 }

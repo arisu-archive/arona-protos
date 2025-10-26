@@ -2,7 +2,7 @@ package protos
 
 type OpenConditionEventListResponse struct {
 	ResponsePacket
-	Protocol              Protocol
-	ConquestTiles         map[int64][]ConquestTileDB
-	WorldRaidLocalBossDBs map[int64][]WorldRaidLocalBossDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	ConquestTiles map[int64][]ConquestTileDB `json:",omitempty,omitzero"`
+	WorldRaidLocalBossDBs map[int64][]WorldRaidLocalBossDB `json:",omitempty,omitzero"`
 }

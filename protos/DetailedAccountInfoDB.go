@@ -1,21 +1,21 @@
 package protos
 
 type DetailedAccountInfoDB struct {
-	AccountId                      int64
-	Nickname                       string
-	Level                          int64
-	ClanName                       string
-	Comment                        string
-	FriendCount                    int64
-	FriendCode                     string
-	RepresentCharacterUniqueId     int64
-	CharacterCount                 int64
-	LastNormalCampaignClearStageId *int64
-	LastHardCampaignClearStageId   *int64
-	ArenaRanking                   *int64
-	RaidRanking                    *int64
-	RaidTier                       *int32
-	EliminateRaidRanking           *int64
-	EliminateRaidTier              *int32
-	AssistCharacterDBs             []AssistCharacterDB
+	AccountId int64 `json:",omitempty,omitzero"`
+	Nickname string `json:",omitempty,omitzero"`
+	Level int64 `json:",omitempty,omitzero"`
+	ClanName string `json:",omitempty,omitzero"`
+	Comment string `json:",omitempty,omitzero"`
+	FriendCount int64 `json:",omitempty,omitzero"`
+	FriendCode string `json:",omitempty,omitzero"`
+	RepresentCharacterUniqueId int64 `json:",omitempty,omitzero"`
+	CharacterCount int64 `json:",omitempty,omitzero"`
+	LastNormalCampaignClearStageId *int64 `json:",omitempty,omitzero"`
+	LastHardCampaignClearStageId *int64 `json:",omitempty,omitzero"`
+	ArenaRanking *int64 `json:",omitempty,omitzero"`
+	RaidRanking *int64 `json:",omitempty,omitzero"`
+	RaidTier *int32 `json:",omitempty,omitzero"`
+	EliminateRaidRanking *int64 `json:",omitempty,omitzero"`
+	EliminateRaidTier *int32 `json:",omitempty,omitzero"`
+	AssistCharacterDBs []AssistCharacterDB `json:",omitempty,omitzero"`
 }

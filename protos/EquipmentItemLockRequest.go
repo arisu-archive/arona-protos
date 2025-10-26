@@ -2,7 +2,7 @@ package protos
 
 type EquipmentItemLockRequest struct {
 	RequestPacket
-	Protocol       Protocol
-	TargetServerId int64
-	IsLocked       bool
+	Protocol Protocol `json:",omitempty,omitzero"`
+	TargetServerId int64 `json:",omitempty,omitzero"`
+	IsLocked bool `json:",omitempty,omitzero"`
 }

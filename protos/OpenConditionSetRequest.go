@@ -2,6 +2,6 @@ package protos
 
 type OpenConditionSetRequest struct {
 	RequestPacket
-	Protocol    Protocol
-	ConditionDB OpenConditionDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	ConditionDB OpenConditionDB `json:",omitempty,omitzero"`
 }

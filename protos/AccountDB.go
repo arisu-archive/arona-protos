@@ -1,32 +1,31 @@
 package protos
 
 import (
-	"time"
-
 	"github.com/arisu-archive/arona-flatbuffers/go/flatdata"
+	"time"
 )
 
 type AccountDB struct {
-	ServerId                   int64
-	Nickname                   string
-	CallName                   string
-	CallNameKatakana           string
-	CallNameKorean             string
-	DevId                      string
-	State                      flatdata.AccountState
-	Level                      int32
-	Exp                        int64
-	Comment                    string
-	LobbyMode                  int32
-	RepresentCharacterServerId int64
-	MemoryLobbyUniqueId        int64
-	LastConnectTime            time.Time
-	BirthDay                   time.Time
-	CallNameUpdateTime         time.Time
-	PublisherAccountId         int64
-	RetentionDays              *int32
-	VIPLevel                   *int32
-	CreateDate                 time.Time
-	UnReadMailCount            *int32
-	LinkRewardDate             *time.Time
+	ServerId int64 `json:",omitempty,omitzero"`
+	Nickname string `json:",omitempty,omitzero"`
+	CallName string `json:",omitempty,omitzero"`
+	CallNameKatakana string `json:",omitempty,omitzero"`
+	CallNameKorean string `json:",omitempty,omitzero"`
+	DevId string `json:",omitempty,omitzero"`
+	State flatdata.AccountState `json:",omitempty,omitzero"`
+	Level int32 `json:",omitempty,omitzero"`
+	Exp int64 `json:",omitempty,omitzero"`
+	Comment string `json:",omitempty,omitzero"`
+	LobbyMode int32 `json:",omitempty,omitzero"`
+	RepresentCharacterServerId int64 `json:",omitempty,omitzero"`
+	MemoryLobbyUniqueId int64 `json:",omitempty,omitzero"`
+	LastConnectTime time.Time `json:",omitempty,omitzero"`
+	BirthDay time.Time `json:",omitempty,omitzero"`
+	CallNameUpdateTime time.Time `json:",omitempty,omitzero"`
+	PublisherAccountId int64 `json:",omitempty,omitzero"`
+	RetentionDays *int32 `json:",omitempty,omitzero"`
+	VIPLevel *int32 `json:",omitempty,omitzero"`
+	CreateDate time.Time `json:",omitempty,omitzero"`
+	UnReadMailCount *int32 `json:",omitempty,omitzero"`
+	LinkRewardDate *time.Time `json:",omitempty,omitzero"`
 }

@@ -2,8 +2,8 @@ package protos
 
 type ScenarioMapMoveRequest struct {
 	RequestPacket
-	Protocol        Protocol
-	StageUniqueId   int64
-	EchelonEntityId int64
-	DestPosition    HexLocation
+	Protocol Protocol `json:",omitempty,omitzero"`
+	StageUniqueId int64 `json:",omitempty,omitzero"`
+	EchelonEntityId int64 `json:",omitempty,omitzero"`
+	DestPosition HexLocation `json:",omitempty,omitzero"`
 }

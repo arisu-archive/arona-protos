@@ -1,27 +1,26 @@
 package protos
 
 import (
-	"time"
-
 	"github.com/arisu-archive/arona-flatbuffers/go/flatdata"
+	"time"
 )
 
 type AttendanceBookReward struct {
-	UniqueId          int64
-	Type              flatdata.AttendanceType
-	AccountType       flatdata.AccountState
-	DisplayOrder      int64
-	AccountLevelLimit int64
-	Title             string
-	TitleImagePath    string
-	CountRule         flatdata.AttendanceCountRule
-	CountReset        flatdata.AttendanceResetType
-	BookSize          int64
-	StartDate         time.Time
-	StartableEndDate  time.Time
-	EndDate           time.Time
-	ExpiryDate        int64
-	MailType          flatdata.MailType
-	DailyRewardIcons  map[int64]string
-	DailyRewards      map[int64][]ParcelInfo
+	UniqueId int64 `json:",omitempty,omitzero"`
+	Type flatdata.AttendanceType `json:",omitempty,omitzero"`
+	AccountType flatdata.AccountState `json:",omitempty,omitzero"`
+	DisplayOrder int64 `json:",omitempty,omitzero"`
+	AccountLevelLimit int64 `json:",omitempty,omitzero"`
+	Title string `json:",omitempty,omitzero"`
+	TitleImagePath string `json:",omitempty,omitzero"`
+	CountRule flatdata.AttendanceCountRule `json:",omitempty,omitzero"`
+	CountReset flatdata.AttendanceResetType `json:",omitempty,omitzero"`
+	BookSize int64 `json:",omitempty,omitzero"`
+	StartDate time.Time `json:",omitempty,omitzero"`
+	StartableEndDate time.Time `json:",omitempty,omitzero"`
+	EndDate time.Time `json:",omitempty,omitzero"`
+	ExpiryDate int64 `json:",omitempty,omitzero"`
+	MailType flatdata.MailType `json:",omitempty,omitzero"`
+	DailyRewardIcons map[int64]string `json:",omitempty,omitzero"`
+	DailyRewards map[int64][]ParcelInfo `json:",omitempty,omitzero"`
 }

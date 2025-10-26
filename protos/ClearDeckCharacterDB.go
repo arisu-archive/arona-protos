@@ -5,12 +5,12 @@ import (
 )
 
 type ClearDeckCharacterDB struct {
-	UniqueId         int64
-	StarGrade        int32
-	Level            int32
-	SlotNumber       int32
-	HasWeapon        bool
-	SquadType        flatdata.SquadType
-	WeaponStarGrade  int32
-	CombatStyleIndex int32
+	UniqueId int64 `json:",omitempty,omitzero"`
+	StarGrade int32 `json:",omitempty,omitzero"`
+	Level int32 `json:",omitempty,omitzero"`
+	SlotNumber int32 `json:",omitempty,omitzero"`
+	HasWeapon bool `json:",omitempty,omitzero"`
+	SquadType flatdata.SquadType `json:",omitempty,omitzero"`
+	WeaponStarGrade int32 `json:",omitempty,omitzero"`
+	CombatStyleIndex int32 `json:",omitempty,omitzero"`
 }

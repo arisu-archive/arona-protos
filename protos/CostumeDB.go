@@ -6,7 +6,7 @@ import (
 
 type CostumeDB struct {
 	ParcelBase
-	Type                   flatdata.ParcelType
-	UniqueId               int64
-	BoundCharacterServerId int64
+	Type flatdata.ParcelType `json:",omitempty,omitzero"`
+	UniqueId int64 `json:",omitempty,omitzero"`
+	BoundCharacterServerId int64 `json:",omitempty,omitzero"`
 }

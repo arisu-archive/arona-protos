@@ -1,3 +1,4 @@
 package protos
 
-type TBGThemaClearRecord struct{}
+type TBGThemaClearRecord struct {
+}

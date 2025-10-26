@@ -2,7 +2,7 @@ package protos
 
 type CafeOpenResponse struct {
 	ResponsePacket
-	Protocol     Protocol
-	OpenedCafeDB CafeDB
-	FurnitureDBs []FurnitureDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	OpenedCafeDB CafeDB `json:",omitempty,omitzero"`
+	FurnitureDBs []FurnitureDB `json:",omitempty,omitzero"`
 }

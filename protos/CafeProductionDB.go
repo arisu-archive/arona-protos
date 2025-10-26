@@ -5,8 +5,8 @@ import (
 )
 
 type CafeProductionDB struct {
-	CafeDBId              int64
-	ComfortValue          int64
-	AppliedDate           time.Time
-	ProductionParcelInfos []CafeProductionDB_CafeProductionParcelInfo
+	CafeDBId int64 `json:",omitempty,omitzero"`
+	ComfortValue int64 `json:",omitempty,omitzero"`
+	AppliedDate time.Time `json:",omitempty,omitzero"`
+	ProductionParcelInfos []CafeProductionDB_CafeProductionParcelInfo `json:",omitempty,omitzero"`
 }

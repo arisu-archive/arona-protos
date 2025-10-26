@@ -1,15 +1,14 @@
 package protos
 
 import (
-	"time"
-
 	"github.com/arisu-archive/arona-flatbuffers/go/flatdata"
+	"time"
 )
 
 type WorldRaidBossGroup struct {
 	ContentsValueChangeDB
-	ContentsChangeType flatdata.ContentsChangeType
-	GroupId            int64
-	BossSpawnTime      time.Time
-	EliminateTime      time.Time
+	ContentsChangeType flatdata.ContentsChangeType `json:",omitempty,omitzero"`
+	GroupId int64 `json:",omitempty,omitzero"`
+	BossSpawnTime time.Time `json:",omitempty,omitzero"`
+	EliminateTime time.Time `json:",omitempty,omitzero"`
 }

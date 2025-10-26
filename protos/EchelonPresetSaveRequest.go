@@ -2,6 +2,6 @@ package protos
 
 type EchelonPresetSaveRequest struct {
 	RequestPacket
-	Protocol Protocol
-	PresetDB EchelonPresetDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	PresetDB EchelonPresetDB `json:",omitempty,omitzero"`
 }

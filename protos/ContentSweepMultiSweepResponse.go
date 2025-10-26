@@ -2,10 +2,10 @@ package protos
 
 type ContentSweepMultiSweepResponse struct {
 	ResponsePacket
-	Protocol                 Protocol
-	ClearParcels             [][]ParcelInfo
-	BonusParcels             []ParcelInfo
-	EventContentBonusParcels [][]ParcelInfo
-	ParcelResult             ParcelResultDB
-	CampaignStageHistoryDBs  []CampaignStageHistoryDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	ClearParcels [][]ParcelInfo `json:",omitempty,omitzero"`
+	BonusParcels []ParcelInfo `json:",omitempty,omitzero"`
+	EventContentBonusParcels [][]ParcelInfo `json:",omitempty,omitzero"`
+	ParcelResult ParcelResultDB `json:",omitempty,omitzero"`
+	CampaignStageHistoryDBs []CampaignStageHistoryDB `json:",omitempty,omitzero"`
 }

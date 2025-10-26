@@ -6,7 +6,7 @@ import (
 
 type StickerDB struct {
 	ParcelBase
-	Type            flatdata.ParcelType
-	StickerUniqueId int64
-	ParcelInfos     []ParcelInfo
+	Type flatdata.ParcelType `json:",omitempty,omitzero"`
+	StickerUniqueId int64 `json:",omitempty,omitzero"`
+	ParcelInfos []ParcelInfo `json:",omitempty,omitzero"`
 }

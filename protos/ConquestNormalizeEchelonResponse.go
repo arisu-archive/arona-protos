@@ -2,6 +2,6 @@ package protos
 
 type ConquestNormalizeEchelonResponse struct {
 	ResponsePacket
-	Protocol          Protocol
-	ConquestEchelonDB ConquestEchelonDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	ConquestEchelonDB ConquestEchelonDB `json:",omitempty,omitzero"`
 }

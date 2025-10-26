@@ -2,7 +2,7 @@ package protos
 
 type RaidDetailRequest struct {
 	RequestPacket
-	Protocol     Protocol
-	RaidServerId int64
-	RaidUniqueId int64
+	Protocol Protocol `json:",omitempty,omitzero"`
+	RaidServerId int64 `json:",omitempty,omitzero"`
+	RaidUniqueId int64 `json:",omitempty,omitzero"`
 }

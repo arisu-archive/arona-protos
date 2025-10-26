@@ -2,6 +2,6 @@ package protos
 
 type RaidShareResponse struct {
 	ResponsePacket
-	Protocol Protocol
-	RaidDB   RaidDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	RaidDB RaidDB `json:",omitempty,omitzero"`
 }

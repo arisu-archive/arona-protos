@@ -6,7 +6,7 @@ import (
 
 type ContentSaveDiscardRequest struct {
 	RequestPacket
-	Protocol      Protocol
-	ContentType   flatdata.ContentType
-	StageUniqueId int64
+	Protocol Protocol `json:",omitempty,omitzero"`
+	ContentType flatdata.ContentType `json:",omitempty,omitzero"`
+	StageUniqueId int64 `json:",omitempty,omitzero"`
 }

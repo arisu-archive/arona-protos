@@ -6,8 +6,8 @@ import (
 
 type ConquestReceiveRewardsRequest struct {
 	RequestPacket
-	Protocol       Protocol
-	EventContentId int64
-	Difficulty     flatdata.StageDifficulty
-	Step           int32
+	Protocol Protocol `json:",omitempty,omitzero"`
+	EventContentId int64 `json:",omitempty,omitzero"`
+	Difficulty flatdata.StageDifficulty `json:",omitempty,omitzero"`
+	Step int32 `json:",omitempty,omitzero"`
 }

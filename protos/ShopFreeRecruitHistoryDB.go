@@ -5,7 +5,7 @@ import (
 )
 
 type ShopFreeRecruitHistoryDB struct {
-	UniqueId       int64
-	RecruitCount   int32
-	LastUpdateDate time.Time
+	UniqueId int64 `json:",omitempty,omitzero"`
+	RecruitCount int32 `json:",omitempty,omitzero"`
+	LastUpdateDate time.Time `json:",omitempty,omitzero"`
 }

@@ -5,17 +5,17 @@ import (
 )
 
 type OpenConditionDB struct {
-	ContentType                flatdata.OpenConditionContent
-	HideWhenLocked             bool
-	AccountLevel               int64
-	ScenarioModeId             int64
-	CampaignStageUniqueId      int64
-	MultipleConditionCheckType flatdata.MultipleConditionCheckType
-	OpenDayOfWeek              flatdata.WeekDay
-	OpenHour                   int64
-	CloseDayOfWeek             flatdata.WeekDay
-	CloseHour                  int64
-	CafeIdForCafeRank          int64
-	CafeRank                   int64
-	OpenedCafeId               int64
+	ContentType flatdata.OpenConditionContent `json:",omitempty,omitzero"`
+	HideWhenLocked bool `json:",omitempty,omitzero"`
+	AccountLevel int64 `json:",omitempty,omitzero"`
+	ScenarioModeId int64 `json:",omitempty,omitzero"`
+	CampaignStageUniqueId int64 `json:",omitempty,omitzero"`
+	MultipleConditionCheckType flatdata.MultipleConditionCheckType `json:",omitempty,omitzero"`
+	OpenDayOfWeek flatdata.WeekDay `json:",omitempty,omitzero"`
+	OpenHour int64 `json:",omitempty,omitzero"`
+	CloseDayOfWeek flatdata.WeekDay `json:",omitempty,omitzero"`
+	CloseHour int64 `json:",omitempty,omitzero"`
+	CafeIdForCafeRank int64 `json:",omitempty,omitzero"`
+	CafeRank int64 `json:",omitempty,omitzero"`
+	OpenedCafeId int64 `json:",omitempty,omitzero"`
 }

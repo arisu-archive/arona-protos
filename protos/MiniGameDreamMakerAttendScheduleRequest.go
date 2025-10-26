@@ -2,7 +2,7 @@ package protos
 
 type MiniGameDreamMakerAttendScheduleRequest struct {
 	RequestPacket
-	Protocol        Protocol
-	EventContentId  int64
-	ScheduleGroupId int64
+	Protocol Protocol `json:",omitempty,omitzero"`
+	EventContentId int64 `json:",omitempty,omitzero"`
+	ScheduleGroupId int64 `json:",omitempty,omitzero"`
 }

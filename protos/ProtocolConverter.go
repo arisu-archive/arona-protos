@@ -1,3 +1,4 @@
 package protos
 
-type ProtocolConverter struct{}
+type ProtocolConverter struct {
+}

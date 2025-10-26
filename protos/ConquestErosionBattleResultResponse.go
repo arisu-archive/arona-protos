@@ -2,9 +2,9 @@ package protos
 
 type ConquestErosionBattleResultResponse struct {
 	ResponsePacket
-	Protocol                     Protocol
-	ParcelResultDB               ParcelResultDB
-	ConquestEventObjectDBWrapper []ConquestEventObjectDB
-	ConquestInfoDB               ConquestInfoDB
-	DisplayInfos                 []ConquestDisplayInfo
+	Protocol Protocol `json:",omitempty,omitzero"`
+	ParcelResultDB ParcelResultDB `json:",omitempty,omitzero"`
+	ConquestEventObjectDBWrapper []ConquestEventObjectDB `json:",omitempty,omitzero"`
+	ConquestInfoDB ConquestInfoDB `json:",omitempty,omitzero"`
+	DisplayInfos []ConquestDisplayInfo `json:",omitempty,omitzero"`
 }

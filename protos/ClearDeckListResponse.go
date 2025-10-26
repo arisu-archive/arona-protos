@@ -2,6 +2,6 @@ package protos
 
 type ClearDeckListResponse struct {
 	ResponsePacket
-	Protocol     Protocol
-	ClearDeckDBs []ClearDeckDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	ClearDeckDBs []ClearDeckDB `json:",omitempty,omitzero"`
 }

@@ -1,7 +1,7 @@
 package protos
 
 type AccountRestrictionsDB struct {
-	NicknameRestriction bool
-	CommentRestriction  bool
-	CallnameRestriction bool
+	NicknameRestriction bool `json:",omitempty,omitzero"`
+	CommentRestriction bool `json:",omitempty,omitzero"`
+	CallnameRestriction bool `json:",omitempty,omitzero"`
 }

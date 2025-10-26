@@ -1,6 +1,6 @@
 package protos
 
 type ShopEligmaHistoryDB struct {
-	CharacterUniqueId int64
-	PurchaseCount     int64
+	CharacterUniqueId int64 `json:",omitempty,omitzero"`
+	PurchaseCount int64 `json:",omitempty,omitzero"`
 }

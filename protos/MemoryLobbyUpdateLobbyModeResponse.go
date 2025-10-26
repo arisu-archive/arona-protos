@@ -2,5 +2,5 @@ package protos
 
 type MemoryLobbyUpdateLobbyModeResponse struct {
 	ResponsePacket
-	Protocol Protocol
+	Protocol Protocol `json:",omitempty,omitzero"`
 }

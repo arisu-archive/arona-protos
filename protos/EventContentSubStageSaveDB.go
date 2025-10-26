@@ -6,5 +6,5 @@ import (
 
 type EventContentSubStageSaveDB struct {
 	CampaignSubStageSaveDB
-	ContentType flatdata.ContentType
+	ContentType flatdata.ContentType `json:",omitempty,omitzero"`
 }

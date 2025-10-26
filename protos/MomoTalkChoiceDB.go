@@ -5,8 +5,8 @@ import (
 )
 
 type MomoTalkChoiceDB struct {
-	CharacterDBId   int64
-	MessageGroupId  int64
-	ChosenMessageId int64
-	ChosenDate      time.Time
+	CharacterDBId int64 `json:",omitempty,omitzero"`
+	MessageGroupId int64 `json:",omitempty,omitzero"`
+	ChosenMessageId int64 `json:",omitempty,omitzero"`
+	ChosenDate time.Time `json:",omitempty,omitzero"`
 }

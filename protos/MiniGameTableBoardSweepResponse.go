@@ -2,7 +2,7 @@ package protos
 
 type MiniGameTableBoardSweepResponse struct {
 	ResponsePacket
-	Protocol       Protocol
-	SaveDB         TBGBoardSaveDB
-	ParcelResultDB ParcelResultDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	SaveDB TBGBoardSaveDB `json:",omitempty,omitzero"`
+	ParcelResultDB ParcelResultDB `json:",omitempty,omitzero"`
 }

@@ -2,6 +2,6 @@ package protos
 
 type EquipmentItemSellResponse struct {
 	ResponsePacket
-	Protocol          Protocol
-	AccountCurrencyDB AccountCurrencyDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	AccountCurrencyDB AccountCurrencyDB `json:",omitempty,omitzero"`
 }

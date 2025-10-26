@@ -1,7 +1,7 @@
 package protos
 
 type GearSetting struct {
-	UniqueId int64
-	Tier     int32
-	Level    int32
+	UniqueId int64 `json:",omitempty,omitzero"`
+	Tier int32 `json:",omitempty,omitzero"`
+	Level int32 `json:",omitempty,omitzero"`
 }

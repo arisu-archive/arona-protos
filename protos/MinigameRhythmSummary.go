@@ -1,3 +1,4 @@
 package protos
 
-type MinigameRhythmSummary struct{}
+type MinigameRhythmSummary struct {
+}

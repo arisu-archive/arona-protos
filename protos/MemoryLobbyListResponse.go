@@ -2,6 +2,6 @@ package protos
 
 type MemoryLobbyListResponse struct {
 	ResponsePacket
-	Protocol       Protocol
-	MemoryLobbyDBs []MemoryLobbyDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	MemoryLobbyDBs []MemoryLobbyDB `json:",omitempty,omitzero"`
 }

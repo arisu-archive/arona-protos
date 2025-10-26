@@ -2,7 +2,7 @@ package protos
 
 type CafeSummonCharacterResponse struct {
 	ResponsePacket
-	Protocol Protocol
-	CafeDB   CafeDB
-	CafeDBs  []CafeDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	CafeDB CafeDB `json:",omitempty,omitzero"`
+	CafeDBs []CafeDB `json:",omitempty,omitzero"`
 }

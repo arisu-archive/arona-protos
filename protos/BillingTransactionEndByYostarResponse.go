@@ -2,12 +2,12 @@ package protos
 
 type BillingTransactionEndByYostarResponse struct {
 	ResponsePacket
-	Protocol              Protocol
-	ParcelResult          ParcelResultDB
-	MailDB                MailDB
-	CountList             []PurchaseCountDB
-	PurchaseCount         int32
-	MonthlyProductList    []MonthlyProductPurchaseDB
-	BattlePassInfo        BattlePassInfoDB
-	BattlePassProductList []BattlePassProductPurchaseDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	ParcelResult ParcelResultDB `json:",omitempty,omitzero"`
+	MailDB MailDB `json:",omitempty,omitzero"`
+	CountList []PurchaseCountDB `json:",omitempty,omitzero"`
+	PurchaseCount int32 `json:",omitempty,omitzero"`
+	MonthlyProductList []MonthlyProductPurchaseDB `json:",omitempty,omitzero"`
+	BattlePassInfo BattlePassInfoDB `json:",omitempty,omitzero"`
+	BattlePassProductList []BattlePassProductPurchaseDB `json:",omitempty,omitzero"`
 }

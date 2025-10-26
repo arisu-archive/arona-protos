@@ -5,6 +5,6 @@ import (
 )
 
 type ScenarioHistoryDB struct {
-	ScenarioUniqueId int64
-	ClearDateTime    time.Time
+	ScenarioUniqueId int64 `json:",omitempty,omitzero"`
+	ClearDateTime time.Time `json:",omitempty,omitzero"`
 }

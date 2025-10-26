@@ -6,8 +6,8 @@ import (
 
 type ClanAllAssistListRequest struct {
 	RequestPacket
-	Protocol             Protocol
-	EchelonType          flatdata.EchelonType
-	PendingAssistUseInfo []ClanAssistUseInfo
-	IsPractice           bool
+	Protocol Protocol `json:",omitempty,omitzero"`
+	EchelonType flatdata.EchelonType `json:",omitempty,omitzero"`
+	PendingAssistUseInfo []ClanAssistUseInfo `json:",omitempty,omitzero"`
+	IsPractice bool `json:",omitempty,omitzero"`
 }

@@ -2,6 +2,6 @@ package protos
 
 type SkipHistorySaveRequest struct {
 	RequestPacket
-	Protocol      Protocol
-	SkipHistoryDB SkipHistoryDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	SkipHistoryDB SkipHistoryDB `json:",omitempty,omitzero"`
 }

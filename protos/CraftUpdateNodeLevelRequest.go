@@ -6,9 +6,9 @@ import (
 
 type CraftUpdateNodeLevelRequest struct {
 	RequestPacket
-	Protocol          Protocol
-	ConsumeRequestDB  ConsumeRequestDB
-	ConsumeGoldAmount int64
-	SlotId            int64
-	CraftNodeType     flatdata.CraftNodeTier
+	Protocol Protocol `json:",omitempty,omitzero"`
+	ConsumeRequestDB ConsumeRequestDB `json:",omitempty,omitzero"`
+	ConsumeGoldAmount int64 `json:",omitempty,omitzero"`
+	SlotId int64 `json:",omitempty,omitzero"`
+	CraftNodeType flatdata.CraftNodeTier `json:",omitempty,omitzero"`
 }

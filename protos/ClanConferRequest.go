@@ -6,7 +6,7 @@ import (
 
 type ClanConferRequest struct {
 	RequestPacket
-	Protocol        Protocol
-	MemberAccountId int64
-	ConferingGrade  flatdata.ClanSocialGrade
+	Protocol Protocol `json:",omitempty,omitzero"`
+	MemberAccountId int64 `json:",omitempty,omitzero"`
+	ConferingGrade flatdata.ClanSocialGrade `json:",omitempty,omitzero"`
 }

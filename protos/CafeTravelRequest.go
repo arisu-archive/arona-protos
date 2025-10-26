@@ -2,7 +2,7 @@ package protos
 
 type CafeTravelRequest struct {
 	RequestPacket
-	Protocol                 Protocol
-	TargetAccountId          *int64
-	CurrentVisitingAccountId *int64
+	Protocol Protocol `json:",omitempty,omitzero"`
+	TargetAccountId *int64 `json:",omitempty,omitzero"`
+	CurrentVisitingAccountId *int64 `json:",omitempty,omitzero"`
 }

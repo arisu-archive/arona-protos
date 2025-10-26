@@ -2,7 +2,7 @@ package protos
 
 type MiniGameDefenseBattleResultResponse struct {
 	ResponsePacket
-	Protocol       Protocol
-	ParcelResultDB ParcelResultDB
-	StageHistoryDB MiniGameDefenseStageHistoryDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	ParcelResultDB ParcelResultDB `json:",omitempty,omitzero"`
+	StageHistoryDB MiniGameDefenseStageHistoryDB `json:",omitempty,omitzero"`
 }

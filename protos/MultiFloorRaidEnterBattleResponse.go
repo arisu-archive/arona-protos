@@ -2,6 +2,6 @@ package protos
 
 type MultiFloorRaidEnterBattleResponse struct {
 	ResponsePacket
-	Protocol           Protocol
-	AssistCharacterDBs []AssistCharacterDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	AssistCharacterDBs []AssistCharacterDB `json:",omitempty,omitzero"`
 }

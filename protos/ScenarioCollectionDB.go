@@ -5,7 +5,7 @@ import (
 )
 
 type ScenarioCollectionDB struct {
-	GroupId     int64
-	UniqueId    int64
-	ReceiveDate time.Time
+	GroupId int64 `json:",omitempty,omitzero"`
+	UniqueId int64 `json:",omitempty,omitzero"`
+	ReceiveDate time.Time `json:",omitempty,omitzero"`
 }

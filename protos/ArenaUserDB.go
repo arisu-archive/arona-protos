@@ -1,14 +1,14 @@
 package protos
 
 type ArenaUserDB struct {
-	AccountServerId             int64
-	RepresentCharacterUniqueId  int64
-	RepresentCharacterCostumeId int64
-	NickName                    string
-	Rank                        int64
-	Level                       int64
-	Exp                         int64
-	TeamSettingDB               ArenaTeamSettingDB
-	AccountAttachmentDB         AccountAttachmentDB
-	UserName                    string
+	AccountServerId int64 `json:",omitempty,omitzero"`
+	RepresentCharacterUniqueId int64 `json:",omitempty,omitzero"`
+	RepresentCharacterCostumeId int64 `json:",omitempty,omitzero"`
+	NickName string `json:",omitempty,omitzero"`
+	Rank int64 `json:",omitempty,omitzero"`
+	Level int64 `json:",omitempty,omitzero"`
+	Exp int64 `json:",omitempty,omitzero"`
+	TeamSettingDB ArenaTeamSettingDB `json:",omitempty,omitzero"`
+	AccountAttachmentDB AccountAttachmentDB `json:",omitempty,omitzero"`
+	UserName string `json:",omitempty,omitzero"`
 }

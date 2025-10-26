@@ -2,7 +2,7 @@ package protos
 
 type CharacterBatchSkillLevelUpdateResponse struct {
 	ResponsePacket
-	Protocol       Protocol
-	CharacterDB    CharacterDB
-	ParcelResultDB ParcelResultDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	CharacterDB CharacterDB `json:",omitempty,omitzero"`
+	ParcelResultDB ParcelResultDB `json:",omitempty,omitzero"`
 }

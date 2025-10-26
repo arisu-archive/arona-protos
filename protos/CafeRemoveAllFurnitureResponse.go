@@ -2,7 +2,7 @@ package protos
 
 type CafeRemoveAllFurnitureResponse struct {
 	ResponsePacket
-	Protocol     Protocol
-	CafeDB       CafeDB
-	FurnitureDBs []FurnitureDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	CafeDB CafeDB `json:",omitempty,omitzero"`
+	FurnitureDBs []FurnitureDB `json:",omitempty,omitzero"`
 }

@@ -2,8 +2,8 @@ package protos
 
 type MiniGameCCGBuyPerkResponse struct {
 	ResponsePacket
-	Protocol                  Protocol
-	Perks                     []int64
-	ParcelResultDB            ParcelResultDB
-	EventContentCollectionDBs []EventContentCollectionDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	Perks []int64 `json:",omitempty,omitzero"`
+	ParcelResultDB ParcelResultDB `json:",omitempty,omitzero"`
+	EventContentCollectionDBs []EventContentCollectionDB `json:",omitempty,omitzero"`
 }

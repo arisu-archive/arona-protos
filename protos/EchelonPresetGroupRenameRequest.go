@@ -6,8 +6,8 @@ import (
 
 type EchelonPresetGroupRenameRequest struct {
 	RequestPacket
-	Protocol         Protocol
-	PresetGroupIndex int32
-	ExtensionType    flatdata.EchelonExtensionType
-	PresetGroupLabel string
+	Protocol Protocol `json:",omitempty,omitzero"`
+	PresetGroupIndex int32 `json:",omitempty,omitzero"`
+	ExtensionType flatdata.EchelonExtensionType `json:",omitempty,omitzero"`
+	PresetGroupLabel string `json:",omitempty,omitzero"`
 }

@@ -2,6 +2,6 @@ package protos
 
 type ToastListResponse struct {
 	ResponsePacket
-	Protocol Protocol
-	ToastDBs []ToastDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	ToastDBs []ToastDB `json:",omitempty,omitzero"`
 }

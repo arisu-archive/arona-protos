@@ -2,8 +2,8 @@ package protos
 
 type CafeRankUpResponse struct {
 	ResponsePacket
-	Protocol        Protocol
-	CafeDB          CafeDB
-	ParcelResultDB  ParcelResultDB
-	ConsumeResultDB ConsumeResultDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	CafeDB CafeDB `json:",omitempty,omitzero"`
+	ParcelResultDB ParcelResultDB `json:",omitempty,omitzero"`
+	ConsumeResultDB ConsumeResultDB `json:",omitempty,omitzero"`
 }

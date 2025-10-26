@@ -2,6 +2,6 @@ package protos
 
 type WorldRaidBossListResponse struct {
 	ResponsePacket
-	Protocol        Protocol
-	BossListInfoDBs []WorldRaidBossListInfoDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	BossListInfoDBs []WorldRaidBossListInfoDB `json:",omitempty,omitzero"`
 }

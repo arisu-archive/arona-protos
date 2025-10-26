@@ -2,7 +2,7 @@ package protos
 
 type ScenarioClearRequest struct {
 	RequestPacket
-	Protocol      Protocol
-	ScenarioId    int64
-	BattleSummary BattleSummary
+	Protocol Protocol `json:",omitempty,omitzero"`
+	ScenarioId int64 `json:",omitempty,omitzero"`
+	BattleSummary BattleSummary `json:",omitempty,omitzero"`
 }

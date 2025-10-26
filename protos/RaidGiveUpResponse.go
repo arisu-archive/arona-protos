@@ -2,8 +2,8 @@ package protos
 
 type RaidGiveUpResponse struct {
 	ResponsePacket
-	Protocol       Protocol
-	Tier           int32
-	RaidGiveUpDB   RaidGiveUpDB
-	ParcelResultDB ParcelResultDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	Tier int32 `json:",omitempty,omitzero"`
+	RaidGiveUpDB RaidGiveUpDB `json:",omitempty,omitzero"`
+	ParcelResultDB ParcelResultDB `json:",omitempty,omitzero"`
 }

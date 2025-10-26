@@ -2,6 +2,6 @@ package protos
 
 type EchelonPresetListResponse struct {
 	ResponsePacket
-	Protocol       Protocol
-	PresetGroupDBs []EchelonPresetGroupDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	PresetGroupDBs []EchelonPresetGroupDB `json:",omitempty,omitzero"`
 }

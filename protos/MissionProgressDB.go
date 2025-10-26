@@ -5,8 +5,8 @@ import (
 )
 
 type MissionProgressDB struct {
-	MissionUniqueId    int64
-	Complete           bool
-	StartTime          time.Time
-	ProgressParameters map[int64]int64
+	MissionUniqueId int64 `json:",omitempty,omitzero"`
+	Complete bool `json:",omitempty,omitzero"`
+	StartTime time.Time `json:",omitempty,omitzero"`
+	ProgressParameters map[int64]int64 `json:",omitempty,omitzero"`
 }

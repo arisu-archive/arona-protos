@@ -2,9 +2,9 @@ package protos
 
 type MiniGameCCGReplaceCharacterRequest struct {
 	RequestPacket
-	Protocol       Protocol
-	EventContentId int64
-	SlotIndex      int32
-	CharacterId    int64
-	IsStriker      bool
+	Protocol Protocol `json:",omitempty,omitzero"`
+	EventContentId int64 `json:",omitempty,omitzero"`
+	SlotIndex int32 `json:",omitempty,omitzero"`
+	CharacterId int64 `json:",omitempty,omitzero"`
+	IsStriker bool `json:",omitempty,omitzero"`
 }

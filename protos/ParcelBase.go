@@ -5,5 +5,5 @@ import (
 )
 
 type ParcelBase struct {
-	Type flatdata.ParcelType
+	Type flatdata.ParcelType `json:",omitempty,omitzero"`
 }

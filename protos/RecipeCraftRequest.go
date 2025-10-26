@@ -2,7 +2,7 @@ package protos
 
 type RecipeCraftRequest struct {
 	RequestPacket
-	Protocol                 Protocol
-	RecipeCraftUniqueId      int64
-	RecipeIngredientUniqueId int64
+	Protocol Protocol `json:",omitempty,omitzero"`
+	RecipeCraftUniqueId int64 `json:",omitempty,omitzero"`
+	RecipeIngredientUniqueId int64 `json:",omitempty,omitzero"`
 }

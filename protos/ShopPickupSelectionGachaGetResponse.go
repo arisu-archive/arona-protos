@@ -2,6 +2,6 @@ package protos
 
 type ShopPickupSelectionGachaGetResponse struct {
 	ResponsePacket
-	Protocol                 Protocol
-	PickupCharacterSelection map[int64]int64
+	Protocol Protocol `json:",omitempty,omitzero"`
+	PickupCharacterSelection map[int64]int64 `json:",omitempty,omitzero"`
 }

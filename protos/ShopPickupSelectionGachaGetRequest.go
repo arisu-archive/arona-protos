@@ -2,6 +2,6 @@ package protos
 
 type ShopPickupSelectionGachaGetRequest struct {
 	RequestPacket
-	Protocol      Protocol
-	ShopRecruitId int64
+	Protocol Protocol `json:",omitempty,omitzero"`
+	ShopRecruitId int64 `json:",omitempty,omitzero"`
 }

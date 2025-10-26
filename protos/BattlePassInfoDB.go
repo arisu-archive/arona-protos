@@ -5,12 +5,12 @@ import (
 )
 
 type BattlePassInfoDB struct {
-	BattlePassId                      int64
-	PassLevel                         int32
-	PassExp                           int64
-	PurchaseGroupId                   int64
-	ReceiveRewardLevel                int32
-	ReceivePurchaseRewardLevel        int32
-	WeeklyPassExp                     int64
-	LastWeeklyPassExpLimitRefreshDate time.Time
+	BattlePassId int64 `json:",omitempty,omitzero"`
+	PassLevel int32 `json:",omitempty,omitzero"`
+	PassExp int64 `json:",omitempty,omitzero"`
+	PurchaseGroupId int64 `json:",omitempty,omitzero"`
+	ReceiveRewardLevel int32 `json:",omitempty,omitzero"`
+	ReceivePurchaseRewardLevel int32 `json:",omitempty,omitzero"`
+	WeeklyPassExp int64 `json:",omitempty,omitzero"`
+	LastWeeklyPassExpLimitRefreshDate time.Time `json:",omitempty,omitzero"`
 }

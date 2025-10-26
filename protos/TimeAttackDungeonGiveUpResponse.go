@@ -2,9 +2,9 @@ package protos
 
 type TimeAttackDungeonGiveUpResponse struct {
 	ResponsePacket
-	Protocol                Protocol
-	RoomDB                  TimeAttackDungeonRoomDB
-	ParcelResultDB          ParcelResultDB
-	AchieveSeasonBestRecord bool
-	SeasonBestRecord        int64
+	Protocol Protocol `json:",omitempty,omitzero"`
+	RoomDB TimeAttackDungeonRoomDB `json:",omitempty,omitzero"`
+	ParcelResultDB ParcelResultDB `json:",omitempty,omitzero"`
+	AchieveSeasonBestRecord bool `json:",omitempty,omitzero"`
+	SeasonBestRecord int64 `json:",omitempty,omitzero"`
 }

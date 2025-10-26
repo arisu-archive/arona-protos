@@ -5,8 +5,8 @@ import (
 )
 
 type ProtocolLockDB struct {
-	ProtocolId int32
-	BeginDate  time.Time
-	EndDate    time.Time
-	CreateDate time.Time
+	ProtocolId int32 `json:",omitempty,omitzero"`
+	BeginDate time.Time `json:",omitempty,omitzero"`
+	EndDate time.Time `json:",omitempty,omitzero"`
+	CreateDate time.Time `json:",omitempty,omitzero"`
 }

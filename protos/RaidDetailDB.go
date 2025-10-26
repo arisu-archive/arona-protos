@@ -5,7 +5,7 @@ import (
 )
 
 type RaidDetailDB struct {
-	RaidUniqueId int64
-	EndDate      time.Time
-	DamageTable  []RaidPlayerInfoDB
+	RaidUniqueId int64 `json:",omitempty,omitzero"`
+	EndDate time.Time `json:",omitempty,omitzero"`
+	DamageTable []RaidPlayerInfoDB `json:",omitempty,omitzero"`
 }

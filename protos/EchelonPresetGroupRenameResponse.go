@@ -2,6 +2,6 @@ package protos
 
 type EchelonPresetGroupRenameResponse struct {
 	ResponsePacket
-	Protocol      Protocol
-	PresetGroupDB EchelonPresetGroupDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	PresetGroupDB EchelonPresetGroupDB `json:",omitempty,omitzero"`
 }

@@ -1,8 +1,8 @@
 package protos
 
 type EventContentBoxGachaDB struct {
-	EventContentId int64
-	Seed           int64
-	Round          int64
-	PurchaseCount  int32
+	EventContentId int64 `json:",omitempty,omitzero"`
+	Seed int64 `json:",omitempty,omitzero"`
+	Round int64 `json:",omitempty,omitzero"`
+	PurchaseCount int32 `json:",omitempty,omitzero"`
 }

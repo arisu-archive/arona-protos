@@ -2,9 +2,9 @@ package protos
 
 type ContentSweepSetMultiSweepPresetRequest struct {
 	RequestPacket
-	Protocol   Protocol
-	PresetId   int64
-	PresetName string
-	StageIds   []int64
-	ParcelIds  []ParcelKeyPair
+	Protocol Protocol `json:",omitempty,omitzero"`
+	PresetId int64 `json:",omitempty,omitzero"`
+	PresetName string `json:",omitempty,omitzero"`
+	StageIds []int64 `json:",omitempty,omitzero"`
+	ParcelIds []ParcelKeyPair `json:",omitempty,omitzero"`
 }

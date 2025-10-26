@@ -2,6 +2,6 @@ package protos
 
 type MiniGameCCGRerollRewardResponse struct {
 	ResponsePacket
-	Protocol Protocol
-	StageDB  MiniGameCCGStagePlayDB
+	Protocol Protocol `json:",omitempty,omitzero"`
+	StageDB MiniGameCCGStagePlayDB `json:",omitempty,omitzero"`
 }

@@ -6,5 +6,5 @@ import (
 
 type SingleRaidLobbyInfoDB struct {
 	RaidLobbyInfoDB
-	ClearDifficulty []flatdata.Difficulty
+	ClearDifficulty []flatdata.Difficulty `json:",omitempty,omitzero"`
 }
