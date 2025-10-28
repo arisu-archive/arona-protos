@@ -1,6 +1,7 @@
 package protos
 
 type MiniGameCCGSaveDB struct {
+	CardDBIdProvider int32 `json:",omitempty,omitzero"`
 	EventContentId int64 `json:",omitempty,omitzero"`
 	CCGId int64 `json:",omitempty,omitzero"`
 	GameOver bool `json:",omitempty,omitzero"`
