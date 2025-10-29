@@ -2,7 +2,6 @@ package protos
 
 type AccountCheckNexonResponse struct {
 	ResponsePacket
-	Protocol Protocol `json:",omitempty,omitzero"`
 	ResultState int32 `json:",omitempty,omitzero"`
 	ResultMessage string `json:",omitempty,omitzero"`
 	Birth string `json:",omitempty,omitzero"`

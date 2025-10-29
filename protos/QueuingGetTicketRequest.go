@@ -2,7 +2,6 @@ package protos
 
 type QueuingGetTicketRequest struct {
 	RequestPacket
-	Protocol Protocol `json:",omitempty,omitzero"`
 	NpSN int64 `json:",omitempty,omitzero"`
 	NpToken string `json:",omitempty,omitzero"`
 	Npacode string `json:",omitempty,omitzero"`

@@ -2,7 +2,6 @@ package protos
 
 type BillingPurchaseListByNexonResponse struct {
 	ResponsePacket
-	Protocol Protocol `json:",omitempty,omitzero"`
 	CountList []PurchaseCountDB `json:",omitempty,omitzero"`
 	OrderList []PurchaseOrderDB `json:",omitempty,omitzero"`
 	MonthlyProductList []MonthlyProductPurchaseDB `json:",omitempty,omitzero"`

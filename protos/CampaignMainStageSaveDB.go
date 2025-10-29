@@ -1,12 +1,7 @@
 package protos
 
-import (
-	"github.com/arisu-archive/arona-flatbuffers/go/flatdata"
-)
-
 type CampaignMainStageSaveDB struct {
 	ContentSaveDB
-	ContentType flatdata.ContentType `json:",omitempty,omitzero"`
 	CampaignState CampaignState `json:",omitempty,omitzero"`
 	CurrentTurn int32 `json:",omitempty,omitzero"`
 	EnemyClearCount int32 `json:",omitempty,omitzero"`
