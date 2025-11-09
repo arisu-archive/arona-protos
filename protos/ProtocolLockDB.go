@@ -1,12 +1,8 @@
 package protos
 
-import (
-	"time"
-)
-
 type ProtocolLockDB struct {
-	ProtocolId int32 `json:",omitempty,omitzero"`
-	BeginDate time.Time `json:",omitempty,omitzero"`
-	EndDate time.Time `json:",omitempty,omitzero"`
-	CreateDate time.Time `json:",omitempty,omitzero"`
+	ProtocolId int32  `json:",omitempty,omitzero"`
+	BeginDate  MxTime `json:",omitempty,omitzero"`
+	EndDate    MxTime `json:",omitempty,omitzero"`
+	CreateDate MxTime `json:",omitempty,omitzero"`
 }
