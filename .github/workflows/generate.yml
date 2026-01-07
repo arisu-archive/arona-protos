@@ -1,5 +1,7 @@
 name: Generate protocols from Decompiled Code
 on:
+  schedule:
+    - cron: "0 */2 * * 2"
   repository_dispatch:
     types: [generate-protos]
   workflow_dispatch:
