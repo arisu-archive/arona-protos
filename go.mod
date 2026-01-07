@@ -1,8 +1,8 @@
 module github.com/arisu-archive/arona-protos
 
-go 1.24.3
+go 1.25.0
 
-toolchain go1.25.3
+toolchain go1.25.5
 
 require github.com/arisu-archive/arona-flatbuffers v0.3.1
 
