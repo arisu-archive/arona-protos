@@ -10,5 +10,6 @@ type ArenaUserDB struct {
 	Exp                         int64               `json:",omitempty,omitzero"`
 	TeamSettingDB               ArenaTeamSettingDB  `json:",omitempty,omitzero"`
 	AccountAttachmentDB         AccountAttachmentDB `json:",omitempty,omitzero"`
+	IsAnonymous                 bool                `json:",omitempty,omitzero"`
 	UserName                    string              `json:",omitempty,omitzero"`
 }
