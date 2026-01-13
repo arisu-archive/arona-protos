@@ -31,5 +31,7 @@ type CurrencyValue struct {
 	EliminateTicketB          int64            `json:",omitempty,omitzero"`
 	EliminateTicketC          int64            `json:",omitempty,omitzero"`
 	EliminateTicketD          int64            `json:",omitempty,omitzero"`
+	CafeSummonTicket1         int64            `json:",omitempty,omitzero"`
+	CafeSummonTicket2         int64            `json:",omitempty,omitzero"`
 	IsEmpty                   bool             `json:",omitempty,omitzero"`
 }

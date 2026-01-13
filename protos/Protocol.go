@@ -196,6 +196,7 @@ const (
 	Protocol_Cafe_ApplyTemplate                        Protocol = 20017
 	Protocol_Cafe_Open                                 Protocol = 20018
 	Protocol_Cafe_Travel                               Protocol = 20019
+	Protocol_Cafe_SummonCharacterTicketUse             Protocol = 20020
 	Protocol_Craft_List                                Protocol = 21000
 	Protocol_Craft_SelectNode                          Protocol = 21001
 	Protocol_Craft_UpdateNodeLevel                     Protocol = 21002
@@ -228,6 +229,7 @@ const (
 	Protocol_Arena_DamageReport                        Protocol = 22014
 	Protocol_Arena_CheckSeasonCloseReward              Protocol = 22015
 	Protocol_Arena_SyncEchelonSettingTime              Protocol = 22016
+	Protocol_Arena_SettingAnonymous                    Protocol = 22017
 	Protocol_WeekDungeon_List                          Protocol = 23000
 	Protocol_WeekDungeon_EnterBattle                   Protocol = 23001
 	Protocol_WeekDungeon_BattleResult                  Protocol = 23002
@@ -323,6 +325,10 @@ const (
 	Protocol_EventContent_TreasureLobby                Protocol = 30044
 	Protocol_EventContent_TreasureFlip                 Protocol = 30045
 	Protocol_EventContent_TreasureNextRound            Protocol = 30046
+	Protocol_EventContent_ConcentrationGetInfo         Protocol = 30047
+	Protocol_EventContent_ConcentrationFlipCard        Protocol = 30048
+	Protocol_EventContent_ConcentrationRoundComplete   Protocol = 30049
+	Protocol_EventContent_ConcentrationRoundSkip       Protocol = 30050
 	Protocol_TTS_GetFile                               Protocol = 31000
 	Protocol_TTS_GetKana                               Protocol = 31001
 	Protocol_ContentLog_UIOpenStatistics               Protocol = 32000

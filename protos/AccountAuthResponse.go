@@ -21,5 +21,6 @@ type AccountAuthResponse struct {
 	EncryptedUID                        string                 `json:",omitempty,omitzero"`
 	AccountRestrictionsDB               AccountRestrictionsDB  `json:",omitempty,omitzero"`
 	IssueAlertInfos                     []IssueAlertInfoDB     `json:",omitempty,omitzero"`
+	IsArenaAnonymous                    bool                   `json:",omitempty,omitzero"`
 	AccountBanByNexonDBs                []AccountBanByNexonDB  `json:",omitempty,omitzero"`
 }
