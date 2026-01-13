@@ -113,7 +113,7 @@ jobs:
       - name: Fix the linting issues
         uses: golangci/golangci-lint-action@v9
         with:
-          version: v2.1
+          version: v2.8
           args: --fix ./...
       - name: Commit and push changes
         uses: EndBug/add-and-commit@v9
