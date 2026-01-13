@@ -4,6 +4,8 @@ github.com/arisu-archive/arona-flatbuffers v0.3.1 h1:lNNiPOzMm9wpbeFnXJDGXOzsqKM
 github.com/arisu-archive/arona-flatbuffers v0.3.1/go.mod h1:BdAWEPzwiSZGf6pbT9pzgTADu/UVgrYzP1Ld2bmCeME=
 github.com/arisu-archive/arona-flatbuffers v0.4.0 h1:ovRw57cDc+0g2fBTjdL+4q1u8mAi/4MZZnzJ07HsXh4=
 github.com/arisu-archive/arona-flatbuffers v0.4.0/go.mod h1:s5gZf8zMdc+DKt95dgH8EUxl+L55bxnAsiazbiE2l9s=
+github.com/arisu-archive/arona-flatbuffers v0.5.0 h1:2s4VXHBpsnm6HGzKcEdgSU1IFTGvW4PG8Di39ADiwZY=
+github.com/arisu-archive/arona-flatbuffers v0.5.0/go.mod h1:p8MET6eJfaZaronHzI1zTFWl2p9ukF5GJ9NcvBtemZI=
 github.com/arisu-archive/bluearchive-fbs-utils v0.0.0-20251025193505-8e0d5e7baff5 h1:XSk7xahyNnYkp4UZlfoFSLqlZZZXx2lMe07yjbFeGU4=
 github.com/arisu-archive/bluearchive-fbs-utils v0.0.0-20251025193505-8e0d5e7baff5/go.mod h1:n9PFVpzLtcrThjXgFe1TLTdGdZZ/WrSewzzMCS4IDrs=
 github.com/arisu-archive/bluearchive-fbs-utils v0.0.0-20251204154751-651482551f83 h1:MHtBId/Qdcmt+dLY2uiHxOMxRzi4u1jnq4IxcD7ii4E=
@@ -14,6 +16,8 @@ github.com/go-task/slim-sprig/v3 v3.0.0 h1:sUs3vkvUymDpBKi3qH1YSqBQk9+9D/8M2mN1v
 github.com/go-task/slim-sprig/v3 v3.0.0/go.mod h1:W848ghGpv3Qj3dhTPRyJypKRiqCdHZiAzKg9hl15HA8=
 github.com/google/flatbuffers v25.9.23+incompatible h1:rGZKv+wOb6QPzIdkM2KxhBZCDrA0DeN6DNmRDrqIsQU=
 github.com/google/flatbuffers v25.9.23+incompatible/go.mod h1:1AeVuKshWv4vARoZatz6mlQ0JxURH0Kv5+zNeJKJCa8=
+github.com/google/flatbuffers v25.12.19+incompatible h1:haMV2JRRJCe1998HeW/p0X9UaMTK6SDo0ffLn2+DbLs=
+github.com/google/flatbuffers v25.12.19+incompatible/go.mod h1:1AeVuKshWv4vARoZatz6mlQ0JxURH0Kv5+zNeJKJCa8=
 github.com/google/go-cmp v0.7.0 h1:wk8382ETsv4JYUZwIsn6YpYiWiBsYLSJiTsyBybVuN8=
 github.com/google/go-cmp v0.7.0/go.mod h1:pXiqmnSA92OHEEa9HXL2W4E7lf9JzCmGVUdgjX3N/iU=
 github.com/google/pprof v0.0.0-20250403155104-27863c87afa6 h1:BHT72Gu3keYf3ZEu2J0b1vyeLSOYI8bm5wbJM/8yDe8=
