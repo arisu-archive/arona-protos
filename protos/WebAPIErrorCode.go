@@ -380,6 +380,7 @@ const (
 	WebAPIErrorCode_BillingProductSelectionSlotNotMatch            WebAPIErrorCode = 30027
 	WebAPIErrorCode_BillingProductSelectConditionFailed            WebAPIErrorCode = 30028
 	WebAPIErrorCode_BillingProductSelectionSlotNotFound            WebAPIErrorCode = 30029
+	WebAPIErrorCode_BillingRewardParcelNotFound                    WebAPIErrorCode = 30030
 	WebAPIErrorCode_ClanNotFound                                   WebAPIErrorCode = 31000
 	WebAPIErrorCode_ClanSearchFailed                               WebAPIErrorCode = 31001
 	WebAPIErrorCode_ClanEmptySearchString                          WebAPIErrorCode = 31002
@@ -450,6 +451,11 @@ const (
 	WebAPIErrorCode_EventContentTreasureDataNotFound               WebAPIErrorCode = 36015
 	WebAPIErrorCode_EventContentTreasureNotComplete                WebAPIErrorCode = 36016
 	WebAPIErrorCode_EventContentTreasureFlipFailed                 WebAPIErrorCode = 36017
+	WebAPIErrorCode_EventcontentConcentrationFlipCountZero         WebAPIErrorCode = 36018
+	WebAPIErrorCode_EventContentConcentrationRequestSameIndex      WebAPIErrorCode = 36019
+	WebAPIErrorCode_EventContentConcentrationAlreadyMatchedIndex   WebAPIErrorCode = 36020
+	WebAPIErrorCode_EventContentConcentrationCannotCompleteRound   WebAPIErrorCode = 36021
+	WebAPIErrorCode_EventContentConcentrationCannotSkipRound       WebAPIErrorCode = 36022
 	WebAPIErrorCode_MiniGameStageIsNotOpen                         WebAPIErrorCode = 37000
 	WebAPIErrorCode_MiniGameStageInvalidResult                     WebAPIErrorCode = 37001
 	WebAPIErrorCode_MiniGameShootingStageInvlid                    WebAPIErrorCode = 37002
