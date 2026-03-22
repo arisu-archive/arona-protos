@@ -6,7 +6,7 @@ toolchain go1.26.1
 
 require (
 	github.com/arisu-archive/arona-flatbuffers v0.6.0
-	github.com/arisu-archive/mapx v1.0.0
+	github.com/arisu-archive/mapx v1.1.0
 )
 
 require (
