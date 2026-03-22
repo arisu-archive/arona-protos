@@ -4,7 +4,10 @@ go 1.25.0
 
 toolchain go1.26.1
 
-require github.com/arisu-archive/arona-flatbuffers v0.6.0
+require (
+	github.com/arisu-archive/arona-flatbuffers v0.6.0
+	github.com/arisu-archive/mapx v1.0.0
+)
 
 require (
 	github.com/arisu-archive/bluearchive-fbs-utils v0.0.0-20251204154751-651482551f83 // indirect
