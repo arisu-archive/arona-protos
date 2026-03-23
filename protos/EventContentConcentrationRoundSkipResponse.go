@@ -2,6 +2,6 @@ package protos
 
 type EventContentConcentrationRoundSkipResponse struct {
 	ResponsePacket
-	SaveDB         EventContentConcentrationSaveDB
-	ParcelResultDB ParcelResultDB
+	SaveDB         *EventContentConcentrationSaveDB `json:",omitempty,omitzero"`
+	ParcelResultDB *ParcelResultDB                  `json:",omitempty,omitzero"`
 }
