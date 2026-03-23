@@ -8,7 +8,7 @@ type AccountAuthResponse struct {
 	BattleValidation                    bool  `json:",omitempty,omitzero"`
 	UpdateRequired                      bool  `json:",omitempty,omitzero"`
 	TTSCdnUri                           string
-	AccountDB                           AccountDB
+	AccountDB                           *AccountDB `json:",omitempty,omitzero"`
 	AttendanceBookRewards               []AttendanceBookReward
 	AttendanceHistoryDBs                []AttendanceHistoryDB
 	RepurchasableMonthlyProductCountDBs []PurchaseCountDB
@@ -19,7 +19,7 @@ type AccountAuthResponse struct {
 	WeeklyProductParcel                 []ParcelInfo
 	WeeklyProductMail                   []ParcelInfo
 	EncryptedUID                        string
-	AccountRestrictionsDB               AccountRestrictionsDB
+	AccountRestrictionsDB               *AccountRestrictionsDB `json:",omitempty,omitzero"`
 	IssueAlertInfos                     []IssueAlertInfoDB
 	IsArenaAnonymous                    bool `json:",omitempty,omitzero"`
 	AccountBanByNexonDBs                []AccountBanByNexonDB

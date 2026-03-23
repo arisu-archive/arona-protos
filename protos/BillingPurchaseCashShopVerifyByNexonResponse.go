@@ -2,8 +2,8 @@ package protos
 
 type BillingPurchaseCashShopVerifyByNexonResponse struct {
 	ResponsePacket
-	ParcelResult               ParcelResultDB
-	MailDB                     MailDB
+	ParcelResult               *ParcelResultDB `json:",omitempty,omitzero"`
+	MailDB                     *MailDB         `json:",omitempty,omitzero"`
 	CountList                  []PurchaseCountDB
 	PurchaseCount              int32 `json:",omitempty,omitzero"`
 	MonthlyProductList         []MonthlyProductPurchaseDB
