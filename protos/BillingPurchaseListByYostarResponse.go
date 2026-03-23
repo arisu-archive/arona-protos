@@ -2,9 +2,9 @@ package protos
 
 type BillingPurchaseListByYostarResponse struct {
 	ResponsePacket
-	CountList             []PurchaseCountDB
-	OrderList             []PurchaseOrderDB
-	MonthlyProductList    []MonthlyProductPurchaseDB
-	BlockedProductDBs     []BlockedProductDB
-	BattlePassProductList []BattlePassProductPurchaseDB
+	CountList             []*PurchaseCountDB
+	OrderList             []*PurchaseOrderDB
+	MonthlyProductList    []*MonthlyProductPurchaseDB
+	BlockedProductDBs     []*BlockedProductDB
+	BattlePassProductList []*BattlePassProductPurchaseDB
 }
