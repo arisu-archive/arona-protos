@@ -17,5 +17,5 @@ type DetailedAccountInfoDB struct {
 	RaidTier                       *int32 `json:",omitempty,omitzero"`
 	EliminateRaidRanking           *int64 `json:",omitempty,omitzero"`
 	EliminateRaidTier              *int32 `json:",omitempty,omitzero"`
-	AssistCharacterDBs             []AssistCharacterDB
+	AssistCharacterDBs             []*AssistCharacterDB
 }

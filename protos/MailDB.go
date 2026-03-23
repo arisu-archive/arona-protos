@@ -17,6 +17,6 @@ type MailDB struct {
 	SendDate          MxTime  `json:",omitempty,omitzero"`
 	ReceiptDate       *MxTime `json:",omitempty,omitzero"`
 	ExpireDate        *MxTime `json:",omitempty,omitzero"`
-	ParcelInfos       []ParcelInfo
-	RemainParcelInfos []ParcelInfo
+	ParcelInfos       []*ParcelInfo
+	RemainParcelInfos []*ParcelInfo
 }

@@ -7,8 +7,8 @@ import (
 type GroupSummary struct {
 	TeamId                 int64     `json:",omitempty,omitzero"`
 	LeaderEntityId         *EntityId `json:",omitempty,omitzero"`
-	Heroes                 []HeroSummary
-	Supporters             []HeroSummary
+	Heroes                 []*HeroSummary
+	Supporters             []*HeroSummary
 	UseAutoSkill           bool  `json:",omitempty,omitzero"`
 	TSSInteractionServerId int64 `json:",omitempty,omitzero"`
 	TSSInteractionUniqueId int64 `json:",omitempty,omitzero"`

@@ -4,9 +4,9 @@ type BillingPurchaseCashShopVerifyByNexonResponse struct {
 	ResponsePacket
 	ParcelResult               *ParcelResultDB `json:",omitempty,omitzero"`
 	MailDB                     *MailDB         `json:",omitempty,omitzero"`
-	CountList                  []PurchaseCountDB
+	CountList                  []*PurchaseCountDB
 	PurchaseCount              int32 `json:",omitempty,omitzero"`
-	MonthlyProductList         []MonthlyProductPurchaseDB
+	MonthlyProductList         []*MonthlyProductPurchaseDB
 	ProductMonthlyIdInMailList []int64
 	GachaTicketItemIdList      []int64
 	ShopId                     string
