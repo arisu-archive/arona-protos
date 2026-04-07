@@ -8,4 +8,5 @@ type BillingPurchaseCashShopVerifyByNexonRequest struct {
 	VirtualPayment bool  `json:",omitempty,omitzero"`
 	CurrencyCode   string
 	CurrencyValue  int64 `json:",omitempty,omitzero"`
+	SelectionDBs   []*ShopCashProductSelectionDB
 }
