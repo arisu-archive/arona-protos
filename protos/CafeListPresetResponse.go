@@ -2,5 +2,6 @@ package protos
 
 type CafeListPresetResponse struct {
 	ResponsePacket
-	CafePresetDBs []*CafePresetDB
+	CafePresetDBs     []*CafePresetDB
+	CafeCopyPresetDBs []*CafePresetDB
 }

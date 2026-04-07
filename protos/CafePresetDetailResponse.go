@@ -1,0 +1,10 @@
+package protos
+
+import (
+	"github.com/arisu-archive/mapx"
+)
+
+type CafePresetDetailResponse struct {
+	ResponsePacket
+	DeployCountByFurnitureId *mapx.OrderedMap[int64, int64]
+}

@@ -21,6 +21,8 @@ type AccountAuthResponse struct {
 	EncryptedUID                        string
 	AccountRestrictionsDB               *AccountRestrictionsDB `json:",omitempty,omitzero"`
 	IssueAlertInfos                     []*IssueAlertInfoDB
-	IsArenaAnonymous                    bool `json:",omitempty,omitzero"`
+	DailyRecordDBs                      []*DailyRecordDB
+	OptionDB                            *OptionDB `json:",omitempty,omitzero"`
+	IsArenaAnonymous                    bool      `json:",omitempty,omitzero"`
 	AccountBanByNexonDBs                []*AccountBanByNexonDB
 }
