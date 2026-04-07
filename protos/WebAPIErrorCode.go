@@ -59,7 +59,7 @@ const (
 	WebAPIErrorCode_YostarServerNotSuccessStatusCode               WebAPIErrorCode = 1009
 	WebAPIErrorCode_YostarNetworkException                         WebAPIErrorCode = 1010
 	WebAPIErrorCode_YostarException                                WebAPIErrorCode = 1011
-	WebAPIErrorCode_AccoountPassCheckNotSupportCheat               WebAPIErrorCode = 1012
+	WebAPIErrorCode_AccountPassCheckNotSupportCheat                WebAPIErrorCode = 1012
 	WebAPIErrorCode_AccountCreateFail                              WebAPIErrorCode = 1013
 	WebAPIErrorCode_AccountAddPubliserAccountFail                  WebAPIErrorCode = 1014
 	WebAPIErrorCode_AccountAddDevIdFail                            WebAPIErrorCode = 1015
@@ -238,6 +238,8 @@ const (
 	WebAPIErrorCode_CafeCannotTravelToOwnCafe                      WebAPIErrorCode = 15021
 	WebAPIErrorCode_CafeCannotTravel                               WebAPIErrorCode = 15022
 	WebAPIErrorCode_CafeCannotTravel_CafeLock                      WebAPIErrorCode = 15023
+	WebAPIErrorCode_CafePresetCopyNotAllowed                       WebAPIErrorCode = 15024
+	WebAPIErrorCode_CafePresetNotVisitingCafe                      WebAPIErrorCode = 15025
 	WebAPIErrorCode_ScenarioMode_Fail                              WebAPIErrorCode = 16000
 	WebAPIErrorCode_ScenarioMode_DuplicatedScenarioModeId          WebAPIErrorCode = 16001
 	WebAPIErrorCode_ScenarioMode_LimitClearedScenario              WebAPIErrorCode = 16002
@@ -600,6 +602,9 @@ const (
 	WebAPIErrorCode_BattlePassBuyLevelBuyCountError                WebAPIErrorCode = 50003
 	WebAPIErrorCode_BattlePassAlreadyGetRewardAll                  WebAPIErrorCode = 50004
 	WebAPIErrorCode_BattlePassExpiredError                         WebAPIErrorCode = 50005
+	WebAPIErrorCode_DailyRecordNotFound                            WebAPIErrorCode = 51000
+	WebAPIErrorCode_DailyRecordAlreadyExpired                      WebAPIErrorCode = 51001
+	WebAPIErrorCode_DailyRecordRewardNotExist                      WebAPIErrorCode = 51002
 	WebAPIErrorCode_FieldDataNotFound                              WebAPIErrorCode = 60000
 	WebAPIErrorCode_FieldInteracionFailed                          WebAPIErrorCode = 60001
 	WebAPIErrorCode_FieldQuestClearFailed                          WebAPIErrorCode = 60002

@@ -197,6 +197,8 @@ const (
 	Protocol_Cafe_Open                                 Protocol = 20018
 	Protocol_Cafe_Travel                               Protocol = 20019
 	Protocol_Cafe_SummonCharacterTicketUse             Protocol = 20020
+	Protocol_Cafe_PresetDetail                         Protocol = 20021
+	Protocol_Cafe_UpdateCopyPresetFurniture            Protocol = 20022
 	Protocol_Craft_List                                Protocol = 21000
 	Protocol_Craft_SelectNode                          Protocol = 21001
 	Protocol_Craft_UpdateNodeLevel                     Protocol = 21002
@@ -212,6 +214,8 @@ const (
 	Protocol_Craft_RewardAll                           Protocol = 21012
 	Protocol_Craft_ShiftingCompleteProcessAll          Protocol = 21013
 	Protocol_Craft_ShiftingRewardAll                   Protocol = 21014
+	Protocol_Craft_SavePreset                          Protocol = 21015
+	Protocol_Craft_SavePresetName                      Protocol = 21016
 	Protocol_Arena_EnterLobby                          Protocol = 22000
 	Protocol_Arena_Login                               Protocol = 22001
 	Protocol_Arena_SettingChange                       Protocol = 22002
@@ -473,8 +477,9 @@ const (
 	Protocol_MultiFloorRaid_EnterBattle                Protocol = 49001
 	Protocol_MultiFloorRaid_EndBattle                  Protocol = 49002
 	Protocol_MultiFloorRaid_ReceiveReward              Protocol = 49003
+	Protocol_MultiFloorRaid_Login                      Protocol = 49004
 	Protocol_Queuing_GetTicket                         Protocol = 50000
-	Protocol_Queuing_GetTicketGL                       Protocol = 50001
+	Protocol_Queuing_GetCryptoKeys                     Protocol = 50001
 	Protocol_BattlePass_GetInfo                        Protocol = 51000
 	Protocol_BattlePass_BuyLevel                       Protocol = 51001
 	Protocol_BattlePass_ReceiveReward                  Protocol = 51002
@@ -482,6 +487,8 @@ const (
 	Protocol_BattlePass_MissionSingleReward            Protocol = 51004
 	Protocol_BattlePass_MissionMultipleReward          Protocol = 51005
 	Protocol_BattlePass_Check                          Protocol = 51006
+	Protocol_DailyRecord_Reward                        Protocol = 52000
+	Protocol_Option_Save                               Protocol = 53000
 	Protocol_Management_BannerList                     Protocol = 100000
 	Protocol_Management_ProtocolLockList               Protocol = 100001
 )
