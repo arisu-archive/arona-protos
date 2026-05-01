@@ -2,7 +2,7 @@ package protos
 
 type AccountCallNameRequest struct {
 	RequestPacket
-	CallName         string
-	CallNameKatakana string
-	CallNameKorean   string
+	CallName         string `json:",omitempty,omitzero"`
+	CallNameKatakana string `json:",omitempty,omitzero"`
+	CallNameKorean   string `json:",omitempty,omitzero"`
 }

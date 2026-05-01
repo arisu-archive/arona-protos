@@ -10,9 +10,9 @@ type MailDB struct {
 	AccountServerId   int64             `json:",omitempty,omitzero"`
 	Type              flatdata.MailType `json:",omitempty,omitzero"`
 	UniqueId          int64             `json:",omitempty,omitzero"`
-	Sender            string
+	Sender            string            `json:",omitempty,omitzero"`
 	LocalizedSender   *mapx.OrderedMap[string, string]
-	Comment           string
+	Comment           string `json:",omitempty,omitzero"`
 	LocalizedComment  *mapx.OrderedMap[string, string]
 	SendDate          MxTime  `json:",omitempty,omitzero"`
 	ReceiptDate       *MxTime `json:",omitempty,omitzero"`

@@ -8,6 +8,6 @@ type AccountBanByNexonDB struct {
 	BanDay       int32  `json:",omitempty,omitzero"`
 	BanStartDate MxTime `json:",omitempty,omitzero"`
 	BanEndDate   MxTime `json:",omitempty,omitzero"`
-	BanComment   string
-	DeleteFlag   int32 `json:",omitempty,omitzero"`
+	BanComment   string `json:",omitempty,omitzero"`
+	DeleteFlag   int32  `json:",omitempty,omitzero"`
 }
