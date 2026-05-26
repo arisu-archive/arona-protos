@@ -16,7 +16,7 @@ type MissionInfo struct {
 	StartableEndDate              MxTime                                    `json:",omitempty,omitzero"`
 	EndDate                       MxTime                                    `json:",omitempty,omitzero"`
 	EndDday                       int64                                     `json:",omitempty,omitzero"`
-	AccountState                  flatdata.AccountState                     `json:",omitempty,omitzero"`
+	TargetGroup                   flatdata.TargetGroup                      `json:",omitempty,omitzero"`
 	AccountLevel                  int64                                     `json:",omitempty,omitzero"`
 	PreMissionIds                 []int64
 	NextMissionId                 int64 `json:",omitempty,omitzero"`
@@ -28,12 +28,12 @@ type MissionInfo struct {
 	CompleteConditionMissionIds   []int64
 	CompleteConditionMissionCount int64 `json:",omitempty,omitzero"`
 	CompleteConditionRewards      []*ParcelInfo
-	RewardIcon                    string `json:",omitempty,omitzero"`
+	RewardIcon                    string
 	Rewards                       []*ParcelInfo
 	DateAutoRefer                 flatdata.ContentType
-	ToastImagePath                string `json:",omitempty,omitzero"`
-	DisplayOrder                  int64  `json:",omitempty,omitzero"`
-	HasFollowingMission           bool   `json:",omitempty,omitzero"`
+	ToastImagePath                string
+	DisplayOrder                  int64 `json:",omitempty,omitzero"`
+	HasFollowingMission           bool  `json:",omitempty,omitzero"`
 	Shortcuts                     []string
 	ChallengeStageId              int64 `json:",omitempty,omitzero"`
 }

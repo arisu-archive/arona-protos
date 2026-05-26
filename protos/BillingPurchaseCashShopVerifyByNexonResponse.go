@@ -9,9 +9,10 @@ type BillingPurchaseCashShopVerifyByNexonResponse struct {
 	MonthlyProductList         []*MonthlyProductPurchaseDB
 	ProductMonthlyIdInMailList []int64
 	GachaTicketItemIdList      []int64
-	ShopId                     string  `json:",omitempty,omitzero"`
+	ShopId                     string
 	ItemPrice                  float64 `json:",omitempty,omitzero"`
-	Currency                   string  `json:",omitempty,omitzero"`
-	StampId                    string  `json:",omitempty,omitzero"`
+	Currency                   string
+	StampId                    string
 	BattlePassIdInMailList     []int64
+	DailyRecordIdInMailList    []int64
 }
