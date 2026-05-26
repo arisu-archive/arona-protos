@@ -10,13 +10,16 @@ type MailDB struct {
 	AccountServerId   int64             `json:",omitempty,omitzero"`
 	Type              flatdata.MailType `json:",omitempty,omitzero"`
 	UniqueId          int64             `json:",omitempty,omitzero"`
-	Sender            string            `json:",omitempty,omitzero"`
+	Sender            string
 	LocalizedSender   *mapx.OrderedMap[string, string]
-	Comment           string `json:",omitempty,omitzero"`
+	Comment           string
 	LocalizedComment  *mapx.OrderedMap[string, string]
 	SendDate          MxTime  `json:",omitempty,omitzero"`
 	ReceiptDate       *MxTime `json:",omitempty,omitzero"`
 	ExpireDate        *MxTime `json:",omitempty,omitzero"`
+	OrderId           *int64  `json:",omitempty,omitzero"`
+	ProductId         *int64  `json:",omitempty,omitzero"`
+	IsCashMail        bool    `json:",omitempty,omitzero"`
 	ParcelInfos       []*ParcelInfo
 	RemainParcelInfos []*ParcelInfo
 }
