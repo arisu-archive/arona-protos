@@ -5,7 +5,7 @@ go 1.25.0
 toolchain go1.26.2
 
 require (
-	github.com/arisu-archive/arona-flatbuffers v0.8.0
+	github.com/arisu-archive/arona-flatbuffers v0.8.1
 	github.com/arisu-archive/mapx v1.1.0
 )
 
