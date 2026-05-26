@@ -19,4 +19,5 @@ type CommonCheatResponse struct {
 	MemoryLobbyDBs          []*MemoryLobbyDB
 	ScenarioCollectionDBs   []*ScenarioCollectionDB
 	CheatFlags              CheatFlags `json:",omitempty,omitzero"`
+	DebugPopupMessage       string
 }
