@@ -8,6 +8,7 @@ type QueuingGetAuthTicketRequest struct {
 	YostarToken        string
 	PassCheck          bool `json:",omitempty,omitzero"`
 	MakeStandby        bool `json:",omitempty,omitzero"`
+	PassCheckVersion   bool `json:",omitempty,omitzero"`
 	PassCheckYostar    bool `json:",omitempty,omitzero"`
 	ClientVersion      string
 	OSType             string

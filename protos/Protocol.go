@@ -102,6 +102,7 @@ const (
 	Protocol_Mission_MultipleGuideReward               Protocol = 8004
 	Protocol_Mission_Sync                              Protocol = 8005
 	Protocol_Mission_GuideMissionSeasonList            Protocol = 8006
+	Protocol_Mission_NotifyUIEntered                   Protocol = 8007
 	Protocol_Attendance_List                           Protocol = 9000
 	Protocol_Attendance_Check                          Protocol = 9001
 	Protocol_Attendance_Reward                         Protocol = 9002
@@ -502,6 +503,14 @@ const (
 	Protocol_PermanentRaid_EnterBattle                 Protocol = 54001
 	Protocol_PermanentRaid_EndBattle                   Protocol = 54002
 	Protocol_PermanentRaid_GiveUp                      Protocol = 54003
+	Protocol_SNS_PostRead                              Protocol = 55000
+	Protocol_WelcomeCampaign_GetInfo                   Protocol = 56000
+	Protocol_WelcomeCampaign_ReceiveEnterReward        Protocol = 56001
+	Protocol_WelcomeCampaign_AttendanceReward          Protocol = 56002
+	Protocol_WelcomeCampaign_MissionList               Protocol = 56003
+	Protocol_WelcomeCampaign_MissionReward             Protocol = 56004
+	Protocol_WelcomeCampaign_MissionMultipleReward     Protocol = 56005
+	Protocol_WelcomeCampaign_Check                     Protocol = 56006
 	Protocol_Management_BannerList                     Protocol = 100000
 	Protocol_Management_ProtocolLockList               Protocol = 100001
 )

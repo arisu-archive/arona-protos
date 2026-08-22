@@ -26,5 +26,6 @@ type AccountAuthResponse struct {
 	IsArenaAnonymous                    bool      `json:",omitempty,omitzero"`
 	AccountLimitedFlashSaleDBs          []*AccountLimitedFlashSaleDB
 	NewlyAddedShopCashIds               []int64
+	WelcomeCampaignInfo                 *WelcomeCampaignDB `json:",omitempty,omitzero"`
 	AccountBanByNexonDBs                []*AccountBanByNexonDB
 }
