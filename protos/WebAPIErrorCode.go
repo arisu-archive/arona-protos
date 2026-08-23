@@ -580,6 +580,7 @@ const (
 	WebAPIErrorCode_FriendBlockTargetIsExceedMaxCount              WebAPIErrorCode = 43018
 	WebAPIErrorCode_FriendBlockUserCannotOpenProfile               WebAPIErrorCode = 43019
 	WebAPIErrorCode_FriendBlockUserCannotSendRequest               WebAPIErrorCode = 43020
+	WebAPIErrorCode_FriendSearchResultIsEmpty                      WebAPIErrorCode = 43021
 	WebAPIErrorCode_EliminateStageIsNotOpened                      WebAPIErrorCode = 44000
 	WebAPIErrorCode_MultiSweepPresetDocumentNotFound               WebAPIErrorCode = 45000
 	WebAPIErrorCode_MultiSweepPresetNameEmpty                      WebAPIErrorCode = 45001
@@ -618,6 +619,10 @@ const (
 	WebAPIErrorCode_PermanentRaidDataNotFound                      WebAPIErrorCode = 52001
 	WebAPIErrorCode_PermanentRaidBossIsLocked                      WebAPIErrorCode = 52002
 	WebAPIErrorCode_PermanentRaidBossIsAlreadyClosed               WebAPIErrorCode = 52003
+	WebAPIErrorCode_SNSPostNotExistToRead                          WebAPIErrorCode = 53000
+	WebAPIErrorCode_WelcomeCampaignInitError                       WebAPIErrorCode = 54000
+	WebAPIErrorCode_WelcomeCampaignNotOpen                         WebAPIErrorCode = 54001
+	WebAPIErrorCode_WelcomeCampaignEnterRewardFailed               WebAPIErrorCode = 54002
 	WebAPIErrorCode_FieldDataNotFound                              WebAPIErrorCode = 60000
 	WebAPIErrorCode_FieldInteracionFailed                          WebAPIErrorCode = 60001
 	WebAPIErrorCode_FieldQuestClearFailed                          WebAPIErrorCode = 60002
