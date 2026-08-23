@@ -17,7 +17,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v6
         with:
-          ref: develop
+          ref: master
 
       - name: Set up Go
         uses: actions/setup-go@v6
@@ -46,9 +46,9 @@ jobs:
         uses: peter-evans/create-pull-request@v7
         with:
           branch: chore/bump-flatbuffers
-          base: develop
-          commit-message: "chore(dep): bump arona-flatbuffers to latest"
-          title: "chore(dep): bump arona-flatbuffers to latest"
+          base: master
+          commit-message: "fix(deps): bump arona-flatbuffers to latest"
+          title: "fix(deps): bump arona-flatbuffers to latest"
           body: |
             Automated bump of `arona-flatbuffers` to their latest versions.
 
