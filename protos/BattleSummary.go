@@ -21,4 +21,5 @@ type BattleSummary struct {
 	ElapsedRealtime    float32             `json:",omitempty,omitzero"`
 	IsAbort            bool                `json:",omitempty,omitzero"`
 	IsDefeatBattle     bool                `json:",omitempty,omitzero"`
+	MulliganList       []int64
 }

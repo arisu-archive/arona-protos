@@ -36,4 +36,5 @@ type MissionInfo struct {
 	HasFollowingMission           bool  `json:",omitempty,omitzero"`
 	Shortcuts                     []string
 	ChallengeStageId              int64 `json:",omitempty,omitzero"`
+	IsCompleteExtensionTime       bool  `json:",omitempty,omitzero"`
 }
