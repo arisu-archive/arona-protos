@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.9.0](https://github.com/arisu-archive/arona-protos/compare/v1.8.0...v1.9.0) (2026-08-24)
+
+
+### Features
+
+* **docs:** update project README ([611c482](https://github.com/arisu-archive/arona-protos/commit/611c4826464dc8d8a25eb69ded8f3ad1ad8a6954))
+
 ## [1.8.0](https://github.com/arisu-archive/arona-protos/compare/v1.7.0...v1.8.0) (2026-08-24)
 
 
