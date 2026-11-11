@@ -14,4 +14,6 @@ type ClearDeckCharacterDB struct {
 	WeaponStarGrade  int32              `json:",omitempty,omitzero"`
 	CombatStyleIndex int32              `json:",omitempty,omitzero"`
 	IsAssist         bool               `json:",omitempty,omitzero"`
+	IsAPC            bool               `json:",omitempty,omitzero"`
+	SystemAssistType int32              `json:",omitempty,omitzero"`
 }

@@ -2,5 +2,5 @@ package protos
 
 type TTSGetKanaRequest struct {
 	RequestPacket
-	CallName string
+	CallName string `json:",omitempty,omitzero"`
 }
