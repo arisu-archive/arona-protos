@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.10.0](https://github.com/arisu-archive/arona-protos/compare/v1.9.0...v1.10.0) (2026-11-14)
+
+
+### Features
+
+* **protos:** generate protos for 1.96.474931 ([#52](https://github.com/arisu-archive/arona-protos/issues/52)) ([b90cb03](https://github.com/arisu-archive/arona-protos/commit/b90cb03a6fb3c22c00a1f35e9d80044bca5ef96b))
+
 ## [1.9.0](https://github.com/arisu-archive/arona-protos/compare/v1.8.0...v1.9.0) (2026-11-11)
 
 
