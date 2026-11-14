@@ -20,8 +20,9 @@ type ParcelResultDB struct {
 	RemovedFurnitureIds             []int64
 	IdCardBackgroundDBs             *mapx.OrderedMap[int64, *IdCardBackgroundDB]
 	EmblemDBs                       []*EmblemDB
+	StudentFrameDBs                 []*StudentFrameDB
 	StickerDBs                      []*StickerDB
-	MemoryLobbyDBs                  []*MemoryLobbyDB
+	MemoryLobbyIds                  []int64
 	SNSPostDBs                      []*SNSPostDB
 	CharacterNewUniqueIds           []int64
 	SecretStoneCharacterIdAndCounts *mapx.OrderedMap[int64, int32]
@@ -31,4 +32,7 @@ type ParcelResultDB struct {
 	BaseAccountExp                  int64 `json:",omitempty,omitzero"`
 	AdditionalAccountExp            int64 `json:",omitempty,omitzero"`
 	NewbieBoostAccountExp           int64 `json:",omitempty,omitzero"`
+	ProductMonthlyBoostAccountExp   int64 `json:",omitempty,omitzero"`
+	BaseMasterCoin                  int64 `json:",omitempty,omitzero"`
+	AdditionalMasterCoin            int64 `json:",omitempty,omitzero"`
 }

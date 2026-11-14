@@ -11,5 +11,6 @@ type BillingPurchaseListByNexonResponse struct {
 	BattlePassProductList      []*BattlePassProductPurchaseDB
 	BattlePassIdInMailList     []int64
 	DailyRecordIdInMailList    []int64
+	StreakRecordIdInMailList   []int64
 	IsTeenage                  bool `json:",omitempty,omitzero"`
 }
